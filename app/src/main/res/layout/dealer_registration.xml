@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MainViewContainer"
+        android:gravity="center">
+
+        <TextView
+            style="@style/MainViewTextViewBlue"
+            android:text="@string/dealer_info" />
+
+        <LinearLayout
+            android:layout_width="@dimen/center_box_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/last_name"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/last_name" />
+
+            <EditText
+                android:id="@+id/first_name"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/first_name" />
+
+            <EditText
+                android:id="@+id/reg_number"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/reg_number" />
+
+            <EditText
+                android:id="@+id/address_sell_card"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/address_sell_card" />
+
+            <Spinner
+                android:id="@+id/choose_chanel_sales_type"
+                style="@style/MainViewCenterBoxEditText"
+                android:backgroundTint="@color/colorMenuText"
+                android:focusable="false"
+                android:spinnerMode="dropdown"></Spinner>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/RightViewTextView"
+                    android:text="@string/discount_percent"
+                 />
+
+                <EditText
+                    android:id="@+id/discount_precent"
+                    style="@style/MainViewCenterBoxEditText"
+                    android:hint="@string/discount_percent"
+                    android:editable="false"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/skydealer_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:hint="@string/skydealer_number" />
+
+            <EditText
+                android:id="@+id/contact_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:hint="@string/contact_number" />
+
+            <EditText
+                android:id="@+id/order_desc"
+                style="@style/TextAreaStyle"
+                android:gravity="top|left"
+                android:hint="@string/description_order"
+                android:transitionName="@string/description_order" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/RightViewContainer">
+
+        <View style="@style/DividerStyle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/RightViewGroupContainer">
+
+                <TextView
+                    style="@style/RightViewTextViewBlue"
+                    android:text="@string/take_epassport_picture"></TextView>
+            </LinearLayout>
+
+            <LinearLayout style="@style/RightViewGroupContainer"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/RightViewTextView"
+                    android:text="@string/front"
+                    android:layout_gravity="center_vertical"></TextView>
+                <ImageView
+                    android:id="@+id/img_front"
+                    style="@style/RightViewTakePictureView" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RightViewGroupContainer"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/RightViewTextView"
+                    android:text="@string/back"
+                    android:layout_gravity="center_vertical"></TextView>
+                <ImageView
+                    android:id="@+id/img_back"
+                    style="@style/RightViewTakePictureView" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/send_order"
+                style="@style/ButtonStyle"
+                android:layout_marginBottom="@dimen/main_padding"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginRight="@dimen/main_padding"
+                android:layout_marginTop="@dimen/second_padding"
+                android:text="@string/order"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

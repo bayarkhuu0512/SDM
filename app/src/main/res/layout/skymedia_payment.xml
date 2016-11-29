@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/MainViewCenterBoxContainer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/phone_number" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/contract_number" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/payment_value" />
+
+        </RelativeLayout>
+
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/main_padding"
+            android:text="@string/do_payment" />
+
+    </LinearLayout>
+
+</LinearLayout>

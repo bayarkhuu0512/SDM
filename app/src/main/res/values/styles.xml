@@ -1,0 +1,240 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="AppTheme.LeftMenu" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowTitleStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <!-- Left Menu Profile-->
+    <style name="LeftMenuTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/mainFontSize</item>
+    </style>
+
+    <style name="DialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/mainFontSize</item>
+        <item name="android:padding">@dimen/main_padding</item>
+    </style>
+
+    <style name="ButtonLightGreen" parent="ButtonStyle">
+        <item name="android:background">@color/colorLighGreen</item>
+    </style>
+
+    <style name="ButtonYellow">
+        <item name="android:layout_width">@dimen/btn_yellow_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSkytelYellow</item>
+        <item name="android:padding">@dimen/small_padding</item>
+        <item name="android:background">@drawable/btn_yellow</item>
+        <item name="android:textSize">@dimen/yellowBtnFontSize</item>
+        <item name="android:layout_margin">@dimen/small_padding</item>
+    </style>
+
+    <style name="ButtonGrey" parent="ButtonYellow">
+        <item name="android:textColor">@color/colorMenuText</item>
+        <item name="android:background">@drawable/btn_grey</item>
+    </style>
+
+    <style name="ButtonYellowFill" parent="ButtonYellow">
+        <item name="android:background">@drawable/btn_yellow_fill</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/colorRightViewTextColor</item>
+        <item name="android:textColor">@color/colorRightViewTextColor</item>
+        <item name="android:textSize">@dimen/mainFontSize</item>
+        <item name="android:padding">@dimen/main_padding</item>
+
+    </style>
+
+    <style name="LoginEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorBackground</item>
+        <item name="android:textColorHint">@color/colorTabTextColor</item>
+        <item name="android:background">@drawable/bg_et_login</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <!-- Tab Style-->
+    <style name="TabLayoutContainerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorTabBackground</item>
+    </style>
+
+    <style name="TabLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorTabBackground</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:textColor">@color/colorTabTextColor</item>
+        <item name="android:textSize">@dimen/mainFontSize</item>
+    </style>
+
+    <!--Main View -->
+    <style name="MainViewContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/rightview_width</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Main View Center Box -->
+    <style name="MainViewCenterBoxContainer">
+        <item name="android:layout_width">@dimen/center_box_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Main View TextView Blue -->
+    <style name="MainViewTextViewBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/secondFontSize</item>
+        <item name="android:textColor">@color/colorSkytelBlue</item>
+        <item name="android:padding">@dimen/main_padding</item>
+    </style>
+
+    <style name="MainViewTextViewYellow" parent="MainViewTextViewBlue">
+        <item name="android:textColor">@color/colorSkytelYellow</item>
+
+    </style>
+
+    <style name="MainViewTextViewGrey" parent="MainViewTextViewBlue">
+        <item name="android:textColor">@color/colorMenuText</item>
+    </style>
+
+    <style name="MainViewTextViewWhite" parent="MainViewTextViewBlue">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MainViewCenterBoxEditText" parent="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PhoneNumberEdittextStyle" parent="MainViewCenterBoxEditText">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">8</item>
+    </style>
+    <!-- Right View -->
+    <style name="RightViewContainer">
+        <item name="android:layout_width">@dimen/rightview_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RightViewGroupContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/main_padding</item>
+    </style>
+
+    <style name="RightViewTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorRightViewTextColor</item>
+        <item name="android:textSize">@dimen/mainFontSize</item>
+        <item name="android:padding">@dimen/main_padding</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="RightViewTextViewBold" parent="RightViewTextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RightViewTextViewBlue" parent="RightViewTextView">
+        <item name="android:textColor">@color/colorSkytelBlue</item>
+        <item name="android:textSize">@dimen/secondFontSize</item>
+    </style>
+
+    <style name="RightViewTextViewYellow" parent="RightViewTextView">
+        <item name="android:textColor">@color/colorSkytelYellow</item>
+    </style>
+
+    <style name="RightViewTakePictureView">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+
+        <item name="android:src">@drawable/no_image_available</item>
+
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:layout_width">@dimen/divider_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <!-- TextArea Style /using Edittext/ -->
+    <style name="TextAreaStyle" parent="EditTextStyle">
+        <item name="android:layout_width">@dimen/center_box_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:layout_marginTop">@dimen/main_padding</item>
+        <item name="android:lines">8</item>
+    </style>
+
+    <style name="full_screen_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+</resources>

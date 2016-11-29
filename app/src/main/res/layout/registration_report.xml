@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MainViewContainer"
+        android:orientation="vertical"
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:text="@string/choose_report_type" />
+
+            <Spinner
+                android:id="@+id/choose_registration_report_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/registration_report_type"
+                android:focusable="false"
+                android:prompt="@string/report_promt"
+                android:spinnerMode="dropdown">
+
+            </Spinner>
+
+        </LinearLayout>
+        <android.widget.HorizontalScrollView
+            android:id="@+id/tableWrapperScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/reportTableViewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+        </android.widget.HorizontalScrollView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/RightViewContainer">
+
+            <View style="@style/DividerStyle"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/RightViewGroupContainer">
+
+                    <TextView
+                        style="@style/RightViewTextViewBlue"
+                        android:text="@string/do_search"></TextView>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/filterByOrderedNumber"
+                    style="@style/PhoneNumberEdittextStyle"
+                    android:hint="@string/ordered_number" />
+                <TextView
+                    style="@style/RightViewTextViewBold"
+                    android:layout_gravity="start"
+                    android:text="@string/ordered_date" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/filterByStartDate"
+                        style="@style/EditTextStyle"
+                        android:hint="@string/start_date" />
+
+                    <Button
+                        android:id="@+id/btn_start_date"
+                        android:layout_width="@dimen/second_padding"
+                        android:layout_height="@dimen/second_padding"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/main_padding"
+                        android:background="@drawable/ic_exit" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/filterByEndDate"
+                        style="@style/EditTextStyle"
+                        android:hint="@string/end_date" />
+
+                    <Button
+                        android:id="@+id/btn_end_date"
+                        android:layout_width="@dimen/second_padding"
+                        android:layout_height="@dimen/second_padding"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/main_padding"
+                        android:background="@drawable/ic_exit" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/RightViewTextViewBold"
+                    android:layout_gravity="start"
+                    android:text="@string/order_status" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/filterByAll"
+                        style="@style/ButtonYellow"
+                        android:background="@drawable/btn_yellow_selected"
+                        android:text="@string/all"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/filterBySuccess"
+                        style="@style/ButtonYellow"
+                        android:text="@string/successful" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/filterByFailed"
+                        style="@style/ButtonYellow"
+                        android:text="@string/unsuccessful" />
+
+                    <Button
+                        android:id="@+id/filterByWaiting"
+                        style="@style/ButtonYellow"
+                        android:text="@string/waiting" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/search"
+                    style="@style/ButtonStyle"
+                    android:layout_marginBottom="@dimen/main_padding"
+                    android:layout_marginLeft="@dimen/main_padding"
+                    android:layout_marginRight="@dimen/main_padding"
+                    android:layout_marginTop="@dimen/third_padding"
+
+                    android:text="@string/search"></Button>
+
+                <Button
+                    android:id="@+id/refresh"
+                    style="@style/ButtonStyle"
+                    android:layout_marginBottom="@dimen/main_padding"
+                    android:layout_marginLeft="@dimen/main_padding"
+                    android:layout_marginRight="@dimen/main_padding"
+                    android:text="@string/refresh"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+>
+
+        <LinearLayout
+            style="@style/MainViewCenterBoxContainer"
+            android:layout_width="300dp"
+            android:layout_marginRight="@dimen/second_padding">
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:gravity="center_horizontal"
+                android:text="@string/service_select_vas_type" />
+
+            <Spinner
+                android:id="@+id/choose_vas_type"
+                style="@style/MainViewCenterBoxContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/second_padding"
+                android:gravity="center_horizontal"
+                android:text="@string/service_select_service_status" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_active"
+                    style="@style/ButtonYellow"
+                    android:background="@drawable/btn_yellow_selected"
+                    android:text="@string/active"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_deactive"
+                    style="@style/ButtonYellow"
+                    android:text="@string/decline" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MainViewCenterBoxContainer"
+            android:layout_marginLeft="@dimen/second_padding"
+            android:layout_marginRight="400dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MainViewTextViewYellow"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:text="@string/service_type" />
+
+                <TextView
+                    style="@style/MainViewTextViewYellow"
+                    android:layout_width="150dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:text="@string/tariff" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:text="@string/service_prepaid" />
+
+                <TextView
+                    android:id="@+id/price_pre"
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="150dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                     />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:text="@string/service_postpaid" />
+
+                <TextView
+                    android:id="@+id/price_post"
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="150dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                 />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:text="@string/service_mongoldoo" />
+
+                <TextView
+                    android:id="@+id/price_mongoldoo"
+                    style="@style/MainViewTextViewGrey"
+                    android:layout_width="150dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+ />
+
+            </RelativeLayout>
+
+  <!--          <TextView
+                style="@style/MainViewTextViewBlue"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/second_padding"
+                android:text="@string/insert_phone_number" />
+-->
+            <EditText
+                android:layout_marginTop="@dimen/third_padding"
+                android:id="@+id/phone_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:hint="@string/phone_number" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/send_order"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/second_padding"
+            android:text="@string/send_order" />
+    </LinearLayout>
+
+</LinearLayout>

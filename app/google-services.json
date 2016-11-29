@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "810609524142",
+    "firebase_url": "https://service-dealer-program.firebaseio.com",
+    "project_id": "service-dealer-program",
+    "storage_bucket": "service-dealer-program.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810609524142:android:376d2804b8b87cd3",
+        "android_client_info": {
+          "package_name": "com.skytel.sdp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810609524142-f6gcud44ar3raj9brcn3uvcakcm8670u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC70VWHzrMaViWjXPf2pq0ixh_hDYYhUmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        style="@style/MainViewContainer"
+        android:gravity="center">
+
+        <TextView
+            style="@style/MainViewTextViewBlue"
+            android:text="@string/user_info" />
+
+        <LinearLayout
+            android:layout_width="@dimen/center_box_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/last_name"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/last_name" />
+
+            <EditText
+                android:id="@+id/first_name"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/first_name" />
+
+            <EditText
+                android:id="@+id/reg_number"
+                style="@style/MainViewCenterBoxEditText"
+                android:enabled="false"
+                android:hint="@string/reg_number"
+
+               />
+
+            <EditText
+                android:id="@+id/chosen_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:enabled="false"
+                android:hint="@string/chosen_number"
+              />
+
+            <EditText
+                android:id="@+id/sim_card_serial"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/sim_card_serial"
+                android:inputType="number"
+                android:maxLength="@integer/simcard_serial_length"
+                 />
+
+
+            <Spinner
+                android:id="@+id/hobby"
+                style="@style/MainViewCenterBoxEditText"
+                android:backgroundTint="@color/colorMenuText"
+                android:focusable="false"
+                android:spinnerMode="dropdown"/>
+            <Spinner
+                android:id="@+id/job"
+                style="@style/MainViewCenterBoxEditText"
+                android:backgroundTint="@color/colorMenuText"
+                android:focusable="false"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/contact_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:hint="@string/contact_number" />
+
+            <EditText
+                android:id="@+id/description_order"
+                style="@style/TextAreaStyle"
+                android:gravity="top|left"
+                android:hint="@string/description_order"
+                android:transitionName="@string/description_order" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/RightViewContainer">
+
+        <View style="@style/DividerStyle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/RightViewGroupContainer">
+
+                <TextView
+                    style="@style/RightViewTextViewBlue"
+                    android:text="@string/take_epassport_picture"></TextView>
+            </LinearLayout>
+
+            <LinearLayout style="@style/RightViewGroupContainer"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/RightViewTextView"
+                    android:text="@string/front"
+                    android:layout_gravity="center_vertical"></TextView>
+                <ImageView
+                    android:id="@+id/img_front"
+                    style="@style/RightViewTakePictureView" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/RightViewGroupContainer"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    style="@style/RightViewTextView"
+                    android:text="@string/back"
+                    android:layout_gravity="center_vertical"></TextView>
+                <ImageView
+                    android:id="@+id/img_back"
+                    style="@style/RightViewTakePictureView" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/send_order"
+                style="@style/ButtonStyle"
+                android:layout_marginBottom="@dimen/main_padding"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginRight="@dimen/main_padding"
+                android:layout_marginTop="@dimen/second_padding"
+                android:text="@string/order"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

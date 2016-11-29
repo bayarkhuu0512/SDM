@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/MainViewCenterBoxContainer">
+
+        <LinearLayout
+            android:id="@+id/invoice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:text="@string/skydealer_insert_payment_number" />
+
+
+            <EditText
+                android:id="@+id/invoice_phone_number"
+                style="@style/PhoneNumberEdittextStyle"
+                android:hint="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/pin_code"
+                style="@style/MainViewCenterBoxEditText"
+                android:inputType="number"
+                android:hint="@string/pin_code" />
+
+            <Button
+                android:id="@+id/get_invoice_btn"
+                style="@style/ButtonStyle"
+                android:layout_margin="@dimen/main_padding"
+                android:text="@string/get_code" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:text="@string/skydealer_insert_payment_usercode" />
+
+
+            <EditText
+                android:id="@+id/confirm_code"
+                style="@style/MainViewCenterBoxEditText"
+                android:inputType="number"
+                android:hint="@string/code" />
+
+            <Button
+                android:id="@+id/do_payment_btn"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/main_padding"
+                android:text="@string/do_payment" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

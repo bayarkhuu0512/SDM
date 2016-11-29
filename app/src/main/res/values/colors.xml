@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#212121</color>
+    <color name="colorSkytelYellow">#e14913</color>
+    <color name="colorSkytelPressed">#80e14913</color>
+    <color name="colorGrey">#ebebeb</color>
+    <color name="colorGreyPressed">#80fafafa</color>
+    <color name="colorMenuText">#999999</color>
+    <color name="colorTabBackground">#e8eaf6</color>
+    <color name="colorTabTextColor">#424242</color>
+    <color name="colorDivider">#c0c0c0</color>
+    <color name="colorRightViewTextColor">#808080</color>
+    <color name="colorSkytelBlue">#00359B</color>
+    <color name="colorSkytelBluePressed">#8000359B</color>
+    <color name="colorMenuBackgroundSelected">#424242</color>
+    <color name="colorLighGreen">#8bc34a</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>

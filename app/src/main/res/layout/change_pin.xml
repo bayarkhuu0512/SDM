@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/MainViewCenterBoxContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_padding"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/old_pin"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/old_pin"
+                android:inputType="numberPassword"/>
+
+            <EditText
+                android:id="@+id/new_pin"
+                style="@style/MainViewCenterBoxEditText"
+                android:hint="@string/new_pin"
+                android:inputType="numberPassword"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_change_pin"
+            style="@style/ButtonStyle"
+            android:layout_margin="@dimen/main_padding"
+            android:text="@string/btn_change" />
+
+    </LinearLayout>
+
+</LinearLayout>

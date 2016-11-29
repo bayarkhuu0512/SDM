@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Left Menu -->
+    <string-array name="leftmenu_array">
+        <item>Шинэ дугаар</item>
+        <item>Скайдиллер</item>
+        <item>Үйлчилгээ</item>
+        <item>Бүртгэл</item>
+        <item>Мэдээлэл</item>
+        <item>Төлөвлөгөө</item>
+        <item>Санал хүсэлт</item>
+        <item>Тохиргоо</item>
+        <item>Гарах</item>
+    </string-array>
+
+    <string-array name="leftmenu_ic_array">
+        <item>ic_new_number</item>
+        <item>ic_skydealer</item>
+        <item>ic_service</item>
+        <item>ic_register</item>
+        <item>ic_info</item>
+        <item>ic_plan</item>
+        <item>ic_feedback</item>
+        <item>ic_settings</item>
+        <item>ic_exit</item>
+    </string-array>
+
+    <string-array name="voice_type">
+        <item>Санал хүсэлт</item>
+        <item>Талархал</item>
+        <item>Гомдол</item>
+        <item>Мэдээлэл</item>
+    </string-array>
+
+    <string-array name="handset_change_type">
+        <item>2G->3G</item>
+        <item>3G->3G</item>
+    </string-array>
+
+    <string-array name="chanel_sales_type">
+        <item>Скайдиллер</item>
+        <item>Б гэрээт</item>
+    </string-array>
+
+    <!-- Number search -->
+    <string-array name="prefix">
+        <item>БҮГД</item>
+        <item>9110</item>
+    </string-array>
+
+    <string-array name="skydealer_charge_card_types">
+        <item>ӨНГӨЛӨГ DATA</item>
+        <item>ӨНГӨЛӨГ CALL</item>
+        <item>СКАЙтел хоноггүй</item>
+        <item>СКАЙтел хоногтой</item>
+        <item>СКАЙтел дата карт</item>
+        <item>СКАЙмедиа IP76 карт</item>
+        <item>Смарт карт/Олон улс</item>
+    </string-array>
+
+    <!-- Skydealer report type -->
+    <string-array name="skydealer_report_type">
+        <item>Картын цэнэглэлт</item>
+        <item>ДТҮ төлбөр төлөлт</item>
+    </string-array>
+
+    <!-- Registration report type -->
+    <string-array name="registration_report_type">
+        <item>Шинэ Скаймедиа бүртгэл</item>
+        <item>Шинэ гэрээт бүртгэл</item>
+
+    </string-array>
+
+    <!-- Service report type -->
+    <string-array name="service_report_type">
+        <item>Гар солилт хийх</item>
+        <item>Нэмэлт үйлчилгээ</item>
+
+    </string-array>
+
+    <string-array name="skymedia_report_column_names">
+        <item>Утасны дугаар</item>
+        <item>Шалтгаан</item>
+        <item>Төлөв</item>
+        <item>Захиалсан огноо</item>
+        <item>Тайлбар</item>
+    </string-array>
+
+    <string-array name="dealer_report_column_names">
+        <item>Утасны дугаар</item>
+        <item>Диллерийн төрөл</item>
+        <item>Хөнгөлөлтийн хувь</item>
+        <item>Төлөв</item>
+        <item>Захиалсан огноо</item>
+        <item>Тайлбар</item>
+    </string-array>
+
+    <string-array name="vas_report_column_names">
+        <item>Үйлчилгээний төрөл</item>
+        <item>Утасны дугаар</item>
+        <item>Идэвхижүүлэлт</item>
+        <item>Төлөв</item>
+        <item>Захиалсан огноо</item>
+        <item>Тайлбар</item>
+    </string-array>
+    <string-array name="handset_change_report_column_names">
+        <item>Үйлчилгээний төрөл</item>
+        <item>Утасны дугаар</item>
+        <item>Сим картны сериал</item>
+        <item>Төлөв</item>
+        <item>Захиалсан огноо</item>
+        <item>Тайлбар</item>
+    </string-array>
+
+
+
+    <string-array name="charge_card_report_column_names">
+        <item>Утасны дугаар</item>
+        <item>Картын төрөл</item>
+        <item>Үнэ</item>
+        <item>Төлөв</item>
+        <item>Цэнэглэсэн огноо</item>
+    </string-array>
+
+    <string-array name="post_paid_payment_report_column_names">
+        <item>Утасны дугаар</item>
+        <item>Үнэ</item>
+        <item>Төлөв</item>
+        <item>Цэнэглэсэн огноо</item>
+    </string-array>
+
+    <!-- New number Report  -->
+    <string-array name="new_number_report_column_names">
+        <item>Үйлчилгээний төрөл</item>
+        <item>Дугаарын төрөл</item>
+        <item>Захиалсан дугаар</item>
+        <item>Дагалдах хугацаа, нэгж</item>
+        <item>Үнэ</item>
+        <item>Төлөв</item>
+        <item>Захиалсан огноо</item>
+        <item>Тайлбар</item>
+    </string-array>
+
+    <string-array name="skydealer_report_type_code">
+        <item>card</item>
+        <item>settle</item>
+        <item>skymedia</item>
+    </string-array>
+
+    <string-array name="city_aimag_list">
+        <item>Архангай</item>
+        <item>Баян-Өлгий</item>
+        <item>Баянхонгор</item>
+        <item>Булган</item>
+        <item>Говь-Алтай</item>
+        <item>Говьсүмбэр</item>
+        <item>Дархан-Уул</item>
+        <item>Дорноговь</item>
+        <item>Дорнод</item>
+        <item>Дундговь</item>
+        <item>Завхан</item>
+        <item>Орхон</item>
+        <item>Өвөрхангай</item>
+        <item>Өмнөговь</item>
+        <item>Сүхбаатар</item>
+        <item>Сэлэнгэ</item>
+        <item>Төв</item>
+        <item>Увс</item>
+        <item>Ховд</item>
+        <item>Хөвсгөл</item>
+        <item>Хэнтий</item>
+        <item>Улаанбаатар</item>
+    </string-array>
+
+    <string-array name="hobby_list">
+        <item>Спортоор хичээллэх</item>
+        <item>Ном унших</item>
+        <item>Дуу сонсох</item>
+        <item>Уран зураг</item>
+        <item>Аялах</item>
+        <item>Кино үзэх</item>
+        <item>Бусад</item>
+    </string-array>
+
+    <string-array name="job_list">
+        <item>Хувийн хэвшил</item>
+        <item>Төрийн албан хаагч</item>
+        <item>Оюутан</item>
+        <item>Сурагч</item>
+        <item>Тэтгэвэр</item>
+        <item>Группт</item>
+        <item>Малчин</item>
+        <item>Хувиараа</item>
+        <item>Бусад</item>
+    </string-array>
+
+
+</resources>

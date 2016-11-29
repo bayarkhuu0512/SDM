@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="leftmenu_width">200dp</dimen>
+    <dimen name="rightview_width">280dp</dimen>
+    <dimen name="center_box_width">400dp</dimen>
+
+    <dimen name="divider_width">2dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="main_padding">10dp</dimen>
+    <dimen name="second_padding">20dp</dimen>
+    <dimen name="third_padding">30dp</dimen>
+    <dimen name="forth_padding">40dp</dimen>
+    <dimen name="fifth_padding">50dp</dimen>
+
+    <dimen name="btnCorderRadius">4dp</dimen>
+    <dimen name="yellowBtnFontSize">10sp</dimen>
+    <dimen name="mainFontSize">14sp</dimen>
+    <dimen name="secondFontSize">18sp</dimen>
+    <dimen name="ContextFontSize">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="leftmenuFontSize">30sp</dimen>
+    <dimen name="leftmenu_margin">10dp</dimen>
+    <dimen name="btn_yellow_width">120dp</dimen>
+
+    <integer name="chargecard_report_column">5</integer>
+    <integer name="postpaidpayment_report_column">4</integer>
+    <integer name="new_number_report_column">8</integer>
+
+    <integer name="skymedia_report_column">5</integer>
+    <integer name="dealer_report_column">6</integer>
+
+    <integer name="handset_change_report_column">6</integer>
+    <integer name="vas_report_column">6</integer>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <integer name="simcard_serial_length">20</integer>
+
+    <integer name="unregistered_token_err_code">711</integer>
+
+</resources>

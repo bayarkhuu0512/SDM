@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/MainViewTextViewBlue"
+        android:text="@string/text_choose_type" />
+
+    <LinearLayout
+        android:layout_width="@dimen/center_box_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_padding"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/choose_voice"
+            style="@style/MainViewCenterBoxEditText"
+            android:entries="@array/voice_type"
+            android:focusable="false"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/et_user_phonenumber"
+            style="@style/PhoneNumberEdittextStyle"
+            android:hint="@string/text_user_phonenumber" />
+
+        <EditText
+            android:id="@+id/et_user_voice"
+            style="@style/TextAreaStyle"
+            android:gravity="top|left"
+            android:hint="@string/text_write_voice" />
+
+
+        <Button
+            android:id="@+id/btn_feedback_send"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/main_padding"
+            android:text="@string/btn_send" />
+    </LinearLayout>
+
+</LinearLayout>

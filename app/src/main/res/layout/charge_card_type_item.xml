@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardTypeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/cardType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifth_padding"
+        android:padding="@dimen/main_padding" />
+</LinearLayout>

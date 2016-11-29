@@ -1,0 +1,231 @@
+<resources>
+    <string name="app_name">Service Dealer Program</string>
+
+    <!-- General -->
+    <string name="yes">Тийм</string>
+    <string name="no">Үгүй</string>
+    <string name="confirm">Баталгаажуулах</string>
+    <string name="order">Захиалах</string>
+    <string name="do_search">Хайлт хийх</string>
+    <string name="search">Хайх</string>
+    <string name="refresh">Тайлан шинэчлэх</string>
+    <string name="unit_package">Нэгжийн багц</string>
+    <string name="start_date">Эхлэх огноо</string>
+    <string name="end_date">Дуусах огноо</string>
+    <string name="all">Бүгд</string>
+    <string name="successful">Амжилттай</string>
+    <string name="unsuccessful">Амжилтгүй</string>
+    <string name="waiting">Хүлээгдэж буй</string>
+    <string name="opened">Нээгдсэн</string>
+    <string name="phone_number">Утасны дугаар</string>
+    <string name="pin_code">Пин код</string>
+    <string name="code">Код</string>
+    <string name="amount_from_msg">Төлбөрийн дүн</string>
+    <string name="charge">Цэнэглэх</string>
+    <string name="do_payment">Төлбөр төлөх</string>
+    <string name="contract_number">Гэрээний дугаар</string>
+    <string name="payment_value">Төлбөрийн дүн</string>
+    <string name="send_order">Захиалга илгээх</string>
+    <string name="active">Идэвхижүүлэх</string>
+    <string name="decline">Цуцлах</string>
+    <string name="service_type">Үйлчилгээний төрөл</string>
+    <string name="tariff">Үнэ тариф</string>
+    <string name="service_prepaid">Урьдчилсан төлбөрт</string>
+    <string name="service_postpaid">Дараа төлбөрт</string>
+    <string name="service_mongoldoo">Монголдоо багц</string>
+    <string name="sim_card_serial">Сим карт сериал</string>
+    <string name="description_order">Захиалгатай холбоотой тайлбар</string>
+    <string name="get_code">Код авах</string>
+    <string name="please_wait">Түр хүлээнэ үү</string>
+    <string name="information">Мэдээлэл</string>
+    <string name="plan">Төлөвлөгөө</string>
+    <string name="registration">Бүртгэл</string>
+    <string name="service">Үйлчилгээ</string>
+    <string name="register_number">Регистрийн дугаар</string>
+    <string name="previous">&lt;&lt; Өмнөх</string>
+    <string name="next">Дараа &gt;&gt;</string>
+
+    <!-- Dialog -->
+    <string name="dialog_confirm">Та энэ захиалгыг баталгаажуулах уу</string>
+    <string name="dialog_logout_confirm">Та програмаас гарах уу</string>
+
+
+    <!-- Toast -->
+    <string name="please_fill_the_field">Талбаруудыг бүрэн бөглөнө үү!</string>
+    <string name="please_insert_pic">Цахим үнэмлэхний 2 талын зургийг бүрэн оруулна уу!</string>
+    <string name="please_select_the_field">Талбаруудыг бүрэн сонгоно уу!</string>
+    <string name="check_internet_connection">Сервертэй холбогдож чадсангүй. Та интернэт холболтоо шалгаад дахин оролдоно уу!</string>
+    <string name="error_result">Алдаатай хариу ирлээ!</string>
+    <string name="check_sim_serial">Сим картны сериалаа шалгаад дахин оруулна уу!</string>
+    <string name="error">Алдаа гарлаа!</string>
+
+
+    <!-- Feedback -->
+    <string name="text_choose_type">Дуу хоолойн төрлөө сонгоно уу?</string>
+
+    <string name="text_user_phonenumber">Хэрэглэгчийн утасны дугаар</string>
+    <string name="text_write_voice">Хэрэглэгчийн дуу хоолойг бичнэ үү?</string>
+    <string name="btn_send">ИЛГЭЭХ</string>
+
+    <!-- Login -->
+    <string name="text_username">Нэвтрэх нэр</string>
+    <string name="text_password">Нууц үг</string>
+    <string name="btn_login">НЭВТРЭХ</string>
+    <string name="btn_forget_password">Нууц үг мартсан?</string>
+    <string name="rb_employee">Ажилтан</string>
+    <string name="rb_dealer">Диллер</string>
+
+    <!-- New number Tabs -->
+    <string name="tab_newnumber_order">Шинэ дугаарын захиалга</string>
+    <string name="tab_order_report">Захиалгын тайлан</string>
+
+    <!-- Information Tabs -->
+    <string name="info_news">Мэдээ, мэдээлэл</string>
+    <string name="prepaid_info">УТҮ мэдээлэл</string>
+    <string name="postpaid_info">ДТҮ мэдээлэл</string>
+
+    <!-- Plan Tabs -->
+    <string name="newuser_plan">Шинэ хэрэглэгчийн төлөвлөгөө</string>
+    <string name="money_plan">Мөнгөн дүнгийн төлөвлөгөө</string>
+    <string name="discount_info">Урамшууллын мэдээлэл</string>
+    <string name="performance">Гүйцэтгэл</string>
+
+    <!-- Sky dealer Tabs -->
+    <string name="tab_skydealer_chargecard">Карт цэнэглэлт</string>
+    <string name="tab_skydealer_postpaidpayment">ДТҮ төлбөр төлөлт</string>
+    <string name="tab_skydealer_skymediapayment">СКАЙмедиа төлбөр төлөлт</string>
+    <string name="tab_skydealer_report">Борлуулалтын тайлан</string>
+
+    <!-- Service Tabs-->
+    <string name="tab_service_handsetchange">Гар солилт</string>
+    <string name="tab_service_valueaddedservice">Нэмэлт үйлчилгээ</string>
+    <string name="tab_service_report">Үйлчилгээний тайлан</string>
+
+    <!-- Registration Tabs-->
+    <string name="tab_registration_dealer">Шинэ гэрээт</string>
+    <string name="tab_registration_skymedia">Шинэ СКАЙмедиа</string>
+    <string name="tab_registration_report">Бүртгэлийн тайлан</string>
+
+    <!-- Settings Tabs-->
+    <string name="tab_settings_changepassword">Нууц үг солих</string>
+    <string name="tab_settings_changepin">Пин код солих</string>
+
+    <!-- Main View -->
+
+    <!-- Skydealer -->
+    <string name="skydealer_insert_payment_number">Төлбөр төлөх утасны дугаар оруулна уу</string>
+    <string name="skydealer_insert_payment_usercode">Хэрэглэгчийн код оруулна уу</string>
+
+
+    <!-- Service -->
+    <string name="service_select_vas_type">Нэмэлт үйлчилгээний төрөл сонгоно уу</string>
+    <string name="service_select_service_status">Үйлчилгээний төлөв сонгоно уу</string>
+    <string name="insert_phone_number">Утасны дугаар оруулна уу</string>
+
+    <!-- Right View -->
+    <!-- Number Choice-->
+    <string name="chosen_number">Таны сонгосон дугаар</string>
+    <string name="chosen_number_tariff">Сонгосон дугаартаа харгалзах үнэ тарифаа сонгоно уу</string>
+    <string name="chosen_number_price">Шинэ дугаарын үнэ</string>
+    <string name="chosen_number_extra_unit">Дагалдах нэгж</string>
+
+    <!-- Number Order Report-->
+    <string name="ordered_number">Захиалсан утасны дугаар</string>
+    <string name="ordered_date">Захиалсан огноо</string>
+    <string name="order_status">Захиалгын төлөв</string>
+    <string name="mainstream_number">Энгийн дугаар</string>
+    <string name="lucky_number">Азын дугаар</string>
+
+    <!-- SkyDealer Charge Card-->
+    <string name="insert_charge_number">Цэнэглэх дугаар оруулна уу</string>
+    <string name="insert_charge_number_for_ip">Өөрийн дугаарыг оруулна уу</string>
+    <string name="select_package_type">Багцын төрөл сонгоно уу</string>
+    <string name="select_card_type">Картын төрөл сонгоно уу</string>
+
+    <!-- SkyDealer Report-->
+    <string name="card_package_type">Картын багцын төрөл</string>
+    <string name="choose_report_type">Тайлангийн төрөл сонгоно уу?</string>
+    <string name="interval_error">Хугацаагаа 3 сараас багаар сонгоно уу?</string>
+    <string name="show_report">Тайлан харах</string>
+    <string name="report_promt">[Сонгох...]</string>
+
+    <!-- Service -->
+    <string name="take_epassport_picture">Цахим үнэмлэхний зургийг оруулна уу</string>
+    <string name="front">Урд тал</string>
+    <string name="back">Ард тал</string>
+
+    <!-- Handset change -->
+    <string name="choose_handset_change_type">Гар солилтын төрөл сонгоно уу</string>
+
+    <!-- REGISTRATION -->
+    <string name="last_name">Овог</string>
+    <string name="first_name">Нэр</string>
+    <string name="reg_number">Регистрийн дугаар</string>
+    <string name="contact_number">Холбоо барих дугаар</string>
+
+    <!-- New Dealer  -->
+    <string name="dealer_info">Гэрээт борлуулагчийн мэдээлэл</string>
+    <string name="address_sell_card">Карт борлуулах байршил</string>
+    <string name="chanel_sales">Борлуулалтын суваг</string>
+    <string name="discount_percent">Хөнгөлөлтийн хувь</string>
+    <string name="skydealer_number">Скайдиллерийн утасны дугаар</string>
+
+    <!-- New Skymedia  -->
+    <string name="user_info">Хэрэглэгчийн мэдээлэл</string>
+    <string name="address_detail">Оршин суугаа хаяг дэлгэрэнгүй</string>
+    <string name="aimag_city">Аймаг/Хот</string>
+    <string name="sum_district">Сум/Дүүрэг</string>
+    <string name="bag_khoroo">Баг/Хороо</string>
+    <string name="building_street">Байр/Гудамж</string>
+    <string name="entrance_fence">Орц/Хашаа</string>
+    <string name="door_number">Тоот</string>
+
+    <!-- New user -->
+    <string name="hobby">Хобби</string>
+    <string name="job">Эрхэлдэг ажил</string>
+
+    <string name="insert_search_number">Хайх дугаараа оруулна уу</string>
+
+    <!-- Forget Password -->
+    <string name="forget">Нууц үг мартсан?</string>
+    <string name="forget_hint">*Таны мэйл хаягруу баталгаажуулах код очно</string>
+    <string name="recover">Нууц үг шинэчлэх</string>
+    <string name="confirm_code">Баталгаажуулах код</string>
+    <string name="new_pass">Шинэ нууц үг</string>
+
+    <!-- Change Password -->
+    <string name="old_password">Хуучин нууц үг</string>
+    <string name="new_password">Шинэ нууц үг</string>
+    <string name="btn_change">Солих</string>
+
+    <!-- Change Pin -->
+    <string name="old_pin">Хуучин пин код</string>
+    <string name="new_pin">Шинэ пин код</string>
+
+    <!-- Dealer info -->
+    <string name="dealer_zone">Бүс</string>
+    <string name="dealer_balance">Данс</string>
+    <string name="hello">Сайн уу, </string>
+
+    <!-- CHoose photo -->
+    <string name="take_photo">Зураг дарах</string>
+    <string name="choose_from_library">Зургийн цомгоос сонгох</string>
+    <string name="cancel">Болих</string>
+    <string name="add_photo">Зураг нэмэх</string>
+    <string name="select_file">Файл сонгох</string>
+
+    <!-- Information and news fragment -->
+    <string name="choose_info_type">Мэдээллийн төрөл сонгоно уу?</string>
+
+    <string name="coming_soon">Тун удахгүй!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btnIntend">Take (big) Picture</string>
+    <string name="btnIntendS">Take (small) Picture</string>
+    <string name="btnIntendV">Take Video</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSample</string>
+
+</resources>
