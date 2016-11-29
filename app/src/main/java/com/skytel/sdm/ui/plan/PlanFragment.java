@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.plan;
+package com.skytel.sdm.ui.plan;
 
 
 import android.app.Fragment;
@@ -20,8 +20,8 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.github.mikephil.charting.utils.DefaultValueFormatter;
 import com.github.mikephil.charting.utils.PercentFormatter;
-import com.skytel.sdp.R;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.utils.Constants;
 
 import java.util.ArrayList;
 

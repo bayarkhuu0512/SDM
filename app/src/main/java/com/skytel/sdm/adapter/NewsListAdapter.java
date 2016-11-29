@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.InfoNewsType;
-import com.skytel.sdp.entities.NewsListItem;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.InfoNewsType;
+import com.skytel.sdm.entities.NewsListItem;
+import com.skytel.sdm.utils.Constants;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

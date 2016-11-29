@@ -1,4 +1,4 @@
-package com.skytel.sdp;
+package com.skytel.sdm;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,8 +1,8 @@
-package com.skytel.sdp.ui.registration;
+package com.skytel.sdm.ui.registration;
 
-import com.skytel.sdp.entities.NewNumberReport;
-import com.skytel.sdp.entities.RegistrationReport;
-import com.skytel.sdp.entities.SalesReport;
+import com.skytel.sdm.entities.NewNumberReport;
+import com.skytel.sdm.entities.RegistrationReport;
+import com.skytel.sdm.entities.SalesReport;
 
 import java.util.Comparator;
 

@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.skytel.sdp.MainActivity;
-import com.skytel.sdp.R;
+import com.skytel.sdm.MainActivity;
+import com.skytel.sdm.R;
 
 /**
  * Created by Altanchimeg on 4/16/2016.

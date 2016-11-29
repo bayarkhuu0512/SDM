@@ -1,4 +1,4 @@
-package com.skytel.sdp.utils;
+package com.skytel.sdm.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -7,7 +7,7 @@ import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import com.skytel.sdp.R;
+import com.skytel.sdm.R;
 
 public class ConfirmDialog extends DialogFragment {
 

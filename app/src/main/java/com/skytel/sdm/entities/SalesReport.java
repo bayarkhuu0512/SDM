@@ -1,4 +1,4 @@
-package com.skytel.sdp.entities;
+package com.skytel.sdm.entities;
 
 import org.joda.time.DateTime;
 

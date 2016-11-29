@@ -1,4 +1,4 @@
-package com.skytel.sdp.utils;
+package com.skytel.sdm.utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.skytel.sdp.R;
+import com.skytel.sdm.R;
 
 public class CustomProgressDialog extends ProgressDialog {
     AnimationDrawable mRunningAnimation;

@@ -1,4 +1,4 @@
-package com.skytel.sdp.utils;
+package com.skytel.sdm.utils;
 
 /**
  * Created by Altanchimeg on 5/31/2016.

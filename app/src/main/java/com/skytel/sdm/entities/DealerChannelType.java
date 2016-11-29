@@ -1,4 +1,4 @@
-package com.skytel.sdp.entities;
+package com.skytel.sdm.entities;
 
 /**
  * Created by Altanchimeg on 7/1/2016.

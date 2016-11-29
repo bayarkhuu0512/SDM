@@ -1,4 +1,4 @@
-package com.skytel.sdp;
+package com.skytel.sdm;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -15,22 +15,22 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdp.adapter.LeftMenuListAdapter;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.ui.TabInformationFragment;
-import com.skytel.sdp.ui.TabNewNumberFragment;
-import com.skytel.sdp.ui.TabRegistrationFragment;
-import com.skytel.sdp.ui.TabServiceFragment;
-import com.skytel.sdp.ui.TabSettingsFragment;
-import com.skytel.sdp.ui.TabSkyDealerFragment;
-import com.skytel.sdp.ui.feedback.FeedbackFragment;
-import com.skytel.sdp.ui.plan.PlanFragment;
-import com.skytel.sdp.ui.skydealer.ChargeCardFragment;
-import com.skytel.sdp.ui.skydealer.PostPaidPaymentFragment;
-import com.skytel.sdp.utils.BalanceUpdateListener;
-import com.skytel.sdp.utils.ConfirmDialog;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.PrefManager;
+import com.skytel.sdm.adapter.LeftMenuListAdapter;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.ui.TabInformationFragment;
+import com.skytel.sdm.ui.TabNewNumberFragment;
+import com.skytel.sdm.ui.TabRegistrationFragment;
+import com.skytel.sdm.ui.TabServiceFragment;
+import com.skytel.sdm.ui.TabSettingsFragment;
+import com.skytel.sdm.ui.TabSkyDealerFragment;
+import com.skytel.sdm.ui.feedback.FeedbackFragment;
+import com.skytel.sdm.ui.plan.PlanFragment;
+import com.skytel.sdm.ui.skydealer.ChargeCardFragment;
+import com.skytel.sdm.ui.skydealer.PostPaidPaymentFragment;
+import com.skytel.sdm.utils.BalanceUpdateListener;
+import com.skytel.sdm.utils.ConfirmDialog;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.PrefManager;
 
 public class MainActivity extends AppCompatActivity implements BalanceUpdateListener {
     String TAG = MainActivity.class.getName();

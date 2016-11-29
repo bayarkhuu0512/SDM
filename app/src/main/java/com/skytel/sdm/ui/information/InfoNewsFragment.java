@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.information;
+package com.skytel.sdm.ui.information;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -12,15 +12,15 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.skytel.sdp.InfoNewsDetailActivity;
-import com.skytel.sdp.R;
-import com.skytel.sdp.adapter.InfoNewsTypeAdapter;
-import com.skytel.sdp.adapter.NewsListAdapter;
-import com.skytel.sdp.entities.InfoNewsType;
-import com.skytel.sdp.entities.NewsListItem;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
+import com.skytel.sdm.InfoNewsDetailActivity;
+import com.skytel.sdm.R;
+import com.skytel.sdm.adapter.InfoNewsTypeAdapter;
+import com.skytel.sdm.adapter.NewsListAdapter;
+import com.skytel.sdm.entities.InfoNewsType;
+import com.skytel.sdm.entities.NewsListItem;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
 
 import org.json.JSONArray;
 import org.json.JSONException;

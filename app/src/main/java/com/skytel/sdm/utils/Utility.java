@@ -1,4 +1,4 @@
-package com.skytel.sdp.utils;
+package com.skytel.sdm.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;

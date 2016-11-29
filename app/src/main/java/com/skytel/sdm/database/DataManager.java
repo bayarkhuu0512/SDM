@@ -1,4 +1,4 @@
-package com.skytel.sdp.database;
+package com.skytel.sdm.database;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,9 +8,9 @@ import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.stmt.DeleteBuilder;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.stmt.Where;
-import com.skytel.sdp.entities.CardType;
-import com.skytel.sdp.enums.PackageTypeEnum;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.entities.CardType;
+import com.skytel.sdm.enums.PackageTypeEnum;
+import com.skytel.sdm.utils.Constants;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

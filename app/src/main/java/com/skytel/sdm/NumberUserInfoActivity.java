@@ -1,4 +1,4 @@
-package com.skytel.sdp;
+package com.skytel.sdm;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -27,17 +27,17 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.skytel.sdp.adapter.NothingSelectedSpinnerAdapter;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.entities.Phonenumber;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.utils.BitmapSaver;
-import com.skytel.sdp.utils.ConfirmDialog;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.Utility;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.adapter.NothingSelectedSpinnerAdapter;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.entities.Phonenumber;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.utils.BitmapSaver;
+import com.skytel.sdm.utils.ConfirmDialog;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.Utility;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.json.JSONArray;
 import org.json.JSONException;

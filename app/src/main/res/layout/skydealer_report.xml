@@ -42,7 +42,7 @@
                 android:layout_height="match_parent"></RelativeLayout>
         </android.widget.HorizontalScrollView>
         <!--
-                <com.skytel.sdp.ui.skydealer.SortableSalesReportChargeCardTableView xmlns:table="http://schemas.android.com/apk/res-auto"
+                <com.skytel.sdm.ui.skydealer.SortableSalesReportChargeCardTableView xmlns:table="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/salesReportTableView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

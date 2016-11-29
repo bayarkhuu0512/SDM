@@ -1,6 +1,6 @@
-package com.skytel.sdp.ui.skydealer;
+package com.skytel.sdm.ui.skydealer;
 
-import com.skytel.sdp.entities.SalesReport;
+import com.skytel.sdm.entities.SalesReport;
 
 import java.util.Comparator;
 

@@ -1,6 +1,6 @@
-package com.skytel.sdp.ui.newnumber;
+package com.skytel.sdm.ui.newnumber;
 
-import com.skytel.sdp.entities.NewNumberReport;
+import com.skytel.sdm.entities.NewNumberReport;
 
 import java.util.Comparator;
 

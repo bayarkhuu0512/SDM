@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.registration;
+package com.skytel.sdm.ui.registration;
 
 
 import android.app.DatePickerDialog;
@@ -20,24 +20,24 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.skytel.sdp.LoginActivity;
-import com.skytel.sdp.MainActivity;
-import com.skytel.sdp.R;
-import com.skytel.sdp.adapter.NothingSelectedSpinnerAdapter;
-import com.skytel.sdp.adapter.RegReportDealerAdapter;
-import com.skytel.sdp.adapter.RegReportSkymediaAdapter;
-import com.skytel.sdp.adapter.SalesReportChargeCardAdapter;
-import com.skytel.sdp.adapter.SalesReportPostPaidPaymentAdapter;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.entities.RegistrationReport;
-import com.skytel.sdp.entities.SalesReport;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportChargeCardTableView;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
+import com.skytel.sdm.R;
+import com.skytel.sdm.adapter.NothingSelectedSpinnerAdapter;
+import com.skytel.sdm.adapter.RegReportDealerAdapter;
+import com.skytel.sdm.adapter.RegReportSkymediaAdapter;
+import com.skytel.sdm.adapter.SalesReportChargeCardAdapter;
+import com.skytel.sdm.adapter.SalesReportPostPaidPaymentAdapter;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.entities.RegistrationReport;
+import com.skytel.sdm.entities.SalesReport;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportChargeCardTableView;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.joda.time.DateTime;
 import org.json.JSONArray;

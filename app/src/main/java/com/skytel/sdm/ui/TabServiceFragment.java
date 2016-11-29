@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui;
+package com.skytel.sdm.ui;
 
 
 import android.os.Bundle;
@@ -12,14 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.ui.service.HandsetChangeFragment;
-import com.skytel.sdp.ui.service.ServiceReportFragment;
-import com.skytel.sdp.ui.service.ValueAddedServiceFragment;
-import com.skytel.sdp.ui.skydealer.ChargeCardFragment;
-import com.skytel.sdp.ui.skydealer.PostPaidPaymentFragment;
-import com.skytel.sdp.ui.skydealer.SalesReportFragment;
-import com.skytel.sdp.ui.skydealer.SkymediaPaymentFragment;
+import com.skytel.sdm.R;
+import com.skytel.sdm.ui.service.HandsetChangeFragment;
+import com.skytel.sdm.ui.service.ServiceReportFragment;
+import com.skytel.sdm.ui.service.ValueAddedServiceFragment;
+import com.skytel.sdm.ui.skydealer.ChargeCardFragment;
+import com.skytel.sdm.ui.skydealer.PostPaidPaymentFragment;
+import com.skytel.sdm.ui.skydealer.SalesReportFragment;
+import com.skytel.sdm.ui.skydealer.SkymediaPaymentFragment;
 
 public class TabServiceFragment extends Fragment {
 

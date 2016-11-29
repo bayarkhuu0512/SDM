@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.InfoNewsType;
-import com.skytel.sdp.ui.information.InfoNewsFragment;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.InfoNewsType;
+import com.skytel.sdm.ui.information.InfoNewsFragment;
+import com.skytel.sdm.utils.Constants;
 
 import java.util.ArrayList;
 import java.util.List;

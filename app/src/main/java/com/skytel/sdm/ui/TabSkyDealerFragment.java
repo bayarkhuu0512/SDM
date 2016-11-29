@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui;
+package com.skytel.sdm.ui;
 
 
 import android.app.Fragment;
@@ -11,11 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.ui.skydealer.ChargeCardFragment;
-import com.skytel.sdp.ui.skydealer.PostPaidPaymentFragment;
-import com.skytel.sdp.ui.skydealer.SalesReportFragment;
-import com.skytel.sdp.ui.skydealer.SkymediaPaymentFragment;
+import com.skytel.sdm.R;
+import com.skytel.sdm.ui.skydealer.ChargeCardFragment;
+import com.skytel.sdm.ui.skydealer.PostPaidPaymentFragment;
+import com.skytel.sdm.ui.skydealer.SalesReportFragment;
+import com.skytel.sdm.ui.skydealer.SkymediaPaymentFragment;
 
 public class TabSkyDealerFragment extends Fragment {
 

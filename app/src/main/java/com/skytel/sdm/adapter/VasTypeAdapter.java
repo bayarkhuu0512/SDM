@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.HandsetChangeType;
-import com.skytel.sdp.entities.VasType;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.HandsetChangeType;
+import com.skytel.sdm.entities.VasType;
 
 import java.util.List;
 

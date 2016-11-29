@@ -1,8 +1,8 @@
-package com.skytel.sdp.entities;
+package com.skytel.sdm.entities;
 
 
 import com.j256.ormlite.field.DatabaseField;
-import com.skytel.sdp.enums.PackageTypeEnum;
+import com.skytel.sdm.enums.PackageTypeEnum;
 
 public class CardType {
 

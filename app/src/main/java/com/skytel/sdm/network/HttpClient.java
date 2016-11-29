@@ -1,4 +1,4 @@
-package com.skytel.sdp.network;
+package com.skytel.sdm.network;
 
 import java.util.concurrent.TimeUnit;
 

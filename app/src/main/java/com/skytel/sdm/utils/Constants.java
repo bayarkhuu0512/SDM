@@ -1,4 +1,4 @@
-package com.skytel.sdp.utils;
+package com.skytel.sdm.utils;
 
 import android.graphics.Color;
 
@@ -19,7 +19,7 @@ public interface Constants {
     int MENU_LOGOUT = 8;
 
     /* Preference */
-    String PREF_NAME = "sdp";
+    String PREF_NAME = "sdm";
     String PREF_ISLOGGEDIN = "is_logged_in";
     String PREF_AUTH_TOKEN = "AUTH_TOKEN";
     String PREF_DEALER_NAME = "dealer_name";

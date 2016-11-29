@@ -1,7 +1,7 @@
-package com.skytel.sdp.ui.service;
+package com.skytel.sdm.ui.service;
 
-import com.skytel.sdp.entities.RegistrationReport;
-import com.skytel.sdp.entities.ServiceReport;
+import com.skytel.sdm.entities.RegistrationReport;
+import com.skytel.sdm.entities.ServiceReport;
 
 import java.util.Comparator;
 

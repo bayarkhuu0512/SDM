@@ -1,4 +1,4 @@
-package com.skytel.sdp;
+package com.skytel.sdm;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,11 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.registration;
+package com.skytel.sdm.ui.registration;
 
 
 import android.app.Activity;
@@ -24,28 +24,28 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.skytel.sdp.LoginActivity;
-import com.skytel.sdp.MainActivity;
-import com.skytel.sdp.R;
-import com.skytel.sdp.adapter.DealerChannelTypeAdapter;
-import com.skytel.sdp.adapter.NothingSelectedSpinnerAdapter;
-import com.skytel.sdp.adapter.SalesReportCardTypeAdapter;
-import com.skytel.sdp.adapter.SalesReportChargeCardAdapter;
-import com.skytel.sdp.adapter.SalesReportPostPaidPaymentAdapter;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.entities.CardType;
-import com.skytel.sdp.entities.DealerChannelType;
-import com.skytel.sdp.entities.SalesReport;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportChargeCardTableView;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
-import com.skytel.sdp.utils.BitmapSaver;
-import com.skytel.sdp.utils.ConfirmDialog;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.Utility;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
+import com.skytel.sdm.R;
+import com.skytel.sdm.adapter.DealerChannelTypeAdapter;
+import com.skytel.sdm.adapter.NothingSelectedSpinnerAdapter;
+import com.skytel.sdm.adapter.SalesReportCardTypeAdapter;
+import com.skytel.sdm.adapter.SalesReportChargeCardAdapter;
+import com.skytel.sdm.adapter.SalesReportPostPaidPaymentAdapter;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.entities.CardType;
+import com.skytel.sdm.entities.DealerChannelType;
+import com.skytel.sdm.entities.SalesReport;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportChargeCardTableView;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
+import com.skytel.sdm.utils.BitmapSaver;
+import com.skytel.sdm.utils.ConfirmDialog;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.Utility;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.json.JSONArray;
 import org.json.JSONException;

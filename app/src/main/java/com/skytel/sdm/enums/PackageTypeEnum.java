@@ -1,6 +1,6 @@
-package com.skytel.sdp.enums;
+package com.skytel.sdm.enums;
 
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.utils.Constants;
 
 public enum PackageTypeEnum implements Constants{
     COLOR_DATA_PACKAGE(CONST_COLOR_DATA_PACKAGE),

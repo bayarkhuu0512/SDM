@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.CardType;
-import com.skytel.sdp.entities.PriceType;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.CardType;
+import com.skytel.sdm.entities.PriceType;
+import com.skytel.sdm.utils.Constants;
 
 import java.util.List;
 

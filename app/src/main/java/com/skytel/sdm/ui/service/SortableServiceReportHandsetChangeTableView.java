@@ -1,10 +1,10 @@
-package com.skytel.sdp.ui.service;
+package com.skytel.sdm.ui.service;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.ServiceReport;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.ServiceReport;
 
 import de.codecrafters.tableview.SortableTableView;
 import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;

@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.skydealer;
+package com.skytel.sdm.ui.skydealer;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.skytel.sdp.R;
+import com.skytel.sdm.R;
 
 
 public class SkymediaPaymentFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui;
+package com.skytel.sdm.ui;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -10,10 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.ui.information.InfoNewsFragment;
-import com.skytel.sdp.ui.information.PostpaidInfoFragment;
-import com.skytel.sdp.ui.information.PrepaidInfoFragment;
+import com.skytel.sdm.R;
+import com.skytel.sdm.ui.information.InfoNewsFragment;
+import com.skytel.sdm.ui.information.PostpaidInfoFragment;
+import com.skytel.sdm.ui.information.PrepaidInfoFragment;
 
 /**
  * Created by Altanchimeg on 7/18/2016.

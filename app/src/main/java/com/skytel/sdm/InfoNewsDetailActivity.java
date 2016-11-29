@@ -1,4 +1,4 @@
-package com.skytel.sdp;
+package com.skytel.sdm;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -15,9 +15,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;

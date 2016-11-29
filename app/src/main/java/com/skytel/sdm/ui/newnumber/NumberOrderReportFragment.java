@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.newnumber;
+package com.skytel.sdm.ui.newnumber;
 
 
 import android.app.DatePickerDialog;
@@ -19,22 +19,22 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdp.LoginActivity;
-import com.skytel.sdp.MainActivity;
-import com.skytel.sdp.R;
-import com.skytel.sdp.adapter.NewNumberReportAdapter;
-import com.skytel.sdp.adapter.SalesReportChargeCardAdapter;
-import com.skytel.sdp.adapter.SalesReportPostPaidPaymentAdapter;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.entities.NewNumberReport;
-import com.skytel.sdp.entities.SalesReport;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportChargeCardTableView;
-import com.skytel.sdp.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
+import com.skytel.sdm.R;
+import com.skytel.sdm.adapter.NewNumberReportAdapter;
+import com.skytel.sdm.adapter.SalesReportChargeCardAdapter;
+import com.skytel.sdm.adapter.SalesReportPostPaidPaymentAdapter;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.entities.NewNumberReport;
+import com.skytel.sdm.entities.SalesReport;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportChargeCardTableView;
+import com.skytel.sdm.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.joda.time.DateTime;
 import org.json.JSONArray;

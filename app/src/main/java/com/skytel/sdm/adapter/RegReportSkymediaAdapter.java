@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.RegistrationReport;
-import com.skytel.sdp.entities.SalesReport;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.RegistrationReport;
+import com.skytel.sdm.entities.SalesReport;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.information;
+package com.skytel.sdm.ui.information;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.utils.Constants;
 
 /**
  * Created by Altanchimeg on 7/21/2016.

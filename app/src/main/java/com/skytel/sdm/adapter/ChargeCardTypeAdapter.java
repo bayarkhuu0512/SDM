@@ -1,4 +1,4 @@
-package com.skytel.sdp.adapter;
+package com.skytel.sdm.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,11 +9,11 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.entities.CardType;
-import com.skytel.sdp.enums.PackageTypeEnum;
-import com.skytel.sdp.utils.Constants;
+import com.skytel.sdm.R;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.entities.CardType;
+import com.skytel.sdm.enums.PackageTypeEnum;
+import com.skytel.sdm.utils.Constants;
 
 import java.util.List;
 

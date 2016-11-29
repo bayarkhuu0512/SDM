@@ -1,4 +1,4 @@
-package com.skytel.sdp.enums;
+package com.skytel.sdm.enums;
 
 public enum ErrorCodeEnum {
     ERROR_700(700),

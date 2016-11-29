@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui.feedback;
+package com.skytel.sdm.ui.feedback;
 
 
 import android.content.Context;
@@ -13,13 +13,13 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.database.DataManager;
-import com.skytel.sdp.network.HttpClient;
-import com.skytel.sdp.utils.Constants;
-import com.skytel.sdp.utils.CustomProgressDialog;
-import com.skytel.sdp.utils.PrefManager;
-import com.skytel.sdp.utils.ValidationChecker;
+import com.skytel.sdm.R;
+import com.skytel.sdm.database.DataManager;
+import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.utils.Constants;
+import com.skytel.sdm.utils.CustomProgressDialog;
+import com.skytel.sdm.utils.PrefManager;
+import com.skytel.sdm.utils.ValidationChecker;
 
 import org.json.JSONException;
 import org.json.JSONObject;

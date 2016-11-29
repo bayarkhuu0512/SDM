@@ -1,4 +1,4 @@
-package com.skytel.sdp.ui;
+package com.skytel.sdm.ui;
 
 
 import android.content.Context;
@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.ui.newnumber.NumberChoiceFragment;
-import com.skytel.sdp.ui.newnumber.NumberOrderReportFragment;
+import com.skytel.sdm.R;
+import com.skytel.sdm.ui.newnumber.NumberChoiceFragment;
+import com.skytel.sdm.ui.newnumber.NumberOrderReportFragment;
 
 public class TabNewNumberFragment extends Fragment {
 

@@ -1,11 +1,11 @@
-package com.skytel.sdp.ui.newnumber;
+package com.skytel.sdm.ui.newnumber;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.skytel.sdp.R;
-import com.skytel.sdp.entities.NewNumberReport;
-import com.skytel.sdp.ui.skydealer.SalesReportComparator;
+import com.skytel.sdm.R;
+import com.skytel.sdm.entities.NewNumberReport;
+import com.skytel.sdm.ui.skydealer.SalesReportComparator;
 
 import de.codecrafters.tableview.SortableTableView;
 import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
