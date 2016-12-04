@@ -19,10 +19,10 @@
             </RelativeLayout>
         </android.widget.HorizontalScrollView>
 
-
     </LinearLayout>
 
     <ScrollView
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -30,7 +30,7 @@
 
         <LinearLayout style="@style/RightViewContainer">
 
-            <View style="@style/DividerStyle"></View>
+            <View style="@style/DividerHorizontalStyle"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -25,21 +25,23 @@ public class CustomProgressDialog extends ProgressDialog {
         getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT);
 
+/*
         ImageView mRunningManView = (ImageView) findViewById(R.id.animation);
         mRunningManView.setBackgroundResource(R.drawable.loading_animation_list);
         mRunningAnimation = (AnimationDrawable) mRunningManView.getBackground();
+*/
 
     }
 
     @Override
     public void show() {
         super.show();
-        mRunningAnimation.start();
+//        mRunningAnimation.start();
     }
 
     @Override
     public void dismiss() {
         super.dismiss();
-        mRunningAnimation.stop();
+  //      mRunningAnimation.stop();
     }
 }

@@ -476,6 +476,7 @@ public class SalesReportFragment extends Fragment implements Constants {
                             // Used for debug
                         }
                     });
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -492,6 +493,7 @@ public class SalesReportFragment extends Fragment implements Constants {
                             }
                         });
                     }
+*/
                     JSONArray jArray = jsonObj.getJSONArray("transactions");
 
                     Log.d(TAG, "*****JARRAY*****" + jArray.length());

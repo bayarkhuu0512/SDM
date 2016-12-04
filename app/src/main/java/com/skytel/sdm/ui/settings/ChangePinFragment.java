@@ -177,6 +177,8 @@ public class ChangePinFragment extends Fragment implements Constants {
                             Toast.makeText(mContext, ""+ result_msg, Toast.LENGTH_LONG).show();
                         }
                     });
+
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -193,6 +195,7 @@ public class ChangePinFragment extends Fragment implements Constants {
                             }
                         });
                     }
+*/
 
                     getActivity().runOnUiThread(new Runnable() {
                         @Override

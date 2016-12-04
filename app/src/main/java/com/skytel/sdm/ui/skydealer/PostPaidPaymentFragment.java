@@ -240,7 +240,9 @@ public class PostPaidPaymentFragment extends Fragment {
                                 }
                             }
                         });
-                    }else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
+                    }
+/*
+                    else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -256,6 +258,7 @@ public class PostPaidPaymentFragment extends Fragment {
                             }
                         });
                     }
+*/
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -354,6 +357,7 @@ public class PostPaidPaymentFragment extends Fragment {
                         Log.d(TAG, "Show the success message to user");
 
                     }
+/*
                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -368,6 +372,7 @@ public class PostPaidPaymentFragment extends Fragment {
                             }
                         });
                     }
+*/
 
 //                  Tuhain dugaar buhii hereglegchid ali hediin tan code ochchihson gsn ug
                     else if (result_code == Constants.RESULT_CODE_INVOICE_ALREADY_CREATED) {

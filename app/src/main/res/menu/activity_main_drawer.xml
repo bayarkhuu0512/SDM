@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_newnumber"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_newnumber" />
+
+        <item
+            android:id="@+id/menu_skydealer"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_skydealer" />
+
+        <item
+            android:id="@+id/menu_registration"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_registration" />
+
+        <item
+            android:id="@+id/menu_service"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_service" />
+        <item
+            android:id="@+id/menu_information"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_information" />
+        <item
+            android:id="@+id/menu_plan"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_plan" />
+        <item
+            android:id="@+id/menu_feedback"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_feedback" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_exit" />
+
+    </group>
+
+
+</menu>

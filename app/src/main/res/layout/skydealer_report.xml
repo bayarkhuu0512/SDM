@@ -53,6 +53,7 @@
     </LinearLayout>
 
     <ScrollView
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -60,7 +61,7 @@
 
         <LinearLayout style="@style/RightViewContainer">
 
-            <View style="@style/DividerStyle"></View>
+            <View style="@style/DividerHorizontalStyle"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -157,13 +158,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <!--   <Button
-                           android:id="@+id/filterByAll"
-                           style="@style/ButtonYellow"
-                           android:text="@string/all"
-                           android:background="@drawable/btn_yellow_selected"
-                           android:textColor="@android:color/white" /> -->
-
                     <Button
                         android:id="@+id/filterBySuccess"
                         style="@style/ButtonYellow"
@@ -177,20 +171,6 @@
                         android:text="@string/unsuccessful" />
 
                 </LinearLayout>
-
-                <!--  <LinearLayout
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:orientation="horizontal">
-
-
-
-
-                      <Button
-                          style="@style/ButtonYellow"
-                          android:visibility="invisible" />
-
-                  </LinearLayout> -->
 
                 <Button
                     android:id="@+id/search"

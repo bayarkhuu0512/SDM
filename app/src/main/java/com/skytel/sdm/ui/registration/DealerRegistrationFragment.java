@@ -269,6 +269,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                         }
                     });
 
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -285,6 +286,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                             }
                         });
                     }
+*/
 
                     JSONArray jArray = jsonObj.getJSONArray("dealer_channel_types");
 
@@ -463,6 +465,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                         }
                     });
 
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -479,6 +482,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                             }
                         });
                     }
+*/
 
 
                 } catch (JSONException e) {

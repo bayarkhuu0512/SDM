@@ -285,7 +285,9 @@ public class ChargeCardFragment extends Fragment {
                                                             ex.printStackTrace();
                                                         }
 
-                                                    } else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
+                                                    }
+/*
+                                                    else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                                                         getActivity().runOnUiThread(new Runnable() {
                                                             @Override
                                                             public void run() {
@@ -301,6 +303,7 @@ public class ChargeCardFragment extends Fragment {
                                                             }
                                                         });
                                                     }
+*/
                                                     else
                                                     {
 

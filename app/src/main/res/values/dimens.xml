@@ -3,9 +3,9 @@
     <dimen name="logo_height">100dp</dimen>
     <dimen name="leftmenu_width">200dp</dimen>
     <dimen name="rightview_width">280dp</dimen>
-    <dimen name="center_box_width">400dp</dimen>
+    <dimen name="center_box_width">300dp</dimen>
 
-    <dimen name="divider_width">2dp</dimen>
+    <dimen name="divider_weight">2dp</dimen>
     <dimen name="small_padding">5dp</dimen>
     <dimen name="main_padding">10dp</dimen>
     <dimen name="second_padding">20dp</dimen>
@@ -40,5 +40,8 @@
     <integer name="simcard_serial_length">20</integer>
 
     <integer name="unregistered_token_err_code">711</integer>
+
+    <!-- Mobile -->
+    <dimen name="widget_width">100dp</dimen>
 
 </resources>

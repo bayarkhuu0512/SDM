@@ -249,6 +249,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
 
                         }
                     });
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -263,6 +264,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                             }
                         });
                     }
+*/
 
                     JSONArray jArray = jsonObj.getJSONArray("types");
 
@@ -421,6 +423,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                         }
                     });
 
+/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -437,7 +440,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                             }
                         });
                     }
-                    ;
+*/
 
 
                 } catch (JSONException e) {

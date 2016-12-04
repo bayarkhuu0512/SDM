@@ -327,6 +327,7 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
                             }
                         });
                     }
+/*
                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
 
                                 MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
@@ -338,6 +339,7 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
                                 startActivity(intent);
 
                     }
+*/
 
                 } catch (JSONException e) {
                     Toast.makeText(mContext, getResources().getString(R.string.error_result), Toast.LENGTH_LONG).show();

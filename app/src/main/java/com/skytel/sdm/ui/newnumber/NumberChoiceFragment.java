@@ -641,7 +641,9 @@ public class NumberChoiceFragment extends Fragment {
                             }
                         });
 
-                    } else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
+                    }
+/*
+                    else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
 
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
@@ -657,6 +659,7 @@ public class NumberChoiceFragment extends Fragment {
                         });
 
                     }
+*/
 
 
                 } catch (JSONException e) {

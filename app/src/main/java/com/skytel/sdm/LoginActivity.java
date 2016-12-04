@@ -52,11 +52,10 @@ public class LoginActivity extends Activity implements Constants {
 
 /**
  * If code is running on Debug
-*/
-              Intent i = new Intent(LoginActivity.this, MainActivity.class);
-  /*      startActivity(i);
+ */
+        Intent i = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(i);
         finish();
-*/
 
         if (mPrefManager.getIsLoggedIn()) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
@@ -96,7 +95,7 @@ public class LoginActivity extends Activity implements Constants {
         url.append("?login=" + mEtUserName.getText().toString());
         url.append("&pass=" + mEtPassword.getText().toString());
 
-       Log.d(TAG, "send URL: "+url.toString());
+        Log.d(TAG, "send URL: " + url.toString());
 
         Request request = new Request.Builder()
                 .url(url.toString())

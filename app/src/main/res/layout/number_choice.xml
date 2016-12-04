@@ -15,7 +15,7 @@
             <Spinner
                 android:id="@+id/prefix"
                 style="@style/MainViewCenterBoxEditText"
-                android:layout_width="@dimen/leftmenu_width"
+                android:layout_width="@dimen/widget_width"
                 android:backgroundTint="@color/colorMenuText"
                 android:focusable="false"
                 android:spinnerMode="dropdown"></Spinner>
@@ -23,7 +23,7 @@
             <EditText
                 android:id="@+id/et_search_number"
                 style="@style/PhoneNumberEdittextStyle"
-                android:layout_width="160dp"
+                android:layout_width="@dimen/widget_width"
                 android:hint="@string/insert_search_number" />
 
             <Button
@@ -49,9 +49,11 @@
 
     </LinearLayout>
 
-    <LinearLayout style="@style/RightViewContainer">
+    <LinearLayout
+        android:visibility="gone"
+        style="@style/RightViewContainer">
 
-        <View style="@style/DividerStyle"></View>
+        <View style="@style/DividerHorizontalStyle"></View>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,52 +99,6 @@
 
                         android:scrollbars="none"></ListView>
 
-<!--
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            style="@style/RightViewTextViewYellow"
-                            android:text="@string/chosen_number_price" />
-
-                        <TextView
-                            style="@style/RightViewTextViewYellow"
-                            android:layout_alignParentRight="true"
-                            android:text="@string/chosen_number_extra_unit" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/right_view_table_background">
-
-                        <TextView
-                            style="@style/RightViewTextView"
-                            android:text="5000₮"></TextView>
-
-                        <TextView
-                            style="@style/RightViewTextView"
-                            android:layout_alignParentRight="true"
-                            android:text="1000 нэгж, 30 хоног"></TextView>
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            style="@style/RightViewTextView"
-                            android:text="10000₮"></TextView>
-
-                        <TextView
-                            style="@style/RightViewTextView"
-                            android:layout_alignParentRight="true"
-                            android:text="6000 нэгж, 30 хоног"></TextView>
-                    </RelativeLayout>
--->
-
                 </LinearLayout>
 
                 <Button
@@ -152,7 +108,9 @@
                     android:text="@string/order"></Button>
 
             </LinearLayout>
-        </LinearLayout>
+
+</LinearLayout>
 
     </LinearLayout>
+
 </RelativeLayout>

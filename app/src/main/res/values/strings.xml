@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Service Dealer Mobile</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Menu -->
+    <string name="menu_newnumber">Шинэ дугаар</string>
+    <string name="menu_skydealer">Скайдиллер</string>
+    <string name="menu_registration">Бүртгэл</string>
+    <string name="menu_service">Үйлчилгээ</string>
+    <string name="menu_information">Мэдээлэл</string>
+    <string name="menu_plan">Төлөвлөгөө</string>
+    <string name="menu_feedback">Санал хүсэлт</string>
+    <string name="menu_settings">Тохиргоо</string>
+    <string name="menu_exit">Гарах</string>
 
     <!-- General -->
     <string name="yes">Тийм</string>
@@ -184,7 +197,7 @@
     <string name="hobby">Хобби</string>
     <string name="job">Эрхэлдэг ажил</string>
 
-    <string name="insert_search_number">Хайх дугаараа оруулна уу</string>
+    <string name="insert_search_number">Хайх дугаар</string>
 
     <!-- Forget Password -->
     <string name="forget">Нууц үг мартсан?</string>

@@ -124,7 +124,6 @@
     <style name="MainViewContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginRight">@dimen/rightview_width</item>
         <item name="android:orientation">vertical</item>
     </style>
 
@@ -212,9 +211,15 @@
 
     </style>
 
-    <style name="DividerStyle">
-        <item name="android:layout_width">@dimen/divider_width</item>
+    <style name="DividerHorizontalStyle">
+        <item name="android:layout_width">@dimen/divider_weight</item>
         <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorDivider</item>
+    </style>
+
+    <style name="DividerVerticalStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_weight</item>
         <item name="android:background">@color/colorDivider</item>
     </style>
 
