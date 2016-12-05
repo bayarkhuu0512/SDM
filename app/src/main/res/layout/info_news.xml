@@ -22,6 +22,7 @@
 
 
         <LinearLayout style="@style/RightViewContainer"
+            android:visibility="gone"
             >
 
             <View style="@style/DividerHorizontalStyle"></View>

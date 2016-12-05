@@ -49,7 +49,8 @@
         android:layout_alignParentRight="true"
         android:scrollbars="none">
 
-        <LinearLayout style="@style/RightViewContainer">
+        <LinearLayout style="@style/RightViewContainer"
+            android:visibility="gone">
 
             <View style="@style/DividerHorizontalStyle"></View>
 

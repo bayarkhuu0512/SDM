@@ -4,126 +4,126 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        style="@style/MainViewContainer"
-        android:gravity="center">
-
-        <TextView
-            style="@style/MainViewTextViewBlue"
-
-            android:layout_margin="@dimen/second_padding"
-            android:text="@string/choose_handset_change_type" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical">
 
         <LinearLayout
-            android:layout_width="@dimen/center_box_width"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/main_padding"
-            android:orientation="vertical">
+            style="@style/MainViewContainer"
+            android:gravity="center">
 
-            <Spinner
-                style="@style/MainViewCenterBoxContainer"
-                android:id="@+id/choose_handset_change"
-                android:layout_width="match_parent"
+            <TextView
+                style="@style/MainViewTextViewBlue"
+
+                android:layout_margin="@dimen/second_padding"
+                android:text="@string/choose_handset_change_type" />
+
+            <LinearLayout
+                android:layout_width="@dimen/center_box_width"
                 android:layout_height="wrap_content"
-                android:focusable="false"
-                android:spinnerMode="dropdown">
+                android:layout_margin="@dimen/main_padding"
+                android:orientation="vertical">
 
-            </Spinner>
-
-
-            <EditText
-                android:id="@+id/phone_number"
-                style="@style/PhoneNumberEdittextStyle"
-                android:hint="@string/phone_number"
-                />
-
-
-            <EditText
-                android:id="@+id/sim_card_serial"
-                style="@style/MainViewCenterBoxEditText"
-                android:maxLength="@integer/simcard_serial_length"
-                android:inputType="number"
-                android:hint="@string/sim_card_serial" />
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/MainViewCenterBoxContainer">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/main_padding">
-
-                <TextView
-                    style="@style/MainViewTextViewYellow"
+                <Spinner
+                    android:id="@+id/choose_handset_change"
+                    style="@style/MainViewCenterBoxContainer"
                     android:layout_width="match_parent"
-                    android:background="@drawable/border"
-                    android:text="@string/tariff" />
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:spinnerMode="dropdown">
 
-                <TextView
-                    android:id="@+id/price"
-                    style="@style/MainViewTextViewGrey"
-                    android:layout_width="150dp"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/border" />
+                </Spinner>
 
-            </RelativeLayout>
-        </LinearLayout>
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/phone_number"
+                    style="@style/PhoneNumberEdittextStyle"
+                    android:hint="@string/phone_number" />
 
-    <LinearLayout style="@style/RightViewContainer">
 
-        <View style="@style/DividerHorizontalStyle"></View>
+                <EditText
+                    android:id="@+id/sim_card_serial"
+                    style="@style/MainViewCenterBoxEditText"
+                    android:hint="@string/sim_card_serial"
+                    android:inputType="number"
+                    android:maxLength="@integer/simcard_serial_length" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
+            </LinearLayout>
 
-            <LinearLayout style="@style/RightViewGroupContainer">
+            <LinearLayout style="@style/MainViewCenterBoxContainer">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/main_padding">
+
+                    <TextView
+                        style="@style/MainViewTextViewYellow"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/border"
+                        android:text="@string/tariff" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        style="@style/MainViewTextViewGrey"
+                        android:layout_width="150dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/border" />
+
+                </RelativeLayout>
 
                 <TextView
                     style="@style/RightViewTextViewBlue"
                     android:text="@string/take_epassport_picture"></TextView>
+
+                <LinearLayout
+                    android:layout_width="@dimen/center_box_width"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/RightViewGroupContainer"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/RightViewTextView"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/front"></TextView>
+
+                        <ImageView
+                            android:id="@+id/img_front"
+                            style="@style/RightViewTakePictureView" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/RightViewGroupContainer"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/RightViewTextView"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/back"></TextView>
+
+                        <ImageView
+                            android:id="@+id/img_back"
+                            style="@style/RightViewTakePictureView" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/send_order"
+                    style="@style/ButtonStyle"
+                    android:layout_margin="@dimen/main_padding"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/order"></Button>
+
             </LinearLayout>
-
-            <LinearLayout style="@style/RightViewGroupContainer"
-                android:orientation="horizontal"
-               >
-                <TextView
-                    style="@style/RightViewTextView"
-                    android:text="@string/front"
-                    android:layout_gravity="center_vertical"></TextView>
-                <ImageView
-                    android:id="@+id/img_front"
-                    style="@style/RightViewTakePictureView" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/RightViewGroupContainer"
-                android:orientation="horizontal"
-                >
-                <TextView
-                    style="@style/RightViewTextView"
-                    android:text="@string/back"
-                    android:layout_gravity="center_vertical"></TextView>
-                <ImageView
-                    android:id="@+id/img_back"
-                    style="@style/RightViewTakePictureView" />
-            </LinearLayout>
-
-
-            <Button
-                android:id="@+id/send_order"
-                style="@style/ButtonStyle"
-                android:layout_marginBottom="@dimen/main_padding"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginRight="@dimen/main_padding"
-                android:layout_marginTop="@dimen/second_padding"
-                android:text="@string/order"></Button>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

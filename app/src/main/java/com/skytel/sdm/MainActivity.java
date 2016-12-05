@@ -144,9 +144,9 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
             selectItem(MENU_NEWNUMBER);
         } else if (id == R.id.menu_skydealer) {
             selectItem(MENU_SKYDEALER);
-        } else if (id == R.id.menu_registration) {
-            selectItem(MENU_SERVICE);
         } else if (id == R.id.menu_service) {
+            selectItem(MENU_SERVICE);
+        } else if (id == R.id.menu_registration) {
             selectItem(MENU_REGISTRATION);
         } else if (id == R.id.menu_information) {
             selectItem(MENU_INFORMATION);
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
                 break;
             case MENU_LOGOUT:
                 fragment = new TabNewNumberFragment();
-/*
+
                 ConfirmDialog confirmDialog = new ConfirmDialog();
                 Bundle args = new Bundle();
                 args.putInt("message", R.string.dialog_logout_confirm);
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
                 confirmDialog.setArguments(args);
                 confirmDialog.registerCallback(dialogConfirmListener);
                 confirmDialog.show(getFragmentManager(), "dialog");
-*/
+
                 break;
             default:
                 fragment = new TabNewNumberFragment();

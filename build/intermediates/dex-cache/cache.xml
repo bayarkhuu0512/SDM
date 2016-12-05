@@ -3,219 +3,219 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.mindorks\paracamera\0.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8b80a4e162e012a08d7923de08317ef6cf265f81">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mindorks-paracamera-0.0.2_fcc1ace873778da4069b473f1257dc3e62d18b4e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_fe013c86c33a5ace0249fa8c179e60474cefb45b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_ae5669429ad733e26d76ca15d7976a621b1c4b62\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f3d5284b81f790c3ed0e55d0034e9f12359d0f24\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_13e5a5a06fed1d546bd43f4cb1ba2002a9035902\classes.dex" />
+        sha1="233ebb9f1c3a268a3fd07dd4c72956aa59a8d00c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_d79da48beb2a44c28d44d1941fbea614065a224d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d4d7a1f3a4727e4c5546a76bf703d7ee5ff3008b">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_32ed930c717f4fc2c6677ba13ea04df91177cbb2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_f5f529832f6f5cf629a723c74e2fb43db5c89ca5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-core-4.48_4c2f270e59ad5493869b2d9ee12849629141d148\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0221690e0c7a1422dc7ebb0eb459cdffa9a23eb4">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_81fa5dd0a93a58bfe448f5023459188b2956e58a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.8_aecbc4a73ccb637e85d92b5167ebd11d12c599fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_8977193eb5fc9714995f5b8b4f8cf160028713b4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_eb79a08b22cdec6bfad8842a453cb4a95718abfb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="afa06f539a4026c10b247386312aa67404b80a16">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-android-4.48_f147a873076de7f7520fa1e12942ee6602206ada\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="b915ebd2c4b901eec32e4df44e5503752e92ce38">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-jdbc-4.48_a54dff66b30002491435bda33155ba385ea79446\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_aa2b8d808cc6a8d81cf2e466e8501cee934ba993\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\ch.acra\acra\4.9.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ch.acra-acra-4.9.0_869ceba9adad3f2c84075b85893b2ae0fe69cf4a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_4ff0df9efe189eff84d28e7981dbbef362778ffd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Install\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_39d2a30847e7699167bf6f52707d4ade5665c7b2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_c5219baa27a25eab83bde5f61c213a47c4da34b7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_b294dce2a99033ea6266b829d4836ce8fdb2a5a4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_25225b7e6e8c39915e384d2f66708192d8119f3d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_d421592b7c3b0b77ea6d8deb26243c4f4d64c28b\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_22411a008e78a819352df3ab8521cf8116114952\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.8_13b33a8aa613377abe2696e876a735fe8b19c63f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.mindorks\paracamera\0.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8b80a4e162e012a08d7923de08317ef6cf265f81">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mindorks-paracamera-0.0.2_3e7a226006dc66ab096b11b92cc2cee6ebec28ad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-android-4.48_edc6d78df7680f824beaea82c1241d0ff54d2ae0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_a04d3860e453c162e30900c15bafb579b35fb15e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_61f43549592a763fc93587a380b56ca8b8de8e4e\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_88aa58789d40e8b29adb5c18b0ce406682e477cc\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\de.codecrafters.tableview\tableview\2.0.1\jars\classes.jar"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5bb12765052237e9522bf63c3c23f82cc51f38a0">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_c77186e7db90e86a3e5cb03b28b3294706867264\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-core-4.48_015ef92b87bc72e8e846f41532dfc5f8a6a01a9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\de.codecrafters.tableview\tableview\2.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="95df9aed9df240a0e1b508ddaeb510d950b2879c">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.codecrafters.tableview-tableview-2.0.1_4b17e273123096e7211f0b9b1d2060a1ecee895b\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.codecrafters.tableview-tableview-2.0.1_64940eabdabfe6ffbbad399ec6433b84673a2511\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_f4f856da3f3fa4cddf50fbd8c0bf91b2b9c15fc9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_b46d656a44d2d420026418e50aa5eb07a0b0215e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_bc62cec15732df7fd1aecc3d3a685f8879ac2973\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_1d4eda2b9cb7a94d18f5618a0997a2af0f22bf7d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_0415f8d7e6dad36606997a9694557815aeadeaf5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_bdc3ab6109028d1742f52e2c1c8179b8ba701fad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_50978ba402f072486d495d0df10e2f1f3f55d7ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_d01d945a2d08b136fd9cceccd2a7e2003085d7c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b915ebd2c4b901eec32e4df44e5503752e92ce38">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-jdbc-4.48_71349a98eb7425ccc9ebaab08832c54e1df23baf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\ch.acra\acra\4.9.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ch.acra-acra-4.9.0_b06e0e667b01e2f7511bde55277f307d8595a8ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_f6397796e0da4b9141009f790f8383a9893e8c57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_53331fd5f37d9fd9de22e4132452fbb672e17e9f\classes.dex" />
     </item>
 
 </items>

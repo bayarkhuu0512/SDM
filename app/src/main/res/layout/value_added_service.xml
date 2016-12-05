@@ -4,17 +4,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
 >
 
         <LinearLayout
             style="@style/MainViewCenterBoxContainer"
-            android:layout_width="300dp"
-            android:layout_marginRight="@dimen/second_padding">
+            android:gravity="center_horizontal">
 
             <TextView
                 style="@style/MainViewTextViewBlue"
@@ -40,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/main_padding">
 
                 <Button
                     android:id="@+id/btn_active"
@@ -60,8 +64,7 @@
 
         <LinearLayout
             style="@style/MainViewCenterBoxContainer"
-            android:layout_marginLeft="@dimen/second_padding"
-            android:layout_marginRight="400dp">
+            android:layout_marginLeft="@dimen/second_padding">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -71,13 +74,15 @@
                     style="@style/MainViewTextViewYellow"
                     android:layout_width="match_parent"
                     android:background="@drawable/border"
+                    android:textSize="@dimen/mainFontSize"
                     android:text="@string/service_type" />
 
                 <TextView
                     style="@style/MainViewTextViewYellow"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_alignParentRight="true"
                     android:background="@drawable/border"
+                    android:textSize="@dimen/mainFontSize"
                     android:text="@string/tariff" />
 
             </RelativeLayout>
@@ -90,13 +95,15 @@
                     style="@style/MainViewTextViewGrey"
                     android:layout_width="match_parent"
                     android:background="@drawable/border"
-                    android:text="@string/service_prepaid" />
+                    android:text="@string/service_prepaid"
+                    />
 
                 <TextView
                     android:id="@+id/price_pre"
                     style="@style/MainViewTextViewGrey"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_alignParentRight="true"
+                    android:textSize="@dimen/mainFontSize"
                     android:background="@drawable/border"
                      />
 
@@ -110,13 +117,15 @@
                     style="@style/MainViewTextViewGrey"
                     android:layout_width="match_parent"
                     android:background="@drawable/border"
-                    android:text="@string/service_postpaid" />
+                    android:text="@string/service_postpaid"
+                 />
 
                 <TextView
                     android:id="@+id/price_post"
                     style="@style/MainViewTextViewGrey"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_alignParentRight="true"
+                    android:textSize="@dimen/mainFontSize"
                     android:background="@drawable/border"
                  />
 
@@ -129,13 +138,15 @@
                     style="@style/MainViewTextViewGrey"
                     android:layout_width="match_parent"
                     android:background="@drawable/border"
-                    android:text="@string/service_mongoldoo" />
+                    android:text="@string/service_mongoldoo"
+                   />
 
                 <TextView
                     android:id="@+id/price_mongoldoo"
                     style="@style/MainViewTextViewGrey"
-                    android:layout_width="150dp"
+                    android:layout_width="100dp"
                     android:layout_alignParentRight="true"
+                    android:textSize="@dimen/mainFontSize"
                     android:background="@drawable/border"
  />
 
@@ -154,19 +165,13 @@
                 android:hint="@string/phone_number" />
 
         </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="wrap_content">
-
         <Button
             android:id="@+id/send_order"
             style="@style/ButtonStyle"
-            android:layout_marginTop="@dimen/second_padding"
+            android:layout_margin="@dimen/second_padding"
             android:text="@string/send_order" />
+
     </LinearLayout>
 
+</ScrollView>
 </LinearLayout>
