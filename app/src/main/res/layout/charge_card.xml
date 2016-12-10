@@ -61,49 +61,6 @@
 
         <View style="@style/DividerHorizontalStyle"></View>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout style="@style/RightViewGroupContainer">
-
-                <TextView
-                    android:id="@+id/package_type_name"
-                    style="@style/RightViewTextViewYellow"
-                    ></TextView>
-                <TextView
-                    android:id="@+id/card_type_name"
-                    style="@style/RightViewTextViewBold"
-                   ></TextView>
-                <TextView
-                    android:id="@+id/number_to_send_label"
-                    style="@style/RightViewTextViewBlue"
-                    android:text="@string/insert_charge_number"></TextView>
-
-                <EditText
-                    android:id="@+id/charge_card_phone_number"
-                    style="@style/PhoneNumberEdittextStyle"
-                    android:hint="@string/phone_number" />
-
-                <EditText
-                    android:id="@+id/charge_card_pin_code"
-                    style="@style/MainViewCenterBoxEditText"
-                    android:inputType="numberPassword"
-                    android:hint="@string/pin_code" />
-
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/charge_card_order_btn"
-                style="@style/ButtonStyle"
-                android:layout_marginBottom="@dimen/main_padding"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginRight="@dimen/main_padding"
-                android:layout_marginTop="@dimen/second_padding"
-                android:text="@string/charge"></Button>
-        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

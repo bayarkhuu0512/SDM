@@ -1,11 +1,15 @@
 package com.skytel.sdm.ui.newnumber;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -18,8 +22,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdm.LoginActivity;
-import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.NumberUserInfoActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.NumberChoiceAdapter;
@@ -97,6 +99,7 @@ public class NumberChoiceFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.number_choice, container, false);
 
         mContext = getActivity();
@@ -334,7 +337,7 @@ public class NumberChoiceFragment extends Fragment {
                     JSONObject jsonObj = new JSONObject(resp);
 
 //                  Haisan dugaar number.skytel.mn deer baihgui uyed data field hooson irj exception shidej baisniig boliulsan - Zolbayar
-                    if(!jsonObj.isNull("data")){
+                    if (!jsonObj.isNull("data")) {
                         JSONArray jArray = jsonObj.getJSONArray("data");
 
                         Log.d(TAG, "*****JARRAY*****" + jArray.length());
@@ -381,7 +384,7 @@ public class NumberChoiceFragment extends Fragment {
                                 });
                             }
                         });
-                    }else{
+                    } else {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
@@ -693,4 +696,5 @@ public class NumberChoiceFragment extends Fragment {
 
         }
     };
+
 }

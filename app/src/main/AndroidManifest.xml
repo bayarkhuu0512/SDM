@@ -43,6 +43,10 @@
             android:name=".InfoNewsDetailActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
+        <activity
+            android:name=".ui.newnumber.NumberOrderReportFilterActivity"
+            android:theme="@style/CustomActionBarTheme"></activity>
+
 
     </application>
 

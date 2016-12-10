@@ -1,12 +1,17 @@
 package com.skytel.sdm.ui.skydealer;
 
 
+import android.app.Activity;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -25,6 +30,7 @@ import com.skytel.sdm.database.DataManager;
 import com.skytel.sdm.entities.CardType;
 import com.skytel.sdm.enums.PackageTypeEnum;
 import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.ui.newnumber.NumberOrderReportFilterActivity;
 import com.skytel.sdm.utils.BalanceUpdateListener;
 import com.skytel.sdm.utils.ConfirmDialog;
 import com.skytel.sdm.utils.Constants;
@@ -57,12 +63,15 @@ public class ChargeCardFragment extends Fragment {
     private PackageTypeEnum mPackageTypeEnum = null;
     private CardType mCardType;
     // UI Widgets
+
+/*
     private Button mChargeCardOrderBtn;
     private EditText mChargeCardPhoneNumber;
     private EditText mChargeCardPinCode;
-
     private TextView mPackageTypeName;
     private TextView mCardTypeName;
+*/
+
 
     private ListView mPackageTypeListView;
     private ListView mCardTypeListView;
@@ -77,7 +86,7 @@ public class ChargeCardFragment extends Fragment {
     private String[] mPackageTypes;
     private List<CardType> mCardList;
 
-//    IP76 carduud deer tsenegleh dugaariig bish ooriin dugaariig oruulah uchir - Zolbayar
+    //    IP76 carduud deer tsenegleh dugaariig bish ooriin dugaariig oruulah uchir - Zolbayar
     private TextView numberToSendLabel;
 
     public ChargeCardFragment() {
@@ -99,8 +108,10 @@ public class ChargeCardFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
+
         View rootView = inflater.inflate(R.layout.charge_card, container, false);
         mContext = getActivity();
         mDataManager = new DataManager(mContext);
@@ -142,7 +153,7 @@ public class ChargeCardFragment extends Fragment {
                 }
                 mCardTypeListView.setAdapter(new ChargeCardTypeAdapter(getActivity(), mPackageTypeEnum));
 
-                mPackageTypeName.setText(mPackageTypes[position]);
+//                mPackageTypeName.setText(mPackageTypes[position]);
                 mCardList = mDataManager.getCardTypeByPackageType(mPackageTypeEnum);
 
             }
@@ -154,20 +165,20 @@ public class ChargeCardFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 mCardType = mDataManager.getCardType(view.getId());
-                Log.d(TAG, "PackageType: "+mPackageTypeEnum);
-                Log.d(TAG, "CardType: "+ mCardType.getName());
-               mCardTypeName.setText(mCardList.get(position).getDesciption());
-
+                Log.d(TAG, "PackageType: " + mPackageTypeEnum);
+                Log.d(TAG, "CardType: " + mCardType.getName());
+  //              mCardTypeName.setText(mCardList.get(position).getDesciption());
+                Dialog dialog = new Dialog(getActivity());
+                dialog.setContentView(R.layout.dialog_charge_card);
+                dialog.show();
             }
         });
 
+/*
         mChargeCardPhoneNumber = (EditText) rootView.findViewById(R.id.charge_card_phone_number);
         mChargeCardPinCode = (EditText) rootView.findViewById(R.id.charge_card_pin_code);
         mPackageTypeName = (TextView) rootView.findViewById(R.id.package_type_name);
         mCardTypeName = (TextView) rootView.findViewById(R.id.card_type_name);
-
-
-
         mChargeCardOrderBtn = (Button) rootView.findViewById(R.id.charge_card_order_btn);
         mChargeCardOrderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,6 +190,7 @@ public class ChargeCardFragment extends Fragment {
                 }
             }
         });
+*/
 
         for (CardType cardType : mDataManager.getCardTypeByPackageType(PackageTypeEnum.COLOR_DATA_PACKAGE)) {
             Log.d(TAG, "cardTypeName " + cardType.getName());
@@ -193,8 +205,8 @@ public class ChargeCardFragment extends Fragment {
         url.append(Constants.SERVER_URL);
         url.append(Constants.FUNCTION_CHARGE);
         url.append("?card_type=" + mCardType.getName());
-        url.append("&phone=" + mChargeCardPhoneNumber.getText().toString());
-        url.append("&pin=" + mChargeCardPinCode.getText().toString());
+//        url.append("&phone=" + mChargeCardPhoneNumber.getText().toString());
+ //       url.append("&pin=" + mChargeCardPinCode.getText().toString());
 
         getActivity().runOnUiThread(new Runnable() {
             @Override
@@ -212,80 +224,83 @@ public class ChargeCardFragment extends Fragment {
                 .build();
 
         mClient.newCall(request).enqueue(new Callback() {
-                                            @Override
-                                            public void onFailure(Call call, IOException e) {
-                                                mProgressDialog.dismiss();
-                                                System.out.println("onFailure");
-                                                e.printStackTrace();
-                                                getActivity().runOnUiThread(new Runnable() {
-                                                    @Override
-                                                    public void run() {
-                                                        Toast.makeText(mContext, getResources().getString(R.string.check_internet_connection), Toast.LENGTH_LONG).show();
-                                                        // Used for debug
-                                                    }
-                                                });
-                                            }
+                                             @Override
+                                             public void onFailure(Call call, IOException e) {
+                                                 mProgressDialog.dismiss();
+                                                 System.out.println("onFailure");
+                                                 e.printStackTrace();
+                                                 getActivity().runOnUiThread(new Runnable() {
+                                                     @Override
+                                                     public void run() {
+                                                         Toast.makeText(mContext, getResources().getString(R.string.check_internet_connection), Toast.LENGTH_LONG).show();
+                                                         // Used for debug
+                                                     }
+                                                 });
+                                             }
 
-                                            @Override
-                                            public void onResponse(Call call, Response response) throws IOException {
-                                                mProgressDialog.dismiss();
+                                             @Override
+                                             public void onResponse(Call call, Response response) throws IOException {
+                                                 mProgressDialog.dismiss();
 
-                                                System.out.println("onResponse");
+                                                 System.out.println("onResponse");
 
-                                                if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+                                                 if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
 
-                                                Headers responseHeaders = response.headers();
-                                                for (int i = 0; i < responseHeaders.size(); i++) {
-                                                    System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
-                                                }
+                                                 Headers responseHeaders = response.headers();
+                                                 for (int i = 0; i < responseHeaders.size(); i++) {
+                                                     System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
+                                                 }
 
-                                                String resp = response.body().string();
-                                                System.out.println("resp " + resp);
+                                                 String resp = response.body().string();
+                                                 System.out.println("resp " + resp);
 
-                                                try {
-                                                    JSONObject jsonObj = new JSONObject(resp);
-                                                    int result_code = jsonObj.getInt("result_code");
-                                                    final String result_msg = jsonObj.getString("result_msg");
-                                                    Log.d(TAG, "result_msg " + result_msg);
-                                                    Log.d(TAG, "result_code " + result_code);
+                                                 try {
+                                                     JSONObject jsonObj = new JSONObject(resp);
+                                                     int result_code = jsonObj.getInt("result_code");
+                                                     final String result_msg = jsonObj.getString("result_msg");
+                                                     Log.d(TAG, "result_msg " + result_msg);
+                                                     Log.d(TAG, "result_code " + result_code);
 
-                                                    getActivity().runOnUiThread(new Runnable() {
-                                                        @Override
-                                                        public void run() {
-                                                            Toast.makeText(mContext, "" + result_msg, Toast.LENGTH_LONG).show();
-                                                        }
-                                                    });
+                                                     getActivity().runOnUiThread(new Runnable() {
+                                                         @Override
+                                                         public void run() {
+                                                             Toast.makeText(mContext, "" + result_msg, Toast.LENGTH_LONG).show();
+                                                         }
+                                                     });
 
-                                                    if (result_code == Constants.RESULT_CODE_SUCCESS) {
+                                                     if (result_code == Constants.RESULT_CODE_SUCCESS) {
 
-                                                        String dealer_id = jsonObj.getString("dealer_id");
-                                                        final String balance = jsonObj.getString("balance");
+                                                         String dealer_id = jsonObj.getString("dealer_id");
+                                                         final String balance = jsonObj.getString("balance");
 
-                                                        Log.d(TAG, "dealer_id " + dealer_id);
-                                                        Log.d(TAG, "balance " + balance);
+                                                         Log.d(TAG, "dealer_id " + dealer_id);
+                                                         Log.d(TAG, "balance " + balance);
 
 
-                                                        try {
-                                                            getActivity().runOnUiThread(new Runnable() {
-                                                                @Override
-                                                                public void run() {
-                                                                    mPrefManager.saveDealerBalance(balance);
-                                                                    if (sBalanceUpdateListener != null) {
-                                                                        sBalanceUpdateListener.onBalanceUpdate();
-                                                                    }
-                                                                    Log.d(TAG, "Show the success message to user");
+                                                         try {
+                                                             getActivity().runOnUiThread(new Runnable() {
+                                                                 @Override
+                                                                 public void run() {
+                                                                     mPrefManager.saveDealerBalance(balance);
+                                                                     if (sBalanceUpdateListener != null) {
+                                                                         sBalanceUpdateListener.onBalanceUpdate();
+                                                                     }
+                                                                     Log.d(TAG, "Show the success message to user");
 
-                                                                    mChargeCardPhoneNumber.setText("");
-                                                                    mChargeCardPinCode.setText("");
-                                                                    mCardTypeName.setText("");
-                                                                    mPackageTypeName.setText("");
-                                                                }
-                                                            });
-                                                        } catch (Exception ex) {
-                                                            ex.printStackTrace();
-                                                        }
+/*
+                                                                     mChargeCardPhoneNumber.setText("");
+                                                                     mChargeCardPinCode.setText("");
+                                                                     mCardTypeName.setText("");
+                                                                     mPackageTypeName.setText("");
+*/
 
-                                                    }
+                                                                 }
+                                                             });
+                                                         } catch (Exception ex) {
+                                                             ex.printStackTrace();
+                                                         }
+
+                                                     }
 /*
                                                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                                                         getActivity().runOnUiThread(new Runnable() {
@@ -304,34 +319,35 @@ public class ChargeCardFragment extends Fragment {
                                                         });
                                                     }
 */
-                                                    else
-                                                    {
+                                                     else {
 
-                                                        getActivity().runOnUiThread(new Runnable() {
-                                                            @Override
-                                                            public void run() {
+                                                         getActivity().runOnUiThread(new Runnable() {
+                                                             @Override
+                                                             public void run() {
 
-                                                                mChargeCardPhoneNumber.setText("");
-                                                                mChargeCardPinCode.setText("");
+/*
+                                                                 mChargeCardPhoneNumber.setText("");
+                                                                 mChargeCardPinCode.setText("");
+*/
 
-                                                            }
-                                                        });
+                                                             }
+                                                         });
 
-                                                    }
+                                                     }
 
 
-                                                } catch (JSONException e) {
-                                                    getActivity().runOnUiThread(new Runnable() {
-                                                        @Override
-                                                        public void run() {
-                                                            Toast.makeText(mContext, "Алдаатай хариу ирлээ", Toast.LENGTH_LONG).show();
-                                                        }
-                                                    });
-                                                    e.printStackTrace();
+                                                 } catch (JSONException e) {
+                                                     getActivity().runOnUiThread(new Runnable() {
+                                                         @Override
+                                                         public void run() {
+                                                             Toast.makeText(mContext, "Алдаатай хариу ирлээ", Toast.LENGTH_LONG).show();
+                                                         }
+                                                     });
+                                                     e.printStackTrace();
 
-                                                }
-                                            }
-                                        }
+                                                 }
+                                             }
+                                         }
 
         );
     }
@@ -357,11 +373,13 @@ public class ChargeCardFragment extends Fragment {
         }
     };
 
+
     @Override
     public void onPause() {
         super.onPause();
+/*
         mChargeCardPhoneNumber.setText("");
         mChargeCardPinCode.setText("");
+*/
     }
-
 }

@@ -3,7 +3,7 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
-    <!-- Menu -->
+    <!-- Navigation Drawer Menu -->
     <string name="menu_newnumber">Шинэ дугаар</string>
     <string name="menu_skydealer">Скайдиллер</string>
     <string name="menu_registration">Бүртгэл</string>

@@ -1,6 +1,7 @@
 package com.skytel.sdm.ui.newnumber;
 
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -9,32 +10,25 @@ import android.os.Bundle;
 import android.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdm.LoginActivity;
-import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.NewNumberReportAdapter;
-import com.skytel.sdm.adapter.SalesReportChargeCardAdapter;
-import com.skytel.sdm.adapter.SalesReportPostPaidPaymentAdapter;
 import com.skytel.sdm.database.DataManager;
 import com.skytel.sdm.entities.NewNumberReport;
-import com.skytel.sdm.entities.SalesReport;
 import com.skytel.sdm.network.HttpClient;
-import com.skytel.sdm.ui.skydealer.SortableSalesReportChargeCardTableView;
-import com.skytel.sdm.ui.skydealer.SortableSalesReportPostPaidPaymentTableView;
 import com.skytel.sdm.utils.Constants;
 import com.skytel.sdm.utils.CustomProgressDialog;
 import com.skytel.sdm.utils.PrefManager;
-import com.skytel.sdm.utils.ValidationChecker;
 
 import org.joda.time.DateTime;
 import org.json.JSONArray;
@@ -112,8 +106,9 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.number_order_report, container, false);
+        setHasOptionsMenu(true);
 
+        View rootView = inflater.inflate(R.layout.number_order_report, container, false);
 
         mContext = getActivity();
         mDataManager = new DataManager(mContext);
@@ -506,4 +501,39 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         });
     }
 
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
+        inflater.inflate(R.menu.filter_action, menu);
+        for (int j = 0; j < menu.size(); j++) {
+            MenuItem item = menu.getItem(j);
+            Log.d(TAG, "set flag for " + item.getTitle());
+            item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        }
+
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.filter_menu:
+                Intent myIntent = new Intent(getActivity(), NumberOrderReportFilterActivity.class);
+                startActivityForResult(myIntent, 1);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == Activity.RESULT_OK) {
+/*
+                Log.d(TAG, "id " + data.getIntExtra("id", 0));
+*/
+            }
+        }
+    }
 }
