@@ -11,7 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <RelativeLayout
+  <!--  <RelativeLayout
         android:id="@+id/profileContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,5 +38,75 @@
             android:src="@drawable/ic_exit" />
 
     </RelativeLayout>
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/dealer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="@string/hello"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LeftMenuTextView"
+                    android:clickable="true"
+                    android:onClick="loginView"
+                    android:text="@string/dealer_balance" />
+
+                <TextView
+                    android:id="@+id/dealer_balance"
+                    style="@style/LeftMenuTextView"
+                    android:text="1,000,000"
+                    android:textColor="@color/colorSkytelYellow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LeftMenuTextView"
+                    android:clickable="true"
+                    android:onClick="loginView"
+                    android:text="@string/dealer_zone" />
+
+                <TextView
+                    android:id="@+id/dealer_zone"
+                    style="@style/LeftMenuTextView"
+                    android:text="Баруун"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorSkytelYellow" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

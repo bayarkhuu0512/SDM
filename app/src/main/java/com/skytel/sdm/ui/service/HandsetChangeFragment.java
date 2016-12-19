@@ -113,7 +113,6 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.handset_change, container, false);
 // Instantiate the camera
-        camera = new Camera(getActivity());
         mContext = getActivity();
         mProgressDialog = new CustomProgressDialog(getActivity());
         mPrefManager = new PrefManager(mContext);
@@ -455,7 +454,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
             }
         });
     }
-
+/*
     private void selectImage() {
         final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_from_library),
                 getString(R.string.cancel)};
@@ -497,11 +496,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
     Camera camera;
 
     private void cameraIntent() {
-/*
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, REQUEST_CAMERA);
-<<<<<<< HEAD
-*/
+
         Intent i = new Intent(getActivity(), CameraActivity.class);
         startActivityForResult(i, 2);
 
@@ -533,17 +528,6 @@ public class HandsetChangeFragment extends Fragment implements Constants {
             onCaptureImageResult(data);
         }
 
-/*
-=======
->>>>>>> origin/master
-        if (resultCode == Activity.RESULT_OK) {
-            if (requestCode == SELECT_FILE) {
-                onSelectFromGalleryResult(data);
-            } else if (requestCode == REQUEST_CAMERA) {
-                onCaptureImageResult(data);
-            }
-        }
-*/
 
     }
 
@@ -581,6 +565,101 @@ public class HandsetChangeFragment extends Fragment implements Constants {
 
         }
 
+        mProgressDialog.dismiss();
+
+    }
+*/
+private void selectImage() {
+    final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_from_library),
+            getString(R.string.cancel)};
+
+    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+    builder.setTitle(getString(R.string.add_photo));
+    builder.setItems(items, new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int item) {
+            boolean result = Utility.checkPermission(mContext);
+
+            if (items[item].equals(getString(R.string.take_photo))) {
+                userChosenTask = getString(R.string.take_photo);
+                if (result){
+                    mProgressDialog.show();
+                    cameraIntent();
+                }
+
+
+            } else if (items[item].equals( getString(R.string.choose_from_library))) {
+                userChosenTask =  getString(R.string.choose_from_library);
+                if (result) {
+                    mProgressDialog.show();
+                    galleryIntent();
+                }
+
+            } else if (items[item].equals( getString(R.string.cancel))) {
+                dialog.dismiss();
+            }
+        }
+    });
+    builder.show();
+}
+
+    private void galleryIntent() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);//
+        startActivityForResult(Intent.createChooser(intent,  getString(R.string.select_file)), SELECT_FILE);
+    }
+
+    private void cameraIntent() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, REQUEST_CAMERA);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == SELECT_FILE)
+                onSelectFromGalleryResult(data);
+            else if (requestCode == REQUEST_CAMERA)
+                onCaptureImageResult(data);
+        }
+
+    }
+
+    private void onCaptureImageResult(Intent data) {
+        bm = (Bitmap) data.getExtras().get("data");
+        if (isFirst) {
+            mFrontImage.setImageBitmap(bm);
+            BitmapSaver.saveBitmapToFile(bm, imageFront);
+        } else {
+            mBackImage.setImageBitmap(bm);
+            BitmapSaver.saveBitmapToFile(bm, imageBack);
+        }
+        mProgressDialog.dismiss();
+    }
+
+    @SuppressWarnings("deprecation")
+    private void onSelectFromGalleryResult(Intent data) {
+        if (data != null) {
+            try {
+                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        if (isFirst) {
+            mFrontImage.setImageBitmap(bm);
+            BitmapSaver.saveBitmapToFile(bm, imageFront);
+
+        } else {
+            mBackImage.setImageBitmap(bm);
+            BitmapSaver.saveBitmapToFile(bm, imageBack);
+
+        }
         mProgressDialog.dismiss();
 
     }

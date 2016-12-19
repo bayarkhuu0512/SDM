@@ -1,17 +1,12 @@
 package com.skytel.sdm.ui.skydealer;
 
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -21,8 +16,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.skytel.sdm.LoginActivity;
-import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.ChargeCardPackageTypeAdapter;
 import com.skytel.sdm.adapter.ChargeCardTypeAdapter;
@@ -30,7 +23,6 @@ import com.skytel.sdm.database.DataManager;
 import com.skytel.sdm.entities.CardType;
 import com.skytel.sdm.enums.PackageTypeEnum;
 import com.skytel.sdm.network.HttpClient;
-import com.skytel.sdm.ui.newnumber.NumberOrderReportFilterActivity;
 import com.skytel.sdm.utils.BalanceUpdateListener;
 import com.skytel.sdm.utils.ConfirmDialog;
 import com.skytel.sdm.utils.Constants;
@@ -64,14 +56,11 @@ public class ChargeCardFragment extends Fragment {
     private CardType mCardType;
     // UI Widgets
 
-/*
     private Button mChargeCardOrderBtn;
     private EditText mChargeCardPhoneNumber;
     private EditText mChargeCardPinCode;
     private TextView mPackageTypeName;
     private TextView mCardTypeName;
-*/
-
 
     private ListView mPackageTypeListView;
     private ListView mCardTypeListView;
@@ -152,8 +141,6 @@ public class ChargeCardFragment extends Fragment {
                         break;
                 }
                 mCardTypeListView.setAdapter(new ChargeCardTypeAdapter(getActivity(), mPackageTypeEnum));
-
-//                mPackageTypeName.setText(mPackageTypes[position]);
                 mCardList = mDataManager.getCardTypeByPackageType(mPackageTypeEnum);
 
             }
@@ -167,30 +154,31 @@ public class ChargeCardFragment extends Fragment {
                 mCardType = mDataManager.getCardType(view.getId());
                 Log.d(TAG, "PackageType: " + mPackageTypeEnum);
                 Log.d(TAG, "CardType: " + mCardType.getName());
-  //              mCardTypeName.setText(mCardList.get(position).getDesciption());
+
                 Dialog dialog = new Dialog(getActivity());
                 dialog.setContentView(R.layout.dialog_charge_card);
+                dialog.setTitle(getString(R.string.tab_skydealer_chargecard));
+                mChargeCardPhoneNumber = (EditText) dialog.findViewById(R.id.charge_card_phone_number);
+                mChargeCardPinCode = (EditText) dialog.findViewById(R.id.charge_card_pin_code);
+                mPackageTypeName = (TextView) dialog.findViewById(R.id.package_type_name);
+                mCardTypeName = (TextView) dialog.findViewById(R.id.card_type_name);
+                mChargeCardOrderBtn = (Button) dialog.findViewById(R.id.charge_card_order_btn);
+                mPackageTypeName.setText(mPackageTypes[position]);
+                mCardTypeName.setText(mCardList.get(position).getDesciption());
+                mChargeCardOrderBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (ValidationChecker.isValidationPassed(mChargeCardPhoneNumber) && ValidationChecker.isValidationPassed(mChargeCardPinCode)) {
+                            mConfirmDialog.show(getFragmentManager(), "dialog");
+
+                        } else {
+                            Toast.makeText(mContext, getResources().getString(R.string.please_fill_the_field), Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
                 dialog.show();
             }
         });
-
-/*
-        mChargeCardPhoneNumber = (EditText) rootView.findViewById(R.id.charge_card_phone_number);
-        mChargeCardPinCode = (EditText) rootView.findViewById(R.id.charge_card_pin_code);
-        mPackageTypeName = (TextView) rootView.findViewById(R.id.package_type_name);
-        mCardTypeName = (TextView) rootView.findViewById(R.id.card_type_name);
-        mChargeCardOrderBtn = (Button) rootView.findViewById(R.id.charge_card_order_btn);
-        mChargeCardOrderBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (ValidationChecker.isValidationPassed(mChargeCardPhoneNumber) && ValidationChecker.isValidationPassed(mChargeCardPinCode)) {
-                    mConfirmDialog.show(getFragmentManager(), "dialog");
-                } else {
-                    Toast.makeText(mContext, getResources().getString(R.string.please_fill_the_field), Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-*/
 
         for (CardType cardType : mDataManager.getCardTypeByPackageType(PackageTypeEnum.COLOR_DATA_PACKAGE)) {
             Log.d(TAG, "cardTypeName " + cardType.getName());
@@ -199,14 +187,13 @@ public class ChargeCardFragment extends Fragment {
         return rootView;
     }
 
-
     public void runChargeFunction() throws Exception {
         final StringBuilder url = new StringBuilder();
         url.append(Constants.SERVER_URL);
         url.append(Constants.FUNCTION_CHARGE);
         url.append("?card_type=" + mCardType.getName());
-//        url.append("&phone=" + mChargeCardPhoneNumber.getText().toString());
- //       url.append("&pin=" + mChargeCardPinCode.getText().toString());
+        url.append("&phone=" + mChargeCardPhoneNumber.getText().toString());
+        url.append("&pin=" + mChargeCardPinCode.getText().toString());
 
         getActivity().runOnUiThread(new Runnable() {
             @Override

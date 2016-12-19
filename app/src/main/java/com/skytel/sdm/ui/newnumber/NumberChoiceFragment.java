@@ -1,6 +1,7 @@
 package com.skytel.sdm.ui.newnumber;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -113,27 +114,15 @@ public class NumberChoiceFragment extends Fragment {
 
         mSearchNumber = (EditText) rootView.findViewById(R.id.et_search_number);
         mNewNumbersGrid = (GridView) rootView.findViewById(R.id.newNumbersList);
-        mPriceTypeInfoListView = (ListView) rootView.findViewById(R.id.priceTypeInfoListView);
+
         mPrefixSpinner = (Spinner) rootView.findViewById(R.id.prefix);
-        mChosenNewNumber = (TextView) rootView.findViewById(R.id.chosen_new_number);
-        mRegisterNumber = (EditText) rootView.findViewById(R.id.register_number);
-        mNumberType = (TextView) rootView.findViewById(R.id.numberType);
+
 
         mNumberChoiceAdapter = new NumberChoiceAdapter(mContext, mNumbersArrayList);
         mNewNumbersGrid.setAdapter(mNumberChoiceAdapter);
 
         mPriceTypeInfoListAdapter = new PriceTypeInfoListAdapter(mContext, mPriceTypeInfoArrayList);
 
-
-        mPriceTypeInfoListView.setAdapter(mPriceTypeInfoListAdapter);
-
-        mPriceTypeInfoListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d(TAG, "PriceTypeInfo ID: " + mPriceTypeInfoArrayList.get(position).getId() + "");
-                mSelectedPriceId = mPriceTypeInfoArrayList.get(position).getId();
-            }
-        });
 
         try {
             mProgressDialog.show();
@@ -158,33 +147,6 @@ public class NumberChoiceFragment extends Fragment {
         mSearchButton = (Button) rootView.findViewById(R.id.numberSearch);
         mSearchButton.setOnClickListener(SearchNewNumberOnClick);
 
-        mNumberChoiceOrder = (Button) rootView.findViewById(R.id.numberChoiceOrder);
-        mNumberChoiceOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-
-                    if (ValidationChecker.isSelected(mSelectedPriceId) && ValidationChecker.isValidationPassedTextView(mChosenNewNumber) && ValidationChecker.isValidationPassed(mRegisterNumber)) {
-                        Log.d(TAG, "price type info selected price id" + mPriceTypeInfoArrayList.get(mSelectedPriceId - 1).getPriceTypeId());
-
-                        ConfirmDialog confirmDialog = new ConfirmDialog();
-                        Bundle args = new Bundle();
-                        args.putInt("message", R.string.dialog_confirm);
-                        args.putInt("title", R.string.confirm);
-
-                        confirmDialog.setArguments(args);
-                        confirmDialog.registerCallback(dialogConfirmListener);
-                        confirmDialog.show(getFragmentManager(), "dialog");
-
-                    } else {
-                        Toast.makeText(mContext, getResources().getString(R.string.please_fill_the_field), Toast.LENGTH_SHORT).show();
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
 
         return rootView;
     }
@@ -194,6 +156,7 @@ public class NumberChoiceFragment extends Fragment {
         url.append(Constants.SERVER_SKYTEL_MN_URL);
         url.append(Constants.FUNCTION_GET_PREFIX);
         url.append("?service=" + "prepaid");
+
 
         getActivity().runOnUiThread(new Runnable() {
             @Override
@@ -252,11 +215,6 @@ public class NumberChoiceFragment extends Fragment {
                         JSONObject jsonData = jArray.getJSONObject(i);
 
                         String pref = jsonData.getString("pref");
-
-//                        Log.d(TAG, "INDEX:       " + i);
-//
-//                        Log.d(TAG, "pref: " + pref);
-
 
                         mPrefixArrayList.add(pref);
                     }
@@ -372,6 +330,52 @@ public class NumberChoiceFragment extends Fragment {
                                         mSelected_number = mNumbersArrayList.get(position).getPhoneNumber();
                                         mSelected_price_type_id = mNumbersArrayList.get(position).getPriceType();
                                         mSearchNumber.setText(mSelected_number);
+
+                                        Dialog dialog = new Dialog(getActivity());
+                                        dialog.setContentView(R.layout.dialog_number_choice);
+                                        dialog.setTitle(getString(R.string.tab_newnumber_order));
+
+                                        mPriceTypeInfoListView = (ListView) dialog.findViewById(R.id.priceTypeInfoListView);
+                                        mPriceTypeInfoListView.setAdapter(mPriceTypeInfoListAdapter);
+                                        mPriceTypeInfoListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                        @Override
+                                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                            Log.d(TAG, "PriceTypeInfo ID: " + mPriceTypeInfoArrayList.get(position).getId() + "");
+                                            mSelectedPriceId = mPriceTypeInfoArrayList.get(position).getId();
+                                            }
+                                        });
+                                        mChosenNewNumber = (TextView) dialog.findViewById(R.id.chosen_new_number);
+                                        mNumberType = (TextView) dialog.findViewById(R.id.numberType);
+                                        mRegisterNumber = (EditText) dialog.findViewById(R.id.register_number);
+                                        mNumberChoiceOrder = (Button) dialog.findViewById(R.id.numberChoiceOrder);
+                                        mNumberChoiceOrder.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                try {
+
+                                                    if (ValidationChecker.isSelected(mSelectedPriceId) && ValidationChecker.isValidationPassedTextView(mChosenNewNumber) && ValidationChecker.isValidationPassed(mRegisterNumber)) {
+                                                        Log.d(TAG, "price type info selected price id" + mPriceTypeInfoArrayList.get(mSelectedPriceId - 1).getPriceTypeId());
+
+                                                        ConfirmDialog confirmDialog = new ConfirmDialog();
+                                                        Bundle args = new Bundle();
+                                                        args.putInt("message", R.string.dialog_confirm);
+                                                        args.putInt("title", R.string.confirm);
+
+                                                        confirmDialog.setArguments(args);
+                                                        confirmDialog.registerCallback(dialogConfirmListener);
+                                                        confirmDialog.show(getFragmentManager(), "dialog");
+
+                                                    } else {
+                                                        Toast.makeText(mContext, getResources().getString(R.string.please_fill_the_field), Toast.LENGTH_SHORT).show();
+                                                    }
+                                                } catch (Exception e) {
+                                                    e.printStackTrace();
+                                                }
+
+                                            }
+                                        });
+
+
                                         mChosenNewNumber.setText(mSelected_number);
                                         try {
                                             mProgressDialog.show();
@@ -379,6 +383,7 @@ public class NumberChoiceFragment extends Fragment {
                                         } catch (Exception e) {
                                             e.printStackTrace();
                                         }
+                                        dialog.show();
 
                                     }
                                 });

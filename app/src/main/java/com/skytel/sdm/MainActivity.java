@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-//        View headerView = navigationView.inflateHeaderView(R.layout.nav_header_main);
+       // View headerView = navigationView.inflateHeaderView(R.layout.nav_header_main);
         View headerView = navigationView.getHeaderView(0);
 
         if (savedInstanceState == null) {
@@ -81,14 +81,14 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
         }
 
 
-/*
-        mDealerName = (TextView) findViewById(R.id.dealer_name);
+
+        mDealerName = (TextView) headerView.findViewById(R.id.dealer_name);
         mDealerName.setText(mPrefManager.getDealerName());
-        mDealerBalance = (TextView) findViewById(R.id.dealer_balance);
+        mDealerBalance = (TextView) headerView.findViewById(R.id.dealer_balance);
         mDealerBalance.setText(mPrefManager.getDealerBalance());
-        mDealerZone = (TextView) findViewById(R.id.dealer_zone);
+        mDealerZone = (TextView) headerView.findViewById(R.id.dealer_zone);
         mDealerZone.setText(mPrefManager.getDealerZone());
-*/
+
         new LongOperation().execute();
 
         ChargeCardFragment.sBalanceUpdateListener = this;
@@ -216,6 +216,8 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
                 .replace(R.id.content_fragment, fragment)
                 .commit();
     }
+
+
 
     private class LongOperation extends AsyncTask<String, Void, Boolean> {
 

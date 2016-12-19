@@ -15,7 +15,7 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.NavigationView
-        android:background="@color/colorBackground"
+        android:background="@color/colorWhite"
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -24,8 +24,8 @@
         app:headerLayout="@layout/nav_header_main"
         app:itemIconTint="@color/colorSkytelYellow"
         app:itemTextAppearance="?android:attr/textAppearanceMedium"
-        app:itemTextColor="@color/colorGreyPressed"
-        app:itemBackground="@color/colorBackground"
+        app:itemTextColor="@color/colorBackground"
+        app:itemBackground="@color/colorWhite"
         app:menu="@menu/activity_main_drawer"
         />
 

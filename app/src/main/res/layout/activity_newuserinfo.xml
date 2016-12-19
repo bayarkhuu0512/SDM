@@ -20,6 +20,10 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
 
     <LinearLayout
         style="@style/MainViewContainer"
@@ -34,6 +38,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/main_padding"
             android:orientation="vertical">
+
+            <TextView
+                style="@style/MainViewTextViewBlue"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_padding"
+                android:text="@string/user_info" />
 
             <EditText
                 android:id="@+id/last_name"
@@ -93,11 +103,61 @@
                 android:gravity="top|left"
                 android:hint="@string/description_order"
                 android:transitionName="@string/description_order" />
+
+            <TextView
+                style="@style/RightViewTextViewBlue"
+                android:text="@string/take_epassport_picture"></TextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/center_box_width"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_padding"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/RightViewGroupContainer"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/RightViewTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/front"></TextView>
+
+                    <ImageView
+                        android:id="@+id/img_front"
+                        style="@style/RightViewTakePictureView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/RightViewGroupContainer"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/RightViewTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/back"></TextView>
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        style="@style/RightViewTakePictureView" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_order"
+                style="@style/ButtonStyle"
+                android:layout_margin="@dimen/main_padding"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/order"></Button>
         </LinearLayout>
 
     </LinearLayout>
+    </ScrollView>
 
-    <LinearLayout style="@style/RightViewContainer">
+  <!--  <LinearLayout
+        android:visibility="gone"
+        style="@style/RightViewContainer">
 
         <View style="@style/DividerHorizontalStyle"></View>
 
@@ -150,5 +210,7 @@
 
         </LinearLayout>
 
+
     </LinearLayout>
+    -->
 </RelativeLayout>
