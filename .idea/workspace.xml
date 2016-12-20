@@ -47,59 +47,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NumberUserInfoActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/NumberUserInfoActivity.java">
+      <file leaf-file-name="ChargeCardFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/ChargeCardFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1608">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="168" column="110" selection-start-line="168" selection-start-column="110" selection-end-line="168" selection-end-column="110" />
               <folding>
-                <element signature="e#11085#11145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkyMediaRegistrationFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/registration/SkyMediaRegistrationFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="332" column="1" selection-start-line="332" selection-start-column="1" selection-end-line="426" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandsetChangeFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/service/HandsetChangeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="360" column="32" selection-start-line="360" selection-start-column="32" selection-end-line="360" selection-end-column="32" />
-              <folding>
-                <element signature="e#15137#15197#0" expanded="true" />
-                <element signature="e#21589#21619#0" expanded="true" />
-                <element signature="e#21621#21660#0" expanded="true" />
-                <element signature="e#21674#21700#0" expanded="true" />
-                <element signature="e#21794#21823#0" expanded="true" />
-                <element signature="e#22076#22106#0" expanded="true" />
-                <element signature="e#22144#22174#0" expanded="true" />
-                <element signature="e#22348#22387#0" expanded="true" />
-                <element signature="e#22426#22465#0" expanded="true" />
-                <element signature="e#22640#22666#0" expanded="true" />
-                <element signature="e#22984#23015#0" expanded="true" />
-                <element signature="e#24022#24054#0" expanded="true" />
-                <marker date="1482124839444" expanded="false" signature="17711:17741" ph="&quot;Зураг дарах&quot;" />
-                <marker date="1482124839444" expanded="false" signature="17743:17782" ph="&quot;Зургийн цомгоос сонгох&quot;" />
-                <marker date="1482124839444" expanded="false" signature="17800:17826" ph="&quot;Болих&quot;" />
-                <marker date="1482124839444" expanded="false" signature="17928:17957" ph="&quot;Зураг нэмэх&quot;" />
-                <marker date="1482124839444" expanded="false" signature="17992:18121" ph="(dialog, item) → {" />
-                <marker date="1482124839444" expanded="false" signature="18230:18260" ph="&quot;Зураг дарах&quot;" />
-                <marker date="1482124839444" expanded="false" signature="18302:18332" ph="&quot;Зураг дарах&quot;" />
-                <marker date="1482124839444" expanded="false" signature="18527:18566" ph="&quot;Зургийн цомгоос сонгох&quot;" />
-                <marker date="1482124839444" expanded="false" signature="18608:18647" ph="&quot;Зургийн цомгоос сонгох&quot;" />
-                <marker date="1482124839444" expanded="false" signature="18840:18866" ph="&quot;Болих&quot;" />
-                <marker date="1482124839444" expanded="false" signature="18935:18950" ph="}" />
-                <marker date="1482124839444" expanded="false" signature="19207:19238" ph="&quot;Файл сонгох&quot;" />
-                <marker date="1482124839444" expanded="false" signature="20886:20918" ph="/deprecation/" />
+                <element signature="e#6873#6935#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1797,7 +1751,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/PostPaidPaymentFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/utils/ChargeCardDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_charge_card.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/ChargeCardFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/number_choice.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_number_choice.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
@@ -1808,6 +1761,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/registration/SkyMediaRegistrationFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/service/HandsetChangeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/utils/BitmapSaver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/ChargeCardFragment.java" />
       </list>
     </option>
   </component>
@@ -1842,6 +1796,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1863,38 +1818,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1926,28 +1849,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="sdm" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdm" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InfoNewsDetailActivity.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1998,61 +1899,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdm" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SDM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdm" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newnumber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
@@ -2485,7 +2333,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23608018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23608018" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2498,13 +2346,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8942093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2884187" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26545843" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439232" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2514,6 +2361,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2759,7 +2607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-43">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2770,7 +2617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2794,7 +2640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2810,7 +2655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2821,7 +2665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2842,17 +2685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/ChargeCardFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="160" column="54" selection-start-line="160" selection-start-column="54" selection-end-line="160" selection-end-column="54" />
-          <folding>
-            <element signature="e#6190#6234#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2871,7 +2703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2890,15 +2721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="514" column="38" selection-start-line="514" selection-start-column="38" selection-end-line="514" selection-end-column="38" />
-          <folding>
-            <element signature="e#12813#13354#0" expanded="true" />
-            <element signature="e#13353#13354#0" expanded="true" />
-            <element signature="e#13880#15764#0" expanded="true" />
-            <element signature="e#14766#14789#0" expanded="true" />
-            <element signature="e#14869#14885#0" expanded="true" />
-            <element signature="e#15341#15397#0" expanded="true" />
-            <element signature="e#15763#15764#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2910,15 +2732,15 @@
         <state relative-caret-position="595">
           <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
           <folding>
-            <element signature="e#1227#1246#0" expanded="true" />
-            <element signature="e#1696#1715#0" expanded="true" />
-            <element signature="e#3981#4013#0" expanded="true" />
-            <element signature="e#4090#4115#0" expanded="true" />
-            <element signature="e#4207#4229#0" expanded="true" />
-            <element signature="e#4614#4629#0" expanded="true" />
-            <element signature="e#5159#5173#0" expanded="true" />
-            <element signature="e#5544#5565#0" expanded="true" />
-            <element signature="e#5654#5669#0" expanded="true" />
+            <element signature="e#1227#1246#0" expanded="false" />
+            <element signature="e#1696#1715#0" expanded="false" />
+            <element signature="e#3981#4013#0" expanded="false" />
+            <element signature="e#4090#4115#0" expanded="false" />
+            <element signature="e#4207#4229#0" expanded="false" />
+            <element signature="e#4614#4629#0" expanded="false" />
+            <element signature="e#5159#5173#0" expanded="false" />
+            <element signature="e#5544#5565#0" expanded="false" />
+            <element signature="e#5654#5669#0" expanded="false" />
             <marker date="1482116641190" expanded="false" signature="6289:6321" ph="&quot;Цахим үнэмлэхний зургийг оруулна уу&quot;" />
             <marker date="1482116641190" expanded="false" signature="6607:6622" ph="&quot;Урд тал&quot;" />
             <marker date="1482116641190" expanded="false" signature="7107:7121" ph="&quot;Ард тал&quot;" />
@@ -2931,31 +2753,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/NumberUserInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1608">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#11085#11145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/registration/SkyMediaRegistrationFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="332" column="1" selection-start-line="332" selection-start-column="1" selection-end-line="426" selection-end-column="0" />
+        <state relative-caret-position="203">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -2964,7 +2768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="479" column="0" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2972,7 +2775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="341" column="52" selection-start-line="341" selection-start-column="52" selection-end-line="341" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2986,21 +2788,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/service/HandsetChangeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="-2108">
           <caret line="360" column="32" selection-start-line="360" selection-start-column="32" selection-end-line="360" selection-end-column="32" />
           <folding>
-            <element signature="e#15137#15197#0" expanded="true" />
-            <element signature="e#21589#21619#0" expanded="true" />
-            <element signature="e#21621#21660#0" expanded="true" />
-            <element signature="e#21674#21700#0" expanded="true" />
-            <element signature="e#21794#21823#0" expanded="true" />
-            <element signature="e#22076#22106#0" expanded="true" />
-            <element signature="e#22144#22174#0" expanded="true" />
-            <element signature="e#22348#22387#0" expanded="true" />
-            <element signature="e#22426#22465#0" expanded="true" />
-            <element signature="e#22640#22666#0" expanded="true" />
-            <element signature="e#22984#23015#0" expanded="true" />
-            <element signature="e#24022#24054#0" expanded="true" />
             <marker date="1482124839444" expanded="false" signature="17711:17741" ph="&quot;Зураг дарах&quot;" />
             <marker date="1482124839444" expanded="false" signature="17743:17782" ph="&quot;Зургийн цомгоос сонгох&quot;" />
             <marker date="1482124839444" expanded="false" signature="17800:17826" ph="&quot;Болих&quot;" />
@@ -3014,6 +2804,32 @@
             <marker date="1482124839444" expanded="false" signature="18935:18950" ph="}" />
             <marker date="1482124839444" expanded="false" signature="19207:19238" ph="&quot;Файл сонгох&quot;" />
             <marker date="1482124839444" expanded="false" signature="20886:20918" ph="/deprecation/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/registration/SkyMediaRegistrationFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="332" column="1" selection-start-line="332" selection-start-column="1" selection-end-line="426" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/NumberUserInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/skytel/sdm/ui/skydealer/ChargeCardFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="168" column="110" selection-start-line="168" selection-start-column="110" selection-end-line="168" selection-end-column="110" />
+          <folding>
+            <element signature="e#6873#6935#0" expanded="true" />
           </folding>
         </state>
       </provider>

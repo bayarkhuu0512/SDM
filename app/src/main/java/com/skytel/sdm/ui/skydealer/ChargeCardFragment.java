@@ -108,7 +108,7 @@ public class ChargeCardFragment extends Fragment {
         mPrefManager = new PrefManager(mContext);
         mPackageTypes = mContext.getResources().getStringArray(R.array.skydealer_charge_card_types);
 
-        numberToSendLabel = (TextView) rootView.findViewById(R.id.number_to_send_label);
+
 
         // Set Package Type List
         mPackageTypeListView = (ListView) rootView.findViewById(R.id.package_type_list_view);
@@ -134,7 +134,6 @@ public class ChargeCardFragment extends Fragment {
                         break;
                     case Constants.CONST_SKYMEDIA_IP76_PACKAGE:
                         mPackageTypeEnum = PackageTypeEnum.SKYMEDIA_IP76_PACKAGE;
-                        numberToSendLabel.setText(getResources().getString(R.string.insert_charge_number_for_ip));
                         break;
                     case Constants.CONST_SMART_PACKAGE:
                         mPackageTypeEnum = PackageTypeEnum.SMART_PACKAGE;
@@ -158,6 +157,7 @@ public class ChargeCardFragment extends Fragment {
                 Dialog dialog = new Dialog(getActivity());
                 dialog.setContentView(R.layout.dialog_charge_card);
                 dialog.setTitle(getString(R.string.tab_skydealer_chargecard));
+                numberToSendLabel = (TextView) dialog.findViewById(R.id.number_to_send_label);
                 mChargeCardPhoneNumber = (EditText) dialog.findViewById(R.id.charge_card_phone_number);
                 mChargeCardPinCode = (EditText) dialog.findViewById(R.id.charge_card_pin_code);
                 mPackageTypeName = (TextView) dialog.findViewById(R.id.package_type_name);
@@ -165,6 +165,9 @@ public class ChargeCardFragment extends Fragment {
                 mChargeCardOrderBtn = (Button) dialog.findViewById(R.id.charge_card_order_btn);
                 mPackageTypeName.setText(mPackageTypes[position]);
                 mCardTypeName.setText(mCardList.get(position).getDesciption());
+                if(mPackageTypeEnum == PackageTypeEnum.SKYMEDIA_IP76_PACKAGE){
+                    numberToSendLabel.setText(getResources().getString(R.string.insert_charge_number_for_ip));
+                }
                 mChargeCardOrderBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
