@@ -56,9 +56,6 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
     private int mSelectedFilterButton = FILTER_ALL;
     private CustomProgressDialog mProgressDialog;
 
-    NumberOrderReportFragment fragment;
-    Intent intent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,8 +64,6 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
 
         context = this;
         mProgressDialog = new CustomProgressDialog(context);
-        fragment = new NumberOrderReportFragment();
-        intent=new Intent(context,fragment.getClass());
 
         mSearch = (Button) findViewById(R.id.search);
         mSearch.setOnClickListener(searchOnClick);
@@ -123,25 +118,14 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
                 String end_date = mFilterByEndDate.getText().toString();
                 mProgressDialog.show();
 
-                intent=new Intent(context,fragment.getClass());
-                startActivityForResult(intent, 1);
+//                intent=new Intent(context,fragment.getClass());
+				Intent intent = new Intent();
                 intent.putExtra("phone_number", phone_number);
                 intent.putExtra("order_status", order_status);
                 intent.putExtra("start_date", start_date);
                 intent.putExtra("end_date", end_date);
                 setResult(Activity.RESULT_OK, intent);
                 finish();
-/*
-                Bundle args = new Bundle();
-                args.putString("phone_number", phone_number);
-                args.putInt("order_status", order_status);
-                args.putString("start_date", start_date);
-                args.putString("end_date", end_date);
-                Fragment fragment = new NumberOrderReportFragment();
-                fragment.setArguments(args);
-
-
-*/
 
             } catch (Exception e) {
                 e.printStackTrace();
