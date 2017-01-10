@@ -315,12 +315,12 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-
+        menu.clear();
         inflater.inflate(R.menu.filter_action, menu);
         for (int j = 0; j < menu.size(); j++) {
             MenuItem item = menu.getItem(j);
             Log.d(TAG, "set flag for " + item.getTitle());
-            item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
+//            item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
         }
 
         super.onCreateOptionsMenu(menu, inflater);
