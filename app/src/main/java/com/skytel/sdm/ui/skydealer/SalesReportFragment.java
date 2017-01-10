@@ -1,6 +1,7 @@
 package com.skytel.sdm.ui.skydealer;
 
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +10,9 @@ import android.os.Bundle;
 import android.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -34,6 +38,7 @@ import com.skytel.sdm.entities.CardType;
 import com.skytel.sdm.entities.SalesReport;
 import com.skytel.sdm.enums.PackageTypeEnum;
 import com.skytel.sdm.network.HttpClient;
+import com.skytel.sdm.ui.newnumber.NumberOrderReportFilterActivity;
 import com.skytel.sdm.utils.Constants;
 import com.skytel.sdm.utils.CustomProgressDialog;
 import com.skytel.sdm.utils.PrefManager;
@@ -77,21 +82,7 @@ public class SalesReportFragment extends Fragment implements Constants {
 
     private RelativeLayout mReportTableViewContainer;
 
-    private Button mSearch;
-    private Button mRefresh;
-    //private Button mFilterByAll;
-    private Button mFilterBySuccess;
-    private Button mFilterByFailed;
-    private EditText mFilterByPhoneNumber;
-    private EditText mFilterByEndDate;
-    private EditText mFilterByStartDate;
-    private Spinner mFilterByUnitPackage;
-    private TextView mTextUnitPackage;
 
-    private String mSelectedFilterByUnit = null;
-
-    private Button mFilterButtonByEndDate;
-    private Button mFilterButtonByStartDate;
 
     private Spinner mReportTypeSpinner;
 
@@ -133,60 +124,8 @@ public class SalesReportFragment extends Fragment implements Constants {
 
         mReportTableViewContainer = (RelativeLayout) rootView.findViewById(R.id.reportTableViewContainer);
 
-        //      mSalesReportTableView = (SortableTableView) rootView.findViewById(R.id.salesReportTableView);
 
-        mSearch = (Button) rootView.findViewById(R.id.search);
-        mSearch.setOnClickListener(searchOnClick);
 
-        mRefresh = (Button) rootView.findViewById(R.id.refresh);
-        mRefresh.setOnClickListener(searchOnClick);
-
-        /*mFilterByAll = (Button) rootView.findViewById(R.id.filterByAll);
-        mFilterByAll.setOnClickListener(filterByAllOnClick);*/
-
-        mFilterBySuccess = (Button) rootView.findViewById(R.id.filterBySuccess);
-        mFilterBySuccess.setOnClickListener(filterBySuccessOnClick);
-
-        mFilterByFailed = (Button) rootView.findViewById(R.id.filterByFailed);
-        mFilterByFailed.setOnClickListener(filterByFailedOnClick);
-
-        mFilterByPhoneNumber = (EditText) rootView.findViewById(R.id.filterByOrderedNumber);
-        mFilterByEndDate = (EditText) rootView.findViewById(R.id.filterByEndDate);
-        mFilterByStartDate = (EditText) rootView.findViewById(R.id.filterByStartDate);
-        mFilterByUnitPackage = (Spinner) rootView.findViewById(R.id.filterByUnitPackage);
-        mTextUnitPackage = (TextView) rootView.findViewById(R.id.txt_unit_type);
-
-        //    ArrayAdapter<CharSequence> adapterFilter = ArrayAdapter.createFromResource(getActivity(), R.array.skydealer_charge_card_types, android.R.layout.simple_spinner_item);
-/*
-        mFilterByUnitPackage.setAdapter(new NothingSelectedSpinnerAdapter(adapterFilter,
-                R.layout.spinner_row_nothing_selected,
-                // R.layout.contact_spinner_nothing_selected_dropdown, // Optional
-                getActivity()));
-*/
-
-        final List<CardType> cardTypes = mDataManager.getCardTypes();
-        SalesReportCardTypeAdapter adapterFilter = new SalesReportCardTypeAdapter(getActivity(), R.layout.sales_report_card_types_item, cardTypes);
-        mFilterByUnitPackage.setAdapter(new NothingSelectedSpinnerAdapter(adapterFilter,
-                R.layout.spinner_row_nothing_selected,
-                getActivity()));
-        mFilterByUnitPackage.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-                try {
-                    mSelectedFilterByUnit = cardTypes.get(position-1).getName();
-                    Log.d(TAG, "Card type name: "+cardTypes.get(position-1).getName());
-                } catch (ArrayIndexOutOfBoundsException e){
-
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                Toast.makeText(getActivity(),"Nothing Selected",Toast.LENGTH_SHORT).show();
-            }
-        });
 
         // TODO: Nothing selected state and then choose none abter selected
         mReportTypeSpinner = (Spinner) rootView.findViewById(R.id.choose_skydealer_report_type);
@@ -204,12 +143,12 @@ public class SalesReportFragment extends Fragment implements Constants {
                     mSelectedItemId = (int) mReportTypeSpinner.getSelectedItemId();
                     switch (mSelectedItemId) {
                         case 0:
-                            mFilterByUnitPackage.setVisibility(View.VISIBLE);
-                            mTextUnitPackage.setVisibility(View.VISIBLE);
+                          //  mFilterByUnitPackage.setVisibility(View.VISIBLE);
+                          //  mTextUnitPackage.setVisibility(View.VISIBLE);
                             break;
                         case 1:
-                            mFilterByUnitPackage.setVisibility(View.GONE);
-                            mTextUnitPackage.setVisibility(View.GONE);
+                           // mFilterByUnitPackage.setVisibility(View.GONE);
+                          //  mTextUnitPackage.setVisibility(View.GONE);
                             break;
                     }
                     if (ValidationChecker.isSelected(mSelectedItemId)) {
@@ -223,8 +162,6 @@ public class SalesReportFragment extends Fragment implements Constants {
 
                         runSalesReportFunction(mReportTypeValue[mSelectedItemId], true, "", startDate, currentDateTime, null);
                         Log.d(TAG, "Report Type: " + mReportTypeValue[mSelectedItemId]);
-                        mFilterByStartDate.setText(startDate);
-                        mFilterByEndDate.setText(currentDateTime);
                     } else {
                         Toast.makeText(mContext, getResources().getString(R.string.please_select_the_field), Toast.LENGTH_SHORT).show();
                     }
@@ -243,11 +180,6 @@ public class SalesReportFragment extends Fragment implements Constants {
 
         mReportTypeValue = getResources().getStringArray(R.array.skydealer_report_type_code);
 
-        mFilterButtonByStartDate = (Button) rootView.findViewById(R.id.btn_start_date);
-        mFilterButtonByStartDate.setOnClickListener(filterByStartDateOnClick);
-        mFilterButtonByEndDate = (Button) rootView.findViewById(R.id.btn_end_date);
-        mFilterButtonByEndDate.setOnClickListener(filterByEndDateOnClick);
-
         mYear = mCalendar.get(Calendar.YEAR);
         mMonth = mCalendar.get(Calendar.MONTH);
         mDay = mCalendar.get(Calendar.DAY_OF_MONTH);
@@ -255,142 +187,6 @@ public class SalesReportFragment extends Fragment implements Constants {
         return rootView;
     }
 
-    View.OnClickListener searchOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            try {
-                mSelectedItemId = (int) mReportTypeSpinner.getSelectedItemId();
-                String phone_number = mFilterByPhoneNumber.getText().toString();
-                Boolean isSuccess = isSuccessFilter;
-
-                String start_date = mFilterByStartDate.getText().toString();
-                String end_date = mFilterByEndDate.getText().toString();
-                if (ValidationChecker.isSelected(mSelectedItemId)) {
-                    if(ValidationChecker.isOnInterval(Days.daysBetween(DateTime.parse(start_date), DateTime.parse(end_date)).getDays())){
-                        mProgressDialog.show();
-                        mSelectedItemId = (int) mReportTypeSpinner.getSelectedItemId();
-
-                        runSalesReportFunction(mReportTypeValue[mSelectedItemId], isSuccess, phone_number, start_date, end_date,mSelectedFilterByUnit);
-                    }
-                    else{
-                        Toast.makeText(getActivity(), getText(R.string.interval_error), Toast.LENGTH_SHORT).show();
-                    }
-
-                } else {
-                    Toast.makeText(getActivity(), getText(R.string.choose_report_type), Toast.LENGTH_SHORT).show();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    };
-
-    View.OnClickListener filterByAllOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            mSelectedFilterButton = FILTER_ALL;
-            invalidateFilterButtons();
-        }
-    };
-
-    View.OnClickListener filterBySuccessOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            mSelectedFilterButton = FILTER_SUCCESS;
-            invalidateFilterButtons();
-        }
-    };
-
-    View.OnClickListener filterByFailedOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            mSelectedFilterButton = FILTER_FAILED;
-            invalidateFilterButtons();
-        }
-    };
-    View.OnClickListener filterByStartDateOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            DatePickerDialog dpd = new DatePickerDialog(getActivity(),
-                    new DatePickerDialog.OnDateSetListener() {
-
-                        @Override
-                        public void onDateSet(DatePicker view, int year,
-                                              int monthOfYear, int dayOfMonth) {
-
-                            mCalendar.set(Calendar.YEAR, year);
-                            mCalendar.set(Calendar.MONTH, monthOfYear);
-                            mCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                            String myFormat = "yyyy-MM-dd"; // In which you need put here
-                            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.getDefault());
-
-                            mFilterByStartDate.setText(sdf.format(mCalendar.getTime()));
-
-                        }
-                    }, mYear, mMonth, mDay);
-            dpd.show();
-        }
-    };
-    View.OnClickListener filterByEndDateOnClick = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            DatePickerDialog dpd = new DatePickerDialog(getActivity(),
-                    new DatePickerDialog.OnDateSetListener() {
-
-                        @Override
-                        public void onDateSet(DatePicker view, int year,
-                                              int monthOfYear, int dayOfMonth) {
-
-                            mCalendar.set(Calendar.YEAR, year);
-                            mCalendar.set(Calendar.MONTH, monthOfYear);
-                            mCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                            String myFormat = "yyyy-MM-dd"; // In which you need put here
-                            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.getDefault());
-
-                            mFilterByEndDate.setText(sdf.format(mCalendar.getTime()));
-
-                        }
-                    }, mYear, mMonth, mDay);
-            dpd.show();
-        }
-    };
-
-
-    private void invalidateFilterButtons() {
-        switch (mSelectedFilterButton) {
-           /* case FILTER_ALL:
-                mFilterByAll.setBackground(getResources().getDrawable(R.drawable.btn_yellow_selected));
-                mFilterByAll.setTextColor(Color.WHITE);
-                mFilterBySuccess.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                mFilterBySuccess.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-                mFilterByFailed.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                mFilterByFailed.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-                isSuccessFilter = true;
-                break;*/
-            case FILTER_SUCCESS:
-                //mFilterByAll.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                // mFilterByAll.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-
-                mFilterBySuccess.setBackground(getResources().getDrawable(R.drawable.btn_yellow_selected));
-                mFilterBySuccess.setTextColor(Color.WHITE);
-
-                mFilterByFailed.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                mFilterByFailed.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-                isSuccessFilter = true;
-                break;
-            case FILTER_FAILED:
-                // mFilterByAll.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                //mFilterByAll.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-
-                mFilterBySuccess.setBackground(getResources().getDrawable(R.drawable.btn_yellow));
-                mFilterBySuccess.setTextColor(getResources().getColor(R.color.colorSkytelYellow));
-
-                mFilterByFailed.setBackground(getResources().getDrawable(R.drawable.btn_yellow_selected));
-                mFilterByFailed.setTextColor(Color.WHITE);
-                isSuccessFilter = false;
-                break;
-        }
-    }
 
 
     public void runSalesReportFunction(String report_type, boolean isSuccess, String phone, String start_date, String end_date, String card_type) throws Exception {
@@ -546,7 +342,7 @@ public class SalesReportFragment extends Fragment implements Constants {
                                 sortableSalesReportPostPaidPaymentTableView.setDataAdapter(new SalesReportPostPaidPaymentAdapter(getActivity(), mSalesReportArrayList));
                             }
 
-                            mSelectedFilterByUnit = null;
+                           // mSelectedFilterByUnit = null;
                         }
                     });
 
@@ -562,5 +358,51 @@ public class SalesReportFragment extends Fragment implements Constants {
                 }
             }
         });
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
+        inflater.inflate(R.menu.filter_action, menu);
+        for (int j = 0; j < menu.size(); j++) {
+            MenuItem item = menu.getItem(j);
+            Log.d(TAG, "set flag for " + item.getTitle());
+            item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        }
+
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.filter_menu:
+                Intent myIntent = new Intent(getActivity(), SalesReportFilterActivity.class);
+                startActivityForResult(myIntent, 1);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1) {
+            if (resultCode == Activity.RESULT_OK) {
+
+                boolean isSuccess = data.getBooleanExtra("is_success",true);
+                String phone_number = data.getStringExtra("phone_number");
+                String start_date = data.getStringExtra("start_date");
+                String end_date = data.getStringExtra("end_date");
+
+                try {
+                    mProgressDialog.show();
+                    mSelectedItemId = (int) mReportTypeSpinner.getSelectedItemId();
+                    runSalesReportFunction(mReportTypeValue[mSelectedItemId], isSuccess, phone_number, start_date, end_date,null);
+                   // runNewNumberReportFunction(fromPage, order_status, phone_number, start_date, end_date);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

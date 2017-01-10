@@ -35,19 +35,18 @@
         </activity>
         <activity android:name=".ForgetPasswordActivity" />
         <activity android:name=".utils.CameraActivity" />
-
         <activity
             android:name=".NumberUserInfoActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".InfoNewsDetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.newnumber.NumberOrderReportFilterActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".ui.skydealer.SalesReportFilterActivity"
             android:theme="@style/CustomActionBarTheme"></activity>
-
-
     </application>
 
 </manifest>

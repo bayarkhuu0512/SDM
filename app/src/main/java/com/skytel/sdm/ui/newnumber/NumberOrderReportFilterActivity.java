@@ -118,7 +118,6 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
                 String end_date = mFilterByEndDate.getText().toString();
                 mProgressDialog.show();
 
-//                intent=new Intent(context,fragment.getClass());
 				Intent intent = new Intent();
                 intent.putExtra("phone_number", phone_number);
                 intent.putExtra("order_status", order_status);
