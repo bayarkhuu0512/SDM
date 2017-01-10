@@ -73,6 +73,7 @@ public class SalesReportFilterActivity extends Activity implements Constants {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.filter_sales_report);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         context = this;
         mProgressDialog = new CustomProgressDialog(context);
@@ -153,7 +154,6 @@ public class SalesReportFilterActivity extends Activity implements Constants {
 
                 String start_date = mFilterByStartDate.getText().toString();
                 String end_date = mFilterByEndDate.getText().toString();
-                if (ValidationChecker.isSelected(mSelectedItemId)) {
                     if(ValidationChecker.isOnInterval(Days.daysBetween(DateTime.parse(start_date), DateTime.parse(end_date)).getDays())){
                         mProgressDialog.show();
 
@@ -169,9 +169,6 @@ public class SalesReportFilterActivity extends Activity implements Constants {
                         Toast.makeText(context, getText(R.string.interval_error), Toast.LENGTH_SHORT).show();
                     }
 
-                } else {
-                    Toast.makeText(context, getText(R.string.choose_report_type), Toast.LENGTH_SHORT).show();
-                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

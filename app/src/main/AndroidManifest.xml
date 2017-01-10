@@ -46,6 +46,11 @@
             android:theme="@style/CustomActionBarTheme" />
         <activity
             android:name=".ui.skydealer.SalesReportFilterActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".ui.registration.RegistrationReportFilterActivity"
+            android:theme="@style/CustomActionBarTheme"></activity>
+        <activity android:name=".ui.service.ServiceReportFilterActivity"
             android:theme="@style/CustomActionBarTheme"></activity>
     </application>
 

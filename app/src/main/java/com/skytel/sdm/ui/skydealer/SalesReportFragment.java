@@ -99,6 +99,8 @@ public class SalesReportFragment extends Fragment implements Constants {
     private int fromPage = 0;
     private int numRow = 100;
 
+    private Menu menu;
+
 
     private final Calendar mCalendar = Calendar.getInstance();
 
@@ -107,10 +109,10 @@ public class SalesReportFragment extends Fragment implements Constants {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.skydealer_report, container, false);
 
         mContext = getActivity();
@@ -121,10 +123,7 @@ public class SalesReportFragment extends Fragment implements Constants {
         mSalesReportArrayList = new ArrayList<>();
         mProgressDialog = new CustomProgressDialog(getActivity());
 
-
         mReportTableViewContainer = (RelativeLayout) rootView.findViewById(R.id.reportTableViewContainer);
-
-
 
 
         // TODO: Nothing selected state and then choose none abter selected
@@ -153,7 +152,7 @@ public class SalesReportFragment extends Fragment implements Constants {
                     }
                     if (ValidationChecker.isSelected(mSelectedItemId)) {
                         mProgressDialog.show();
-
+                        setHasOptionsMenu(true);
                         DateTime currentDateJoda = DateTime.parse(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                         String startDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDateJoda.minusMonths(3).toDate());
                         String currentDateTime = new SimpleDateFormat("yyyy-MM-dd").format(currentDateJoda.toDate());
@@ -361,15 +360,15 @@ public class SalesReportFragment extends Fragment implements Constants {
     }
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-
+        menu.clear();
         inflater.inflate(R.menu.filter_action, menu);
         for (int j = 0; j < menu.size(); j++) {
             MenuItem item = menu.getItem(j);
             Log.d(TAG, "set flag for " + item.getTitle());
-            item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
+          //  item.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS);
         }
 
-        super.onCreateOptionsMenu(menu, inflater);
+        super.onCreateOptionsMenu(this.menu, inflater);
     }
 
     @Override

@@ -58,7 +58,7 @@ public class ValidationChecker {
         return true;
     }
     public static boolean isOnInterval(int days){
-        if(days>90){
+        if(days>93){
             return false;
         }
         return true;

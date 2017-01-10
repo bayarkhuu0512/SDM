@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="3e0241e44481ba169b04cb25dc911003cc3eb2ca">
+        sha1="e661bee71b520489e7992f6c373ed7905ddc8f25">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="c92c2268d29b8a07b7015e234fef2838e71e8844">
+        sha1="d2d050b19f47a53a708ae93c096ab4322321a1c1">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
     </item>
     <item
