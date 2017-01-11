@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="e661bee71b520489e7992f6c373ed7905ddc8f25">
+        sha1="9959fc6904fdf60d40501b6617d9189de7caa42d">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
     </item>
     <item
@@ -66,20 +66,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_88aa58789d40e8b29adb5c18b0ce406682e477cc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="d2d050b19f47a53a708ae93c096ab4322321a1c1">
+        sha1="2d61d961cca1ce2d0253d75eac487c0824d749ef">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
     </item>
     <item
@@ -111,12 +102,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_f4f856da3f3fa4cddf50fbd8c0bf91b2b9c15fc9\classes.dex" />
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_09bbc0cd53da0cab151d182ff3853d9bb70e6731\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.5.0_97e4d81d6fcf242e9b00eab7a2caca2bd8c58cbe\classes.dex" />
     </item>
     <item
         is-multidex="true"

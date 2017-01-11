@@ -14,7 +14,8 @@ import java.util.Date;
  */
 public class BitmapSaver {
     public static void saveBitmapToFile(Bitmap bitmap, String imageName) {
-        File file = new File(Environment.getExternalStorageDirectory(),
+        File file = new File(Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_DCIM),
                 imageName);
         try {
             file.createNewFile();
@@ -28,7 +29,8 @@ public class BitmapSaver {
     }
 
     public static File readBitmapFromFile(String imageName) {
-        return new File(Environment.getExternalStorageDirectory(),
+        return new File(Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_DCIM),
                 imageName);
     }
 
