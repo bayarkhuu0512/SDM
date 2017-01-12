@@ -398,9 +398,9 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                 .addFormDataPart("contact", mContactNumber.getText().toString())
                 .addFormDataPart("description", mOrderDesc.getText().toString())
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageBack))
                 ).build();
 
 
@@ -561,10 +561,10 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
         bm = (Bitmap) data.getExtras().get("data");
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
         }
         mProgressDialog.dismiss();
     }
@@ -581,11 +581,11 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
 
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
 
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
 
         }
         mProgressDialog.dismiss();

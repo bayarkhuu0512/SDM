@@ -80,8 +80,6 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
     String startDate;
     String currentDateTime;
 
-    private Menu menu;
-
     private final Calendar mCalendar = Calendar.getInstance();
 
     public NumberOrderReportFragment() {
@@ -90,11 +88,11 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        setHasOptionsMenu(true);
 
         View rootView = inflater.inflate(R.layout.number_order_report, container, false);
 
@@ -107,8 +105,6 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         mProgressDialog = new CustomProgressDialog(getActivity());
 
         mReportTableViewContainer = (RelativeLayout) rootView.findViewById(R.id.reportTableViewContainer);
-
-
 
         mYear = mCalendar.get(Calendar.YEAR);
         mMonth = mCalendar.get(Calendar.MONTH);
@@ -316,8 +312,9 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        menu.clear();
         inflater.inflate(R.menu.filter_action,menu);
+
+/*
         for (int j = 0; j < menu.size(); j++) {
             MenuItem item = menu.getItem(j);
             Log.d(TAG, "set flag for " + item.getTitle());
@@ -325,6 +322,8 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         }
 
         super.onCreateOptionsMenu(menu, inflater);
+*/
+
     }
 
     @Override

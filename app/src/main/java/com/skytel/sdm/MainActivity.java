@@ -37,6 +37,7 @@ import com.skytel.sdm.utils.BalanceUpdateListener;
 import com.skytel.sdm.utils.ConfirmDialog;
 import com.skytel.sdm.utils.Constants;
 import com.skytel.sdm.utils.PrefManager;
+
 import android.Manifest;
 
 public class MainActivity extends AppCompatActivity implements BalanceUpdateListener, NavigationView.OnNavigationItemSelectedListener, Constants {
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-       // View headerView = navigationView.inflateHeaderView(R.layout.nav_header_main);
+        // View headerView = navigationView.inflateHeaderView(R.layout.nav_header_main);
         View headerView = navigationView.getHeaderView(0);
 
         if (savedInstanceState == null) {
@@ -86,9 +87,8 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
         }
 
 
-
         mDealerName = (TextView) headerView.findViewById(R.id.dealer_name);
-        mDealerName.setText("Сайн уу, "+mPrefManager.getDealerName());
+        mDealerName.setText("Сайн уу, " + mPrefManager.getDealerName());
         mDealerBalance = (TextView) headerView.findViewById(R.id.dealer_balance);
         mDealerBalance.setText(mPrefManager.getDealerBalance());
         mDealerZone = (TextView) headerView.findViewById(R.id.dealer_zone);
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
 
     private void selectItem(int groupPos) {
         currentScreen = groupPos;
-        Fragment fragment = null;
+        Fragment fragment;
         switch (groupPos) {
             case MENU_NEWNUMBER:
                 fragment = new TabNewNumberFragment();
@@ -221,7 +221,6 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
                 .replace(R.id.content_fragment, fragment)
                 .commit();
     }
-
 
 
     private class LongOperation extends AsyncTask<String, Void, Boolean> {
@@ -276,7 +275,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
 
     /**
      * Checks if the app has permission to write to device storage
-     *
+     * <p>
      * If the app does not has permission then the user will be prompted to grant permissions
      *
      * @param activity

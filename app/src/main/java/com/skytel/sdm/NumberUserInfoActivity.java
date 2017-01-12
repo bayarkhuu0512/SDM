@@ -263,9 +263,9 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageBack))
                 ).build();
         Request request = new Request.Builder()
                 .url(url.toString())
@@ -426,10 +426,10 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
         bm = (Bitmap) data.getExtras().get("data");
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
         }
         mProgressDialog.dismiss();
     }
@@ -446,11 +446,11 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
 
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
 
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
 
         }
         mProgressDialog.dismiss();

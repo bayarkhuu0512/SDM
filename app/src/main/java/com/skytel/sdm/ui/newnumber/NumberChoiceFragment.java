@@ -97,6 +97,7 @@ public class NumberChoiceFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -116,7 +117,6 @@ public class NumberChoiceFragment extends Fragment {
         mNewNumbersGrid = (GridView) rootView.findViewById(R.id.newNumbersList);
 
         mPrefixSpinner = (Spinner) rootView.findViewById(R.id.prefix);
-
 
         mNumberChoiceAdapter = new NumberChoiceAdapter(mContext, mNumbersArrayList);
         mNewNumbersGrid.setAdapter(mNumberChoiceAdapter);
