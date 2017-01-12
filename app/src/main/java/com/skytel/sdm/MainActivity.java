@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
 
 
         mDealerName = (TextView) headerView.findViewById(R.id.dealer_name);
-        mDealerName.setText(mPrefManager.getDealerName());
+        mDealerName.setText("Сайн уу, "+mPrefManager.getDealerName());
         mDealerBalance = (TextView) headerView.findViewById(R.id.dealer_balance);
         mDealerBalance.setText(mPrefManager.getDealerBalance());
         mDealerZone = (TextView) headerView.findViewById(R.id.dealer_zone);

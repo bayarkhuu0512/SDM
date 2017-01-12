@@ -23,7 +23,8 @@
             <EditText
                 android:id="@+id/register_number"
                 style="@style/MainViewCenterBoxEditText"
-                android:hint="@string/register_number"></EditText>
+                android:hint="@string/register_number"
+                android:maxLength="@integer/register_number_length"></EditText>
 
             <LinearLayout style="@style/RightViewGroupContainer">
 

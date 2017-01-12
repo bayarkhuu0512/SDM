@@ -60,6 +60,7 @@
                 style="@style/MainViewCenterBoxEditText"
                 android:enabled="false"
                 android:hint="@string/reg_number"
+                android:maxLength="@integer/register_number_length"
 
                />
 

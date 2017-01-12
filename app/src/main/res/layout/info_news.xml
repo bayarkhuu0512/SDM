@@ -46,12 +46,10 @@
                         android:choiceMode="singleChoice"
                         android:divider="@null"
                         android:scrollbars="none"></ListView>
-                    <!--
-                        android:listSelector="@drawable/bg_listview"
--->
 
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
+
 </RelativeLayout>

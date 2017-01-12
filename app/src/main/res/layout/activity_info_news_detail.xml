@@ -20,9 +20,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,29 +30,18 @@
 
             <TextView
                 android:id="@+id/content_title"
-                style="@style/MainViewTextViewBlue"
-                android:text="Header is here!" />
+                style="@style/MainViewTextViewBlue" />
 
             <ImageView
                 android:id="@+id/content_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/logo_height"
+                android:layout_height="@dimen/logo_height"
                 android:background="@drawable/bg_pattern" />
 
-
-                  <!--      <TextView
-                            android:id="@+id/content_body"
-                            style="@style/MainViewTextViewGrey"
-                            android:textColor="@color/colorMenuBackgroundSelected"
-                            android:text="body is here" />
--->
             <WebView
                 android:id="@+id/content_body_web"
                 style="@style/MainViewTextViewGrey"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></WebView>
-
-
+                android:layout_height="wrap_content"></WebView>
         </LinearLayout>
-    </ScrollView>
 </RelativeLayout>

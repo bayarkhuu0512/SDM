@@ -36,7 +36,8 @@
             <EditText
                 android:id="@+id/reg_number"
                 style="@style/MainViewCenterBoxEditText"
-                android:hint="@string/reg_number" />
+                android:hint="@string/reg_number"
+                android:maxLength="@integer/register_number_length"/>
 
             <EditText
                 android:id="@+id/address_sell_card"

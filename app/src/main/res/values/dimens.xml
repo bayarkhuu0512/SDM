@@ -38,7 +38,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <integer name="simcard_serial_length">20</integer>
-
+    <integer name="register_number_length">12</integer>
     <integer name="unregistered_token_err_code">711</integer>
 
     <!-- Mobile -->
