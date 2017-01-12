@@ -88,7 +88,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
     private ImageView mFrontImage;
     private ImageView mBackImage;
 
-   // private Camera camera;
+    // private Camera camera;
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     private String userChosenTask;
     private boolean isFirst = true;
@@ -363,9 +363,9 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                 .addFormDataPart("sim_serial", mSimcardSerial.getText().toString())
                 .addFormDataPart("simchange_type", String.valueOf(mChosenHandsetChangeTypeId))
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext, imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext, imageBack))
                 ).build();
 
         Request request = new Request.Builder()
@@ -454,7 +454,122 @@ public class HandsetChangeFragment extends Fragment implements Constants {
             }
         });
     }
-/*
+
+    /*
+        private void selectImage() {
+            final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_from_library),
+                    getString(R.string.cancel)};
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+            builder.setTitle(getString(R.string.add_photo));
+            builder.setItems(items, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int item) {
+                    boolean result = Utility.checkPermission(mContext);
+
+                    if (items[item].equals(getString(R.string.take_photo))) {
+                        userChosenTask = getString(R.string.take_photo);
+                        if (result) {
+                            // mProgressDialog.show();
+                            cameraIntent();
+                        }
+                    } else if (items[item].equals(getString(R.string.choose_from_library))) {
+                        userChosenTask = getString(R.string.choose_from_library);
+                        if (result) {
+                            mProgressDialog.show();
+                            galleryIntent();
+                        }
+                    } else if (items[item].equals(getString(R.string.cancel))) {
+                        dialog.dismiss();
+                    }
+                }
+            });
+            builder.show();
+        }
+
+        private void galleryIntent() {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);//
+            startActivityForResult(Intent.createChooser(intent, getString(R.string.select_file)), SELECT_FILE);
+        }
+
+        Camera camera;
+
+        private void cameraIntent() {
+
+            Intent i = new Intent(getActivity(), CameraActivity.class);
+            startActivityForResult(i, 2);
+
+
+        }
+
+        @Override
+        public void onActivityResult(int requestCode, int resultCode, Intent data) {
+            super.onActivityResult(requestCode, resultCode, data);
+            mProgressDialog.dismiss();
+            if (requestCode == Camera.REQUEST_TAKE_PHOTO) {
+                Bitmap bitmap = camera.getCameraBitmap();
+                if (bitmap != null) {
+                    //		picFrame.setImageBitmap(bitmap);
+    //                Toast.makeText(this.getActivity(), "Picture taken!", Toast.LENGTH_SHORT).show();
+                    if (isFirst) {
+                        mFrontImage.setImageBitmap(bitmap);
+                        BitmapSaver.saveBitmapToFile(bitmap, imageFront);
+
+                    } else {
+                        mBackImage.setImageBitmap(bitmap);
+                        BitmapSaver.saveBitmapToFile(bitmap, imageBack);
+                    }
+
+                } else {
+      //              Toast.makeText(this.getActivity(), "Picture not taken!", Toast.LENGTH_SHORT).show();
+                }
+            } else if(requestCode == 2){
+                onCaptureImageResult(data);
+            }
+
+
+        }
+
+
+        private void onCaptureImageResult(Intent data) {
+            bm = (Bitmap) data.getExtras().get("data");
+            if (isFirst) {
+                mFrontImage.setImageBitmap(bm);
+                BitmapSaver.saveBitmapToFile(bm, imageFront);
+
+            } else {
+                mBackImage.setImageBitmap(bm);
+                BitmapSaver.saveBitmapToFile(bm, imageBack);
+            }
+            mProgressDialog.dismiss();
+        }
+
+        @SuppressWarnings("deprecation")
+        private void onSelectFromGalleryResult(Intent data) {
+            if (data != null) {
+                try {
+                    bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (isFirst) {
+                mFrontImage.setImageBitmap(bm);
+                BitmapSaver.saveBitmapToFile(bm, imageFront);
+
+            } else {
+                mBackImage.setImageBitmap(bm);
+                BitmapSaver.saveBitmapToFile(bm, imageBack);
+
+            }
+
+            mProgressDialog.dismiss();
+
+        }
+    */
     private void selectImage() {
         final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_from_library),
                 getString(R.string.cancel)};
@@ -469,15 +584,18 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                 if (items[item].equals(getString(R.string.take_photo))) {
                     userChosenTask = getString(R.string.take_photo);
                     if (result) {
-                        // mProgressDialog.show();
+                        mProgressDialog.show();
                         cameraIntent();
                     }
+
+
                 } else if (items[item].equals(getString(R.string.choose_from_library))) {
                     userChosenTask = getString(R.string.choose_from_library);
                     if (result) {
                         mProgressDialog.show();
                         galleryIntent();
                     }
+
                 } else if (items[item].equals(getString(R.string.cancel))) {
                     dialog.dismiss();
                 }
@@ -493,123 +611,6 @@ public class HandsetChangeFragment extends Fragment implements Constants {
         startActivityForResult(Intent.createChooser(intent, getString(R.string.select_file)), SELECT_FILE);
     }
 
-    Camera camera;
-
-    private void cameraIntent() {
-
-        Intent i = new Intent(getActivity(), CameraActivity.class);
-        startActivityForResult(i, 2);
-
-
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        mProgressDialog.dismiss();
-        if (requestCode == Camera.REQUEST_TAKE_PHOTO) {
-            Bitmap bitmap = camera.getCameraBitmap();
-            if (bitmap != null) {
-                //		picFrame.setImageBitmap(bitmap);
-//                Toast.makeText(this.getActivity(), "Picture taken!", Toast.LENGTH_SHORT).show();
-                if (isFirst) {
-                    mFrontImage.setImageBitmap(bitmap);
-                    BitmapSaver.saveBitmapToFile(bitmap, imageFront);
-
-                } else {
-                    mBackImage.setImageBitmap(bitmap);
-                    BitmapSaver.saveBitmapToFile(bitmap, imageBack);
-                }
-
-            } else {
-  //              Toast.makeText(this.getActivity(), "Picture not taken!", Toast.LENGTH_SHORT).show();
-            }
-        } else if(requestCode == 2){
-            onCaptureImageResult(data);
-        }
-
-
-    }
-
-
-    private void onCaptureImageResult(Intent data) {
-        bm = (Bitmap) data.getExtras().get("data");
-        if (isFirst) {
-            mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
-
-        } else {
-            mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
-        }
-        mProgressDialog.dismiss();
-    }
-
-    @SuppressWarnings("deprecation")
-    private void onSelectFromGalleryResult(Intent data) {
-        if (data != null) {
-            try {
-                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (isFirst) {
-            mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageFront);
-
-        } else {
-            mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(bm, imageBack);
-
-        }
-
-        mProgressDialog.dismiss();
-
-    }
-*/
-private void selectImage() {
-    final CharSequence[] items = {getString(R.string.take_photo), getString(R.string.choose_from_library),
-            getString(R.string.cancel)};
-
-    AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-    builder.setTitle(getString(R.string.add_photo));
-    builder.setItems(items, new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int item) {
-            boolean result = Utility.checkPermission(mContext);
-
-            if (items[item].equals(getString(R.string.take_photo))) {
-                userChosenTask = getString(R.string.take_photo);
-                if (result){
-                    mProgressDialog.show();
-                    cameraIntent();
-                }
-
-
-            } else if (items[item].equals( getString(R.string.choose_from_library))) {
-                userChosenTask =  getString(R.string.choose_from_library);
-                if (result) {
-                    mProgressDialog.show();
-                    galleryIntent();
-                }
-
-            } else if (items[item].equals( getString(R.string.cancel))) {
-                dialog.dismiss();
-            }
-        }
-    });
-    builder.show();
-}
-
-    private void galleryIntent() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);//
-        startActivityForResult(Intent.createChooser(intent,  getString(R.string.select_file)), SELECT_FILE);
-    }
-
     private void cameraIntent() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, REQUEST_CAMERA);
@@ -618,12 +619,13 @@ private void selectImage() {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (resultCode == Activity.RESULT_OK) {
             if (requestCode == SELECT_FILE)
                 onSelectFromGalleryResult(data);
             else if (requestCode == REQUEST_CAMERA)
                 onCaptureImageResult(data);
+        } else {
+            mProgressDialog.dismiss();
         }
 
     }
@@ -632,10 +634,10 @@ private void selectImage() {
         bm = (Bitmap) data.getExtras().get("data");
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageFront);
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageBack);
         }
         mProgressDialog.dismiss();
     }
@@ -653,11 +655,11 @@ private void selectImage() {
 
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageFront);
 
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageBack);
 
         }
         mProgressDialog.dismiss();
