@@ -297,12 +297,12 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -314,7 +314,23 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
                             }
                         });
                     }
-*/
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mLastName.setText("");
+                            mFirstName.setText("");
+                            mRegNumber.setText("");
+                            mAddressDetail.setText("");
+                            mAimagCitySpinner.setSelection(-1);
+                            mSumDistrict.setText("");
+                            mKhorooBag.setText("");
+                            mBuildingStreet.setText("");
+                            mDoorFence.setText("");
+                            mDoorNumber.setText("");
+                            mContactNumber.setText("");
+                            mOrderDesc.setText("");
+                        }});
+
 
 
                 } catch (JSONException e) {
@@ -385,6 +401,8 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
                 onSelectFromGalleryResult(data);
             else if (requestCode == REQUEST_CAMERA)
                 onCaptureImageResult(data);
+        } else {
+            mProgressDialog.dismiss();
         }
 
     }

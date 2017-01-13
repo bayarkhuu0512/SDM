@@ -178,12 +178,12 @@ public class ChangePinFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -195,7 +195,7 @@ public class ChangePinFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
                     getActivity().runOnUiThread(new Runnable() {
                         @Override

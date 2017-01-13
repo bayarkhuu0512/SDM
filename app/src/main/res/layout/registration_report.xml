@@ -30,7 +30,16 @@
                 android:spinnerMode="dropdown">
 
             </Spinner>
-
+            <Button
+                android:id="@+id/btn_filter"
+                style="@style/ButtonStyle"
+                android:layout_marginBottom="@dimen/main_padding"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginRight="@dimen/main_padding"
+                android:layout_marginTop="@dimen/main_padding"
+                android:drawableLeft="@drawable/ic_menu_filter"
+                android:text="@string/do_search"
+                android:visibility="gone"></Button>
         </LinearLayout>
         <android.widget.HorizontalScrollView
             android:id="@+id/tableWrapperScrollView"

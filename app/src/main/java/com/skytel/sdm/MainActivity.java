@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
     private String[] mTitles;
     private DrawerLayout drawer;
     private NavigationView navigationView;
-    private int currentScreen;
+    public static int sCurrentScreen = Constants.MENU_NEWNUMBER;;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -165,14 +165,14 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
             selectItem(MENU_LOGOUT);
         }
 
-        setTitle(mTitles[currentScreen]);
+        setTitle(mTitles[sCurrentScreen]);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
 
     private void selectItem(int groupPos) {
-        currentScreen = groupPos;
+        sCurrentScreen = groupPos;
         Fragment fragment;
         switch (groupPos) {
             case MENU_NEWNUMBER:

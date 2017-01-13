@@ -60,10 +60,12 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.filter_number_order_report);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         context = this;
         mProgressDialog = new CustomProgressDialog(context);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
 
         mSearch = (Button) findViewById(R.id.search);
         mSearch.setOnClickListener(searchOnClick);
@@ -264,7 +266,14 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
                 break;
         }
     }
+
     @Override
+    public boolean onNavigateUp() {
+        finish();
+        return true;
+    }
+
+ /*   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -274,9 +283,9 @@ public class NumberOrderReportFilterActivity extends Activity implements Constan
 
         return super.onOptionsItemSelected(item);
     }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
+*/
+ /*   public boolean onCreateOptionsMenu(Menu menu) {
         return true;
-    }
+    }*/
 
 }

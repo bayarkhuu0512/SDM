@@ -242,12 +242,12 @@ public class ValueAddedServiceFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -259,7 +259,7 @@ public class ValueAddedServiceFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
                     JSONArray jArray = jsonObj.getJSONArray("vas_types");
 
@@ -411,17 +411,38 @@ public class ValueAddedServiceFragment extends Fragment implements Constants {
                     Log.d(TAG, "result_code: " + result_code);
                     Log.d(TAG, "result_msg: " + result_msg);
 
+                    if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
+
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
+                                mPrefManager.setIsLoggedIn(false);
+                                mDataManager.resetCardTypes();
+
+                                getActivity().finish();
+                                Intent intent = new Intent(mContext, LoginActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+
+                    }
+
+
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
 
                             Toast.makeText(mContext, ""+ result_msg, Toast.LENGTH_LONG).show();
+
+
                         }
                     });
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             mPhonenumber.setText("");
+                            mVasTypeSpinner.setSelection(-1);
                         }
                     });
 

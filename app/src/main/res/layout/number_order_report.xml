@@ -7,11 +7,22 @@
     <LinearLayout
         style="@style/MainViewContainer"
         android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_filter"
+            style="@style/ButtonStyle"
+            android:layout_marginBottom="@dimen/main_padding"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_marginRight="@dimen/main_padding"
+            android:layout_marginTop="@dimen/main_padding"
+            android:drawableLeft="@drawable/ic_menu_filter"
+            android:text="@string/do_search"
+            ></Button>
         <!-- Jijig delgets deer shahtsaldaj bgaa tul - Zolbayar -->
         <android.widget.HorizontalScrollView
             android:id="@+id/tableWrapperScrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <RelativeLayout
                 android:id="@+id/reportTableViewContainer"
                 android:layout_width="match_parent"

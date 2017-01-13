@@ -21,6 +21,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.NewNumberReportAdapter;
 import com.skytel.sdm.database.DataManager;
@@ -64,6 +66,8 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
     private List<NewNumberReport> mNewNumberReportArrayList;
     private CustomProgressDialog mProgressDialog;
 
+    private Button mButtonFilter;
+
     private RelativeLayout mReportTableViewContainer;
 
     private int mSelectedFilterButton = FILTER_ALL;
@@ -88,7 +92,7 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
+     //   setHasOptionsMenu(true);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -105,6 +109,15 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         mProgressDialog = new CustomProgressDialog(getActivity());
 
         mReportTableViewContainer = (RelativeLayout) rootView.findViewById(R.id.reportTableViewContainer);
+        mButtonFilter = (Button) rootView.findViewById(R.id.btn_filter);
+
+        mButtonFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getActivity(), NumberOrderReportFilterActivity.class);
+                startActivityForResult(myIntent, 1);
+            }
+        });
 
         mYear = mCalendar.get(Calendar.YEAR);
         mMonth = mCalendar.get(Calendar.MONTH);
@@ -217,12 +230,12 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -234,7 +247,7 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
 
 //                  Udaan hugatsaanii daraa app -iig neeh uyed end exception shidej bsan tul.. - Zolbayar
@@ -310,11 +323,11 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         });
     }
 
-    @Override
+  /*  @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.filter_action,menu);
 
-/*
+
         for (int j = 0; j < menu.size(); j++) {
             MenuItem item = menu.getItem(j);
             Log.d(TAG, "set flag for " + item.getTitle());
@@ -322,11 +335,12 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
         }
 
         super.onCreateOptionsMenu(menu, inflater);
-*/
 
-    }
 
-    @Override
+    }*/
+
+
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.filter_menu:
@@ -336,7 +350,8 @@ public class NumberOrderReportFragment extends Fragment implements Constants {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

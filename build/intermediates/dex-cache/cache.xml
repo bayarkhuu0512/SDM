@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="9959fc6904fdf60d40501b6617d9189de7caa42d">
+        sha1="3c530e44a87a1d8bdc9aeb632c3c66156d520c2a">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="fe744130b5d5c7af2ddfa18e6bbb5b9e177cb591">
+        sha1="6b155606a979a252064f26d3847722f4b91d209b">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
     </item>
     <item
@@ -120,21 +120,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_bc62cec15732df7fd1aecc3d3a685f8879ac2973\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
         sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_b46d656a44d2d420026418e50aa5eb07a0b0215e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_bc62cec15732df7fd1aecc3d3a685f8879ac2973\classes.dex" />
     </item>
     <item
         is-multidex="true"

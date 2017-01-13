@@ -61,6 +61,7 @@ public class ServiceReportFilterActivity extends Activity implements Constants{
         setContentView(R.layout.filter_service_report);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
 
         mSearch = (Button) findViewById(R.id.search);
         mSearch.setOnClickListener(searchOnClick);
@@ -257,7 +258,7 @@ public class ServiceReportFilterActivity extends Activity implements Constants{
                 break;
         }
     }
-    @Override
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -270,5 +271,10 @@ public class ServiceReportFilterActivity extends Activity implements Constants{
 
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
-    }
+    }*/
+  @Override
+  public boolean onNavigateUp() {
+      finish();
+      return true;
+  }
 }

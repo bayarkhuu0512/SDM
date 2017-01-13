@@ -248,12 +248,12 @@ public class HandsetChangeFragment extends Fragment implements Constants {
 
                         }
                     });
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -263,7 +263,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
                     JSONArray jArray = jsonObj.getJSONArray("types");
 
@@ -422,12 +422,12 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -439,7 +439,15 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+
+                    mHandsetChangeTypeSpinner.setSelection(-1);
+                    mPhonenumber.setText("");
+                    mSimcardSerial.setText("");
+                        }
+                    });
 
 
                 } catch (JSONException e) {

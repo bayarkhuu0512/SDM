@@ -62,6 +62,7 @@ public class RegistrationReportFilterActivity extends Activity implements Consta
 
         setContentView(R.layout.filter_resigration_report);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
         mSearch = (Button) findViewById(R.id.search);
         mSearch.setOnClickListener(searchOnClick);
 
@@ -261,6 +262,11 @@ public class RegistrationReportFilterActivity extends Activity implements Consta
         }
     }
     @Override
+    public boolean onNavigateUp() {
+        finish();
+        return true;
+    }
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -273,5 +279,5 @@ public class RegistrationReportFilterActivity extends Activity implements Consta
 
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
-    }
+    }*/
 }

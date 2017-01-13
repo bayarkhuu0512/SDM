@@ -10,12 +10,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.skytel.sdm.InfoNewsDetailActivity;
 import com.skytel.sdm.R;
+import com.skytel.sdm.adapter.HandsetChangeTypeAdapter;
 import com.skytel.sdm.adapter.InfoNewsTypeAdapter;
 import com.skytel.sdm.adapter.NewsListAdapter;
+import com.skytel.sdm.adapter.NothingSelectedSpinnerAdapter;
+import com.skytel.sdm.entities.HandsetChangeType;
 import com.skytel.sdm.entities.InfoNewsType;
 import com.skytel.sdm.entities.NewsListItem;
 import com.skytel.sdm.network.HttpClient;
@@ -28,6 +32,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -48,6 +53,7 @@ public class InfoNewsFragment extends Fragment implements Constants {
     private CustomProgressDialog mProgressDialog;
 
     private ListView mInfoNewsTypeListview;
+    private Spinner mInfoTypeSpinner;
     private ListView mNewsListview;
     private InfoNewsTypeAdapter mInfoNewsAdapter;
     private NewsListAdapter mNewsListAdapter;
@@ -74,6 +80,8 @@ public class InfoNewsFragment extends Fragment implements Constants {
         mNewsListview = (ListView) rootView.findViewById(R.id.news_list_view);
         mNewsListAdapter = new NewsListAdapter(getActivity(), mNewsListArrayList);
         mNewsListview.setAdapter(mNewsListAdapter);
+
+        mInfoTypeSpinner = (Spinner) rootView.findViewById(R.id.choose_info_type);
 
         mInfoNewsTypeListview = (ListView) rootView.findViewById(R.id.info_type_list_view);
         mInfoNewsAdapter = new InfoNewsTypeAdapter(getActivity(), mInfoNewsTypeArrayList);
@@ -186,6 +194,8 @@ public class InfoNewsFragment extends Fragment implements Constants {
 
                                                              mInfoNewsTypeArrayList.add(i, infoNewsType);
                                                          }
+
+
                                                          getActivity().runOnUiThread(new Runnable() {
                                                              @Override
                                                              public void run() {

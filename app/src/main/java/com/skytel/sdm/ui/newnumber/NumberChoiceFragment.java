@@ -23,6 +23,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.NumberUserInfoActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.NumberChoiceAdapter;
@@ -650,13 +652,13 @@ public class NumberChoiceFragment extends Fragment {
                         });
 
                     }
-/*
+
                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
 
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -667,7 +669,7 @@ public class NumberChoiceFragment extends Fragment {
                         });
 
                     }
-*/
+
 
 
                 } catch (JSONException e) {

@@ -74,6 +74,7 @@ public class SalesReportFilterActivity extends Activity implements Constants {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.filter_sales_report);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
 
         context = this;
         mProgressDialog = new CustomProgressDialog(context);
@@ -282,7 +283,7 @@ public class SalesReportFilterActivity extends Activity implements Constants {
         }
     }
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -296,5 +297,10 @@ public class SalesReportFilterActivity extends Activity implements Constants {
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
-
+*/
+   @Override
+   public boolean onNavigateUp() {
+       finish();
+       return true;
+   }
 }

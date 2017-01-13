@@ -3,6 +3,7 @@ package com.skytel.sdm.ui.registration;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -169,14 +170,13 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
             @Override
             public void onClick(View v) {
                 if (ValidationChecker.isValidationPassed(mLastName) && ValidationChecker.isValidationPassed(mFirstName) && ValidationChecker.isValidationPassed(mRegNumber) &&
-                        ValidationChecker.isValidationPassed(mCardSellAddress) && ValidationChecker.isSelected(mChannelSalesType) && ValidationChecker.isValidationPassed(mSkydealerNumber) &&
+                        ValidationChecker.isValidationPassed(mCardSellAddress) && ValidationChecker.isSelected(mChannelSalesType)  &&
                         ValidationChecker.isValidationPassed(mContactNumber)) {
                     if(ValidationChecker.hasBitmapValue(bm)){
                         mConfirmDialog.show(getFragmentManager(), "dialog");
                     }else{
                         Toast.makeText(mContext, getResources().getString(R.string.please_insert_pic), Toast.LENGTH_LONG).show();
                     }
-
                 }
                 else{
                     Toast.makeText(mContext, getResources().getString(R.string.please_fill_the_field), Toast.LENGTH_SHORT).show();
@@ -269,12 +269,12 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -286,7 +286,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
                     JSONArray jArray = jsonObj.getJSONArray("dealer_channel_types");
 
@@ -465,12 +465,11 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                         }
                     });
 
-/*
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -482,7 +481,18 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
+                        mCardSellAddress.setText("");
+                        mChannelSalesType.setSelection(-1);
+                        mLastName.setText("");
+                        mFirstName.setText("");
+                        mRegNumber.setText("");
+                        mDiscountPercent.setText("");
+                        mSkydealerNumber.setText("");
+                        mOrderDesc.setText("");
+
+
+
 
 
                 } catch (JSONException e) {
@@ -553,6 +563,8 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                 onSelectFromGalleryResult(data);
             else if (requestCode == REQUEST_CAMERA)
                 onCaptureImageResult(data);
+        } else {
+            mProgressDialog.dismiss();
         }
 
     }

@@ -78,7 +78,7 @@ public class RegistrationReportFragment extends Fragment implements Constants {
 
     private RelativeLayout mReportTableViewContainer;
 
-
+    private Button mButtonFilter;
 
     private Spinner mReportTypeSpinner;
 
@@ -116,7 +116,14 @@ public class RegistrationReportFragment extends Fragment implements Constants {
         mProgressDialog = new CustomProgressDialog(getActivity());
 
         mReportTableViewContainer = (RelativeLayout) rootView.findViewById(R.id.reportTableViewContainer);
-
+        mButtonFilter = (Button) rootView.findViewById(R.id.btn_filter);
+        mButtonFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getActivity(), RegistrationReportFilterActivity.class);
+                startActivityForResult(myIntent, 1);
+            }
+        });
 
 
         mYear = mCalendar.get(Calendar.YEAR);
@@ -140,7 +147,8 @@ public class RegistrationReportFragment extends Fragment implements Constants {
 
                     if (ValidationChecker.isSelected(mSelectedItemId)) {
                         mProgressDialog.show();
-                        setHasOptionsMenu(true);
+                //        setHasOptionsMenu(true);
+                        mButtonFilter.setVisibility(View.VISIBLE);
                         DateTime currentDateJoda = DateTime.parse(new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
                         String startDate = new SimpleDateFormat("yyyy-MM-dd").format(currentDateJoda.minusMonths(3).toDate());
                         String currentDateTime = new SimpleDateFormat("yyyy-MM-dd").format(currentDateJoda.toDate());
@@ -252,12 +260,12 @@ public class RegistrationReportFragment extends Fragment implements Constants {
 
                         }
                     });
-/*
+
                     if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -269,7 +277,7 @@ public class RegistrationReportFragment extends Fragment implements Constants {
                             }
                         });
                     }
-*/
+
 
                     JSONArray jArray = jsonObj.getJSONArray("user_registrations");
 
@@ -360,7 +368,7 @@ public class RegistrationReportFragment extends Fragment implements Constants {
         });
     }
 
-    @Override
+  /*  @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
         inflater.inflate(R.menu.filter_action,menu);
@@ -384,7 +392,7 @@ public class RegistrationReportFragment extends Fragment implements Constants {
                 return super.onOptionsItemSelected(item);
         }
     }
-
+*/
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 1) {

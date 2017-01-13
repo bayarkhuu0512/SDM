@@ -327,10 +327,10 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
                             }
                         });
                     }
-/*
+
                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
 
-                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                 mPrefManager.setIsLoggedIn(false);
                                 mDataManager.resetCardTypes();
 
@@ -339,7 +339,7 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
                                 startActivity(intent);
 
                     }
-*/
+
 
                 } catch (JSONException e) {
                     Toast.makeText(mContext, getResources().getString(R.string.error_result), Toast.LENGTH_LONG).show();
@@ -419,6 +419,8 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
                 onSelectFromGalleryResult(data);
             else if (requestCode == REQUEST_CAMERA)
                 onCaptureImageResult(data);
+        } else {
+            mProgressDialog.dismiss();
         }
     }
 

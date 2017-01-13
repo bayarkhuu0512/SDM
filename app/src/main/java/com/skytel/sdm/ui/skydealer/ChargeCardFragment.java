@@ -4,6 +4,7 @@ package com.skytel.sdm.ui.skydealer;
 import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +17,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.skytel.sdm.LoginActivity;
+import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.R;
 import com.skytel.sdm.adapter.ChargeCardPackageTypeAdapter;
 import com.skytel.sdm.adapter.ChargeCardTypeAdapter;
@@ -291,12 +294,12 @@ public class ChargeCardFragment extends Fragment {
                                                          }
 
                                                      }
-/*
+
                                                     else if (result_code == Constants.RESULT_CODE_UNREGISTERED_TOKEN) {
                                                         getActivity().runOnUiThread(new Runnable() {
                                                             @Override
                                                             public void run() {
-                                                                MainActivity.sCurrentMenu = Constants.MENU_NEWNUMBER;
+                                                                MainActivity.sCurrentScreen = Constants.MENU_NEWNUMBER;
                                                                 mPrefManager.setIsLoggedIn(false);
                                                                 mDataManager.resetCardTypes();
 
@@ -308,7 +311,7 @@ public class ChargeCardFragment extends Fragment {
                                                             }
                                                         });
                                                     }
-*/
+
                                                      else {
 
                                                          getActivity().runOnUiThread(new Runnable() {
