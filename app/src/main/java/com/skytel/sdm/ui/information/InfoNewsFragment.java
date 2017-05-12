@@ -80,6 +80,26 @@ public class InfoNewsFragment extends Fragment implements Constants {
         mNewsListAdapter = new NewsListAdapter(getActivity(), mNewsListArrayList);
         mNewsListview.setAdapter(mNewsListAdapter);
 
+<<<<<<< HEAD
+=======
+
+        mInfoNewsTypeListview = (ListView) rootView.findViewById(R.id.info_type_list_view);
+        mInfoNewsAdapter = new InfoNewsTypeAdapter(getActivity(), mInfoNewsTypeArrayList);
+        mInfoNewsTypeListview.setAdapter(mInfoNewsAdapter);
+        mInfoNewsTypeListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                mInfoNewsAdapter.setCurrentCategoryPos(position);
+                Log.d(TAG, "type position: " + position);
+                Log.d(TAG, "category id: " + mInfoNewsTypeArrayList.get(position).getCategoryId());
+                try {
+                    runGetInfoNewsList(mInfoNewsTypeArrayList.get(position).getCategoryId());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+>>>>>>> origin/master
 
         try {
             runGetInfoNewsList(INFO_CATEGORY_INFORMATION);

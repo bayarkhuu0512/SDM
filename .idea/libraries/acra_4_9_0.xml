@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="acra-4.9.0">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.android/build-cache/762aae4e999523b888b3d0bcb378416f49bc566b/output/res" />
       <root url="jar://$USER_HOME$/.android/build-cache/762aae4e999523b888b3d0bcb378416f49bc566b/output/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.android/build-cache/0867cc354d72bf39d424945c0fb4a5fe28d55527/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/0867cc354d72bf39d424945c0fb4a5fe28d55527/output/res" />
+>>>>>>> origin/master
     </CLASSES>
     <JAVADOC />
     <SOURCES>

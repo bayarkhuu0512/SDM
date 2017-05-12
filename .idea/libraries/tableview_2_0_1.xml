@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="tableview-2.0.1">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.android/build-cache/02ed03a2e6049bedbb4a0a02d16a6306d696f9a2/output/res" />
       <root url="jar://$USER_HOME$/.android/build-cache/02ed03a2e6049bedbb4a0a02d16a6306d696f9a2/output/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.android/build-cache/aeca27bc8891f29c3a6437911a0930206ec561bf/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/aeca27bc8891f29c3a6437911a0930206ec561bf/output/res" />
+>>>>>>> origin/master
     </CLASSES>
     <JAVADOC />
     <SOURCES>
