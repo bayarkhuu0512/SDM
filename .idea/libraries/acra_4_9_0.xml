@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="acra-4.9.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ch.acra/acra/4.9.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ch.acra/acra/4.9.0/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/762aae4e999523b888b3d0bcb378416f49bc566b/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/762aae4e999523b888b3d0bcb378416f49bc566b/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

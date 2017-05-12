@@ -3,264 +3,168 @@
     {
       "id": "1",
       "package_type": "0",
-      "name": "E1000",
-      "description": "1.000₮ (1хоног + 1000)"
+      "name": "C500",
+      "description": "500₮"
     },
     {
       "id": "2",
       "package_type": "0",
-      "name": "E2000",
-      "description": "2.000₮ (3хоног + 1000)"
+      "name": "C1000",
+      "description": "1.000₮"
     },
     {
       "id": "3",
       "package_type": "0",
-      "name": "E3000",
-      "description": "3.000₮ (5хоног + 2000)"
+      "name": "C2000",
+      "description": "2.000₮"
     },
     {
       "id": "4",
       "package_type": "0",
-      "name": "E5000",
-      "description": "5.000₮ (15хоног + 2500)"
+      "name": "S3000",
+      "description": "3.000₮"
     },
     {
       "id": "5",
       "package_type": "0",
-      "name": "E10000",
-      "description": "10.000₮ (30хоног + 5000)"
+      "name": "S5000",
+      "description": "5.000₮"
     },
     {
       "id": "6",
       "package_type": "0",
-      "name": "E15000",
-      "description": "15.000₮ (45хоног + 5000)"
+      "name": "C5000",
+      "description": "5.000₮ (хоногтой)"
     },
     {
       "id": "7",
       "package_type": "0",
-      "name": "E50000",
-      "description": "50.000₮ (180хоног + 10000)"
+      "name": "S6000",
+      "description": "6.000₮"
     },
     {
       "id": "8",
       "package_type": "0",
-      "name": "E90000",
-      "description": "90.000₮ (360хоног + 10000)"
+      "name": "C10000",
+      "description": "10.000₮"
     },
     {
       "id": "9",
-      "package_type": "1",
-      "name": "E1000",
-      "description": "1.000₮ (1хоног + 1000)"
+      "package_type": "0",
+      "name": "F10000",
+      "description": "10.000₮ (247)"
     },
     {
       "id": "10",
-      "package_type": "1",
-      "name": "E2000",
-      "description": "2.000₮ (3хоног + 2000)"
+      "package_type": "0",
+      "name": "C15000",
+      "description": "15.000₮"
     },
     {
       "id": "11",
-      "package_type": "1",
-      "name": "E3000",
-      "description": "3.000₮ (5хоног + 3000)"
+      "package_type": "0",
+      "name": "C50000",
+      "description": "50.000₮"
     },
     {
       "id": "12",
-      "package_type": "1",
-      "name": "E5000",
-      "description": "5.000₮ (15хоног + 5000)"
+      "package_type": "0",
+      "name": "C90000",
+      "description": "90.000₮"
     },
     {
       "id": "13",
       "package_type": "1",
-      "name": "E10000",
-      "description": "10.000₮ (30хоног + 10000)"
+      "name": "NET1000",
+      "description": "1.000₮ (10хоног+100MB)"
     },
     {
       "id": "14",
       "package_type": "1",
-      "name": "E15000",
-      "description": "15.000₮ (45хоног + 15000)"
+      "name": "NET3000",
+      "description": "3.000₮ (15хоног+300MB)"
     },
     {
       "id": "15",
       "package_type": "1",
-      "name": "E50000",
-      "description": "50.000₮ (180хоног + 50000)"
-    },
-    {
-      "id": "16",
-      "package_type": "1",
-      "name": "E90000",
-      "description": "90.000₮ (360хоног + 90000)"
-    },
-    {
-      "id": "17",
-      "package_type": "2",
-      "name": "C500",
-      "description": "500₮ (500нэгж)"
-    },
-    {
-      "id": "18",
-      "package_type": "2",
-      "name": "C1000",
-      "description": "1.000₮ (1000нэгж)"
-    },
-    {
-      "id": "19",
-      "package_type": "2",
-      "name": "C2000",
-      "description": "2.000₮ (2000нэгж)"
-    },
-    {
-      "id": "20",
-      "package_type": "2",
-      "name": "S5000",
-      "description": "5.000₮ (5000нэгж)"
-    },
-    {
-      "id": "21",
-      "package_type": "3",
-      "name": "S3000",
-      "description": "3.000₮ (30хоног)"
-    },
-    {
-      "id": "22",
-      "package_type": "3",
-      "name": "C5000",
-      "description": "5.000₮ (30хоног)"
-    },
-    {
-      "id": "23",
-      "package_type": "3",
-      "name": "S6000",
-      "description": "6.000₮ (90хоног)"
-    },
-    {
-      "id": "24",
-      "package_type": "3",
-      "name": "C10000",
-      "description": "10.000₮ (30хоног)"
-    },
-    {
-      "id": "25",
-      "package_type": "3",
-      "name": "F10000",
-      "description": "10.000₮ (247/30хоног)"
-    },
-    {
-      "id": "26",
-      "package_type": "3",
-      "name": "C15000",
-      "description": "15.000₮ (30хоног)"
-    },
-    {
-      "id": "27",
-      "package_type": "3",
-      "name": "C50000",
-      "description": "50.000₮ (60хоног)"
-    },
-    {
-      "id": "28",
-      "package_type": "3",
-      "name": "C90000",
-      "description": "90.000₮ (60хоног)"
-    },
-    {
-      "id": "29",
-      "package_type": "4",
       "name": "NET10000",
       "description": "10.000₮ (30хоног+1GB)"
     },
     {
-      "id": "30",
-      "package_type": "4",
+      "id": "16",
+      "package_type": "1",
       "name": "NET13000",
       "description": "13.000₮ (30хоног+2GB)"
     },
     {
-      "id": "31",
-      "package_type": "4",
+      "id": "17",
+      "package_type": "1",
       "name": "NET30000",
       "description": "30.000₮ (60хоног+10GB)"
     },
     {
-      "id": "32",
-      "package_type": "5",
+      "id": "18",
+      "package_type": "2",
       "name": "IPRC3000",
       "description": "3.000₮ (хоноггүй)"
     },
     {
-      "id": "33",
-      "package_type": "5",
+      "id": "19",
+      "package_type": "2",
       "name": "IPRC8000",
       "description": "8.000₮ (хоноггүй)"
     },
     {
-      "id": "34",
-      "package_type": "5",
+      "id": "20",
+      "package_type": "2",
       "name": "IPRC5000",
       "description": "5.000₮ (30хоног)"
     },
     {
-      "id": "35",
-      "package_type": "5",
+      "id": "21",
+      "package_type": "2",
       "name": "IPRC10000",
       "description": "10.000₮ (30хоног)"
     },
     {
-      "id": "36",
-      "package_type": "5",
+      "id": "22",
+      "package_type": "2",
       "name": "IPRC15000",
       "description": "15.000₮ (60хоног)"
     },
     {
-      "id": "37",
-      "package_type": "5",
-      "name": "IPRC25000",
-      "description": "25.000₮ (90хоног)"
-    },
-    {
-      "id": "38",
-      "package_type": "5",
+      "id": "23",
+      "package_type": "2",
       "name": "IPRC60000",
       "description": "60.000₮ (180хоног)"
     },
     {
-      "id": "39",
-      "package_type": "5",
-      "name": "IPRC100000",
-      "description": "100.000₮ (365хоног)"
-    },
-    {
-      "id": "40",
-      "package_type": "6",
+      "id": "24",
+      "package_type": "3",
       "name": "SM3000",
       "description": "3.000₮ (Smart)"
     },
     {
-      "id": "41",
-      "package_type": "6",
+      "id": "25",
+      "package_type": "3",
       "name": "SM5000",
       "description": "5.000₮ (Smart)"
     },
     {
-      "id": "42",
-      "package_type": "6",
+      "id": "26",
+      "package_type": "3",
       "name": "SM10000",
       "description": "10.000₮ (Smart)"
     },
     {
-      "id": "43",
-      "package_type": "6",
+      "id": "27",
+      "package_type": "3",
       "name": "SMN3000",
       "description": "3.000₮ (Nihao)"
     },
     {
-      "id": "44",
-      "package_type": "6",
+      "id": "28",
+      "package_type": "3",
       "name": "SMN5000",
       "description": "5.000₮ (Nihao)"
     }

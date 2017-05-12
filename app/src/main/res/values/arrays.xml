@@ -7,7 +7,7 @@
         <item>Үйлчилгээ</item>
         <item>Бүртгэл</item>
         <item>Мэдээлэл</item>
-        <item>Төлөвлөгөө</item>
+       <!-- <item>Төлөвлөгөө</item> -->
         <item>Санал хүсэлт</item>
         <item>Тохиргоо</item>
         <item>Гарах</item>
@@ -19,7 +19,7 @@
         <item>ic_service</item>
         <item>ic_register</item>
         <item>ic_info</item>
-        <item>ic_plan</item>
+   <!--     <item>ic_plan</item> -->
         <item>ic_feedback</item>
         <item>ic_settings</item>
         <item>ic_exit</item>
@@ -49,10 +49,7 @@
     </string-array>
 
     <string-array name="skydealer_charge_card_types">
-        <item>ӨНГӨЛӨГ DATA</item>
-        <item>ӨНГӨЛӨГ CALL</item>
-        <item>СКАЙтел хоноггүй</item>
-        <item>СКАЙтел хоногтой</item>
+        <item>СКАЙтел карт</item>
         <item>СКАЙтел дата карт</item>
         <item>СКАЙмедиа IP76 карт</item>
         <item>Смарт карт/Олон улс</item>

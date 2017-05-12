@@ -2,202 +2,166 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\762aae4e999523b888b3d0bcb378416f49bc566b\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f3d5284b81f790c3ed0e55d0034e9f12359d0f24\classes.dex" />
+        revision="25.0.0"
+        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_29224f4362464d3a001f1bcf73d8056b6325eb9b.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\5e6b4bfdc1b80acda0b1b486187c670a27039787\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="3c530e44a87a1d8bdc9aeb632c3c66156d520c2a">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_22411a008e78a819352df3ab8521cf8116114952\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.8_13b33a8aa613377abe2696e876a735fe8b19c63f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.mindorks\paracamera\0.0.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
+        revision="25.0.0"
         sha1="8b80a4e162e012a08d7923de08317ef6cf265f81">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.mindorks-paracamera-0.0.2_3e7a226006dc66ab096b11b92cc2cee6ebec28ad\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_60e813368b2992bfdeeef2e68eed13b418079982\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\2dca5d831e326d014a866b846649dacc7f8bed42\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="afa06f539a4026c10b247386312aa67404b80a16">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-android-4.48_edc6d78df7680f824beaea82c1241d0ff54d2ae0\classes.dex" />
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_11b9ffff9b21819bb677bce9cb445765958057e4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\0c167002ff0497496e0c36409d9f53d9f6b5f067\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_a04d3860e453c162e30900c15bafb579b35fb15e\classes.dex" />
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\internal_impl-23.3.0_8417d80bb25161462977f0232a478b5190ed09b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\joda-time-2.7_4bbfd41aed2540c2a28919e21d244ce238a2c57d.jar" />
     </item>
     <item
         is-multidex="true"
         jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="6b155606a979a252064f26d3847722f4b91d209b">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
+        revision="25.0.0"
+        sha1="a47b8d28a61e063c7d7ec21ee0bcdf1fe1807c3a">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_c77186e7db90e86a3e5cb03b28b3294706867264\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
+        revision="25.0.0"
         sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-core-4.48_015ef92b87bc72e8e846f41532dfc5f8a6a01a9b\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\ormlite-core-4.48_ee7c9d178db9ff02890cce8f1acea3a2e913dbbd.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\de.codecrafters.tableview\tableview\2.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
+        jumboMode="false"
         optimize="true"
-        revision="23.0.2"
-        sha1="95df9aed9df240a0e1b508ddaeb510d950b2879c">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\de.codecrafters.tableview-tableview-2.0.1_64940eabdabfe6ffbbad399ec6433b84673a2511\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_09bbc0cd53da0cab151d182ff3853d9bb70e6731\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.5.0_97e4d81d6fcf242e9b00eab7a2caca2bd8c58cbe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_b46d656a44d2d420026418e50aa5eb07a0b0215e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_bc62cec15732df7fd1aecc3d3a685f8879ac2973\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-23.3.0_1d4eda2b9cb7a94d18f5618a0997a2af0f22bf7d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_0415f8d7e6dad36606997a9694557815aeadeaf5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_bdc3ab6109028d1742f52e2c1c8179b8ba701fad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_50978ba402f072486d495d0df10e2f1f3f55d7ca\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_d01d945a2d08b136fd9cceccd2a7e2003085d7c3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
+        revision="25.0.0"
         sha1="b915ebd2c4b901eec32e4df44e5503752e92ce38">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-jdbc-4.48_71349a98eb7425ccc9ebaab08832c54e1df23baf\classes.dex" />
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\ormlite-jdbc-4.48_533f03f4d26c068c71c576069eb1da91d7f5b8ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\okio-1.11.0_3145e8d005923bfa4ddf7be58b904006cdd1e27d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\6a5824b153c27f4989af8d90ad81480a44983e85\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_708ff3eb328f68b1f47b4101c90e7bdebab3081e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\02ed03a2e6049bedbb4a0a02d16a6306d696f9a2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95df9aed9df240a0e1b508ddaeb510d950b2879c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_d4dba942f82bdd70011a7195087b044ba57e2bef.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\ch.acra\acra\4.9.0\jars\classes.jar"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ch.acra-acra-4.9.0_b06e0e667b01e2f7511bde55277f307d8595a8ef\classes.dex" />
+        revision="25.0.0"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-android-4.48_9af6ebe1cbb5fc3c8bba49a68238171c5b3ae1b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\picasso-2.5.2_4ca38ed33036f65d66fde0164d71765db9018fc5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.0.8_400911a82d1fde328b6a92a6c3df3c444040d522.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.5.0_305e6e3469f38622f42509c49c4ab6589cabb832\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\a337d22eed9a9b2b4bfc6fdcae0912e9ea7b00bf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_aa6fddc91869ee4eb7ca46075a7bcf065e51cef6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\5e6b4bfdc1b80acda0b1b486187c670a27039787\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8b80a4e162e012a08d7923de08317ef6cf265f81">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_60e813368b2992bfdeeef2e68eed13b418079982.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Altanchimeg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\support-annotations-23.3.0_f6397796e0da4b9141009f790f8383a9893e8c57.jar" />
     </item>
     <item
         is-multidex="true"
@@ -209,13 +173,175 @@
         <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_f6397796e0da4b9141009f790f8383a9893e8c57\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Altanchimeg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_53331fd5f37d9fd9de22e4132452fbb672e17e9f\classes.dex" />
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\support-annotations-23.3.0_f6397796e0da4b9141009f790f8383a9893e8c57.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\762aae4e999523b888b3d0bcb378416f49bc566b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_29224f4362464d3a001f1bcf73d8056b6325eb9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\0c167002ff0497496e0c36409d9f53d9f6b5f067\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_058193e0ad2b46e6b6db53d0cc70ca3165f2e304.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.7_4bbfd41aed2540c2a28919e21d244ce238a2c57d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\b73f1e77de0a50cd0ac621863e5e6a0e3e031d1e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_3c62164af500abd991b3aff3c9d5c06348eb8993.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\9e5d5bfdfc7ddc81a1bf1bd5dfddbbf8253b14d9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_7068e6f5461592e236244a3e03bbd204cbc0eb24.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-core-4.48_ee7c9d178db9ff02890cce8f1acea3a2e913dbbd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b915ebd2c4b901eec32e4df44e5503752e92ce38">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\ormlite-jdbc-4.48_533f03f4d26c068c71c576069eb1da91d7f5b8ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\f31d9de73bb8d6cb33e18ff7d4c0d1c7b5ecf1e2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_8fb480a745cd8ee79436610805453feb5a63c8f9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\02ed03a2e6049bedbb4a0a02d16a6306d696f9a2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95df9aed9df240a0e1b508ddaeb510d950b2879c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4dba942f82bdd70011a7195087b044ba57e2bef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_4ca38ed33036f65d66fde0164d71765db9018fc5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\3e0f156b0e0f2d3e6b983940d9a00f02417b52e6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\classes_4a22b7b8562d00fa00a9eac5df8cbd0ab3572eea.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.0.8_400911a82d1fde328b6a92a6c3df3c444040d522\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\ormlite-android-4.48_9af6ebe1cbb5fc3c8bba49a68238171c5b3ae1b8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_3145e8d005923bfa4ddf7be58b904006cdd1e27d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\okhttp-3.5.0_305e6e3469f38622f42509c49c4ab6589cabb832.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\altanchimeg.SKYTEL\.android\build-cache\a337d22eed9a9b2b4bfc6fdcae0912e9ea7b00bf\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\release\internal_impl-23.3.0_a4f76e9c976bcedcc6d9a1753eb40004b9f4b477.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Altanchimeg\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_f6397796e0da4b9141009f790f8383a9893e8c57\classes.dex" />
     </item>
 
 </items>

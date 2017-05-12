@@ -81,6 +81,8 @@ public class ChargeCardFragment extends Fragment {
     //    IP76 carduud deer tsenegleh dugaariig bish ooriin dugaariig oruulah uchir - Zolbayar
     private TextView numberToSendLabel;
 
+    private String mPackageTypeNameString = "";
+
     public ChargeCardFragment() {
     }
 
@@ -110,7 +112,7 @@ public class ChargeCardFragment extends Fragment {
         mClient = HttpClient.getInstance();
         mPrefManager = new PrefManager(mContext);
         mPackageTypes = mContext.getResources().getStringArray(R.array.skydealer_charge_card_types);
-
+        Log.d(TAG, "PackageType: " + mPackageTypes);
 
 
         // Set Package Type List
@@ -120,17 +122,8 @@ public class ChargeCardFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case Constants.CONST_COLOR_DATA_PACKAGE:
-                        mPackageTypeEnum = PackageTypeEnum.COLOR_DATA_PACKAGE;
-                        break;
-                    case Constants.CONST_COLOR_CALL_PACKAGE:
-                        mPackageTypeEnum = PackageTypeEnum.COLOR_CALL_PACKAGE;
-                        break;
-                    case Constants.CONST_SKYTEL_NODAY_PACKAGE:
-                        mPackageTypeEnum = PackageTypeEnum.SKYTEL_NODAY_PACKAGE;
-                        break;
-                    case Constants.CONST_SKYTEL_DAY_PACKAGE:
-                        mPackageTypeEnum = PackageTypeEnum.SKYTEL_DAY_PACKAGE;
+                    case Constants.CONST_SKYTEL_CARD_PACKAGE:
+                        mPackageTypeEnum = PackageTypeEnum.SKYTEL_CARD_PACKAGE;
                         break;
                     case Constants.CONST_SKYTEL_DATA_PACKAGE:
                         mPackageTypeEnum = PackageTypeEnum.SKYTEL_DATA_PACKAGE;
@@ -144,6 +137,7 @@ public class ChargeCardFragment extends Fragment {
                 }
                 mCardTypeListView.setAdapter(new ChargeCardTypeAdapter(getActivity(), mPackageTypeEnum));
                 mCardList = mDataManager.getCardTypeByPackageType(mPackageTypeEnum);
+                mPackageTypeNameString = mPackageTypes[position].toString();
 
             }
         });
@@ -166,7 +160,7 @@ public class ChargeCardFragment extends Fragment {
                 mPackageTypeName = (TextView) dialog.findViewById(R.id.package_type_name);
                 mCardTypeName = (TextView) dialog.findViewById(R.id.card_type_name);
                 mChargeCardOrderBtn = (Button) dialog.findViewById(R.id.charge_card_order_btn);
-                mPackageTypeName.setText(mPackageTypes[position]);
+                mPackageTypeName.setText(mPackageTypeNameString);
                 mCardTypeName.setText(mCardList.get(position).getDesciption());
                 if(mPackageTypeEnum == PackageTypeEnum.SKYMEDIA_IP76_PACKAGE){
                     numberToSendLabel.setText(getResources().getString(R.string.insert_charge_number_for_ip));
@@ -186,9 +180,9 @@ public class ChargeCardFragment extends Fragment {
             }
         });
 
-        for (CardType cardType : mDataManager.getCardTypeByPackageType(PackageTypeEnum.COLOR_DATA_PACKAGE)) {
+       /* for (CardType cardType : mDataManager.getCardTypeByPackageType(PackageTypeEnum.COLOR_DATA_PACKAGE)) {
             Log.d(TAG, "cardTypeName " + cardType.getName());
-        }
+        }*/
 
         return rootView;
     }

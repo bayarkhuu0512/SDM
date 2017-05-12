@@ -90,6 +90,7 @@ public class NumberChoiceFragment extends Fragment {
     private PrefManager mPrefManager;
 
     private int mSelectedPriceId = -1;
+    private String selectedPrefix;
 
     public NumberChoiceFragment() {
     }
@@ -138,7 +139,9 @@ public class NumberChoiceFragment extends Fragment {
         mPrefixSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                mSearchNumber.setText(mPrefixArrayList.get(position));
+                selectedPrefix = mPrefixArrayList.get(position);
+                Log.d(TAG, "Selected Prefix: "+ selectedPrefix);
+                //mSearchNumber.setText(mPrefixArrayList.get(position));
             }
 
             @Override
@@ -245,7 +248,7 @@ public class NumberChoiceFragment extends Fragment {
 
     public void runGetSearchNumberList() throws Exception {
         final StringBuilder url = new StringBuilder();
-        url.append(Constants.SERVER_NUMBER_SKYTEL_URL);
+      /*  url.append(Constants.SERVER_NUMBER_SKYTEL_URL);
 
         getActivity().runOnUiThread(new Runnable() {
             @Override
@@ -265,6 +268,32 @@ public class NumberChoiceFragment extends Fragment {
                 .url(url.toString())
                 .post(formBody)
                 .build();
+*/
+        url.append(Constants.SERVER_SKYTEL_MN_URL);
+        url.append(Constants.FUNCTION_GET_NUMBERLIST);
+        url.append("?service=" + "prepaid");
+        url.append("&prefix=" + selectedPrefix);
+        url.append("&affix=" + mSearchNumber.getText().toString());
+        url.append("&zzzz=linked99");
+
+
+
+        getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, "send URL: " + url.toString());
+            }
+        });
+
+        System.out.print(url + "\n");
+
+        RequestBody formBody = new FormBody.Builder()
+                .build();
+        Request request = new Request.Builder()
+                .url(url.toString())
+                .post(formBody)
+                .build();
+
 
         mClient.newCall(request).enqueue(new Callback() {
             @Override
@@ -297,8 +326,8 @@ public class NumberChoiceFragment extends Fragment {
                     JSONObject jsonObj = new JSONObject(resp);
 
 //                  Haisan dugaar number.skytel.mn deer baihgui uyed data field hooson irj exception shidej baisniig boliulsan - Zolbayar
-                    if (!jsonObj.isNull("data")) {
-                        JSONArray jArray = jsonObj.getJSONArray("data");
+                    if (!jsonObj.isNull("numbers")) {
+                        JSONArray jArray = jsonObj.getJSONArray("numbers");
 
                         Log.d(TAG, "*****JARRAY*****" + jArray.length());
                         mNumbersArrayList.clear();
@@ -331,7 +360,7 @@ public class NumberChoiceFragment extends Fragment {
                                         Log.d(TAG, "Selected: " + mNumbersArrayList.get(position));
                                         mSelected_number = mNumbersArrayList.get(position).getPhoneNumber();
                                         mSelected_price_type_id = mNumbersArrayList.get(position).getPriceType();
-                                        mSearchNumber.setText(mSelected_number);
+                                       // mSearchNumber.setText(mSelected_number);
 
                                         Dialog dialog = new Dialog(getActivity());
                                         dialog.setContentView(R.layout.dialog_number_choice);
@@ -691,7 +720,8 @@ public class NumberChoiceFragment extends Fragment {
         public void onPositiveButton() {
             try {
                 mProgressDialog.show();
-                runReserveNumber(mSearchNumber.getText().toString(), mRegisterNumber.getText().toString(), mPriceTypeInfoArrayList.get(mSelectedPriceId - 1).getPriceTypeId(), 1);
+                runReserveNumber(mChosenNewNumber.getText().toString(), mRegisterNumber.getText().toString(), mPriceTypeInfoArrayList.get(mSelectedPriceId - 1).getPriceTypeId(), 1);
+                Log.d(TAG, "price type: "+ mPriceTypeInfoArrayList.get(mSelectedPriceId - 1).getPriceTypeId());
             } catch (Exception e) {
                 e.printStackTrace();
             }

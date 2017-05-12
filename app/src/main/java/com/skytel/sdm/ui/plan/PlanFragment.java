@@ -44,9 +44,9 @@ public class PlanFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.plan, container, false);
+        View rootView = inflater.inflate(R.layout.plan_empty, container, false);
 
-        pieChart = (PieChart) rootView.findViewById(R.id.pieChart);
+       /* pieChart = (PieChart) rootView.findViewById(R.id.pieChart);
         barChart = (BarChart) rootView.findViewById(R.id.barChart);
 
         setPieData(4, 100);
@@ -54,7 +54,7 @@ public class PlanFragment extends Fragment {
         setBarData();
         barChart.animateY(3000);
         barChart.setPinchZoom(false);
-        barChart.setDrawBarShadow(false);
+        barChart.setDrawBarShadow(false);*/
 
         return rootView;
     }

@@ -13,10 +13,10 @@ public interface Constants {
     int MENU_SERVICE = 2;
     int MENU_REGISTRATION = 3;
     int MENU_INFORMATION = 4;
-    int MENU_PLAN = 5;
-    int MENU_FEEDBACK = 6;
-    int MENU_SETTINGS = 7;
-    int MENU_LOGOUT = 8;
+  //  int MENU_PLAN = 5;
+    int MENU_FEEDBACK = 5;
+    int MENU_SETTINGS = 6;
+    int MENU_LOGOUT = 7;
 
     /* Preference */
     String PREF_NAME = "sdm";
@@ -60,6 +60,7 @@ public interface Constants {
     String SERVER_SKYTEL_MN_URL = "https://www.skytel.mn";
     String FUNCTION_GET_PREFIX = "/api/content/numberPrefixSearch";
     String FUNCTION_GET_PRICE = "/api/content/numberPrice";
+    String FUNCTION_GET_NUMBERLIST = "/api/content/numberSearch";
     String FUNCTION_GET_INFO_NEWS_TYPE = "/api/content/list";
     String FUNCTION_GETINFO_NEWS_DETAIL_PART1 = "/api/content/";
     String FUNCTION_GETINFO_NEWS_DETAIL_PART2 = "/show";
@@ -73,19 +74,18 @@ public interface Constants {
     int RESULT_CODE_INVOICE_ALREADY_CREATED = 799;
     String RESULT_STATUS_SUCCESS = "success";
 
-    int CONST_COLOR_DATA_PACKAGE = 0;
-    int CONST_COLOR_CALL_PACKAGE = 1;
-    int CONST_SKYTEL_NODAY_PACKAGE = 2;
-    int CONST_SKYTEL_DAY_PACKAGE = 3;
-    int CONST_SKYTEL_DATA_PACKAGE = 4;
-    int CONST_SKYMEDIA_IP76_PACKAGE = 5;
-    int CONST_SMART_PACKAGE = 6;
+    int CONST_SKYTEL_CARD_PACKAGE = 0;
+    int CONST_SKYTEL_DATA_PACKAGE = 1;
+    int CONST_SKYMEDIA_IP76_PACKAGE = 2;
+    int CONST_SMART_PACKAGE = 3;
 
 
     int FILTER_ALL = 0;
     int FILTER_WAITING = 1;
     int FILTER_SUCCESS = 2;
     int FILTER_FAILED = 3;
+
+  String INFO_CATEGORY_INFORMATION = "7";
 
     public static final int[] MATERIAL_COLORS = {
             Color.rgb(46 , 204, 113),  Color.rgb(52, 152, 219), Color.rgb(241, 196, 15), Color.rgb(231, 76, 60),

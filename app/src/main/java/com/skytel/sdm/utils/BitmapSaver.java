@@ -15,23 +15,10 @@ import java.util.Date;
  */
 public class BitmapSaver {
     public static void saveBitmapToFile(Context context, Bitmap bitmap, String imageName) {
-/*
-        File file = new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_DCIM),
-                imageName);
-*/
-/*
-        File file = new File(Environment.getExternalStorageDirectory(),
-                imageName);
-*/
 
-//        File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile()+imageName);
-        //      File file = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(), imageName);
 
         try {
-//            file.createNewFile();
 
-//            FileOutputStream ostream = new FileOutputStream(file);
             FileOutputStream ostream = context.openFileOutput(imageName, Context.MODE_PRIVATE);
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, ostream);
 
@@ -42,11 +29,6 @@ public class BitmapSaver {
     }
 
     public static File readBitmapFromFile(Context context, String imageName) {
-/*
-        return new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_DCIM),
-                imageName);
-*/
 
         String yourFilePath = context.getFilesDir() + "/" + imageName;
 
