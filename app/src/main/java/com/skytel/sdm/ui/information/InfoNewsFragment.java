@@ -53,7 +53,6 @@ public class InfoNewsFragment extends Fragment implements Constants {
     private CustomProgressDialog mProgressDialog;
 
     private ListView mInfoNewsTypeListview;
-    private Spinner mInfoTypeSpinner;
     private ListView mNewsListview;
     private InfoNewsTypeAdapter mInfoNewsAdapter;
     private NewsListAdapter mNewsListAdapter;
@@ -81,7 +80,6 @@ public class InfoNewsFragment extends Fragment implements Constants {
         mNewsListAdapter = new NewsListAdapter(getActivity(), mNewsListArrayList);
         mNewsListview.setAdapter(mNewsListAdapter);
 
-        mInfoTypeSpinner = (Spinner) rootView.findViewById(R.id.choose_info_type);
 
         mInfoNewsTypeListview = (ListView) rootView.findViewById(R.id.info_type_list_view);
         mInfoNewsAdapter = new InfoNewsTypeAdapter(getActivity(), mInfoNewsTypeArrayList);

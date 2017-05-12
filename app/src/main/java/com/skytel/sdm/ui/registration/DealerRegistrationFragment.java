@@ -108,6 +108,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
     private String mChosenDealerTypeCode = null;
 
     private Bitmap bm = null;
+    private static String skydealerNumber = "";
 
     public DealerRegistrationFragment() {
     }
@@ -333,12 +334,19 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                                         mChosenDealerTypeCode = dealerChannelType.get(position - 1).getTypeCode().toString();
                                         mDiscountPercent.setText(dealerChannelType.get(position - 1).getDiscount().toString());
                                         Log.d(TAG, "Dealer channel type discount percent: " + dealerChannelType.get(position - 1).getDiscount()+"%");
+                                        Log.d(TAG, "Dealer channel type code : " + dealerChannelType.get(position - 1).getTypeCode().toString());
                                        if( dealerChannelType.get(position - 1).getId() == 0){
                                            mSkydealerNumber.setVisibility(View.GONE);
+                                           mSkydealerNumber.setText("0");
                                        }
                                         else{
                                            mSkydealerNumber.setVisibility(View.VISIBLE);
+
                                        }
+
+
+
+
 
                                     } catch (ArrayIndexOutOfBoundsException e) {
 
@@ -375,21 +383,29 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
         final StringBuilder url = new StringBuilder();
         url.append(Constants.SERVER_URL);
         url.append(Constants.FUNCTION_NEW_DEALER);
-
-
+/*
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 Log.d(TAG, "send URL: "+url.toString());
+                if(mChosenDealerTypeCode.toString() == "b"){
+
+                    skydealerNumber = "0";
+                }
+                else{
+                    skydealerNumber = mSkydealerNumber.getText().toString();
+                }
+                Log.d(TAG, "Skydealer number: "+skydealerNumber);
             }
         });
-
+*/
         System.out.print(url + "\n");
         System.out.println(mPrefManager.getAuthToken());
 
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
-                .addFormDataPart("phone", mSkydealerNumber.getText().toString())
+
+                .addFormDataPart("phone",mSkydealerNumber.getText().toString())
                 .addFormDataPart("last_name", mLastName.getText().toString())
                 .addFormDataPart("first_name", mFirstName.getText().toString())
                 .addFormDataPart("register", mRegNumber.getText().toString())
@@ -481,6 +497,9 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                             }
                         });
                     }
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
 
                         mCardSellAddress.setText("");
                         mChannelSalesType.setSelection(-1);
@@ -491,7 +510,8 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                         mSkydealerNumber.setText("");
                         mOrderDesc.setText("");
 
-
+                        }
+                    });
 
 
 
@@ -610,6 +630,7 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
         public void onPositiveButton() {
             try {
                 mProgressDialog.show();
+
                 runSendOrder();
             } catch (Exception e) {
                 Log.e(TAG, e.getMessage());

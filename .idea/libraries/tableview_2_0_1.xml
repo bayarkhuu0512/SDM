@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="tableview-2.0.1">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/de.codecrafters.tableview/tableview/2.0.1/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/de.codecrafters.tableview/tableview/2.0.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/aeca27bc8891f29c3a6437911a0930206ec561bf/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/aeca27bc8891f29c3a6437911a0930206ec561bf/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -25,10 +25,10 @@
             android:id="@+id/menu_information"
             android:icon="@drawable/ic_info"
             android:title="@string/menu_information" />
-        <item
+  <!--      <item
             android:id="@+id/menu_plan"
             android:icon="@drawable/ic_plan"
-            android:title="@string/menu_plan" />
+            android:title="@string/menu_plan" /> -->
         <item
             android:id="@+id/menu_feedback"
             android:icon="@drawable/ic_feedback"

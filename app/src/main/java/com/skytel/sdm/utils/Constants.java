@@ -13,10 +13,10 @@ public interface Constants {
     int MENU_SERVICE = 2;
     int MENU_REGISTRATION = 3;
     int MENU_INFORMATION = 4;
-    int MENU_PLAN = 5;
-    int MENU_FEEDBACK = 6;
-    int MENU_SETTINGS = 7;
-    int MENU_LOGOUT = 8;
+  //  int MENU_PLAN = 5;
+    int MENU_FEEDBACK = 5;
+    int MENU_SETTINGS = 6;
+    int MENU_LOGOUT = 7;
 
     /* Preference */
     String PREF_NAME = "sdm";
@@ -60,6 +60,7 @@ public interface Constants {
     String SERVER_SKYTEL_MN_URL = "https://www.skytel.mn";
     String FUNCTION_GET_PREFIX = "/api/content/numberPrefixSearch";
     String FUNCTION_GET_PRICE = "/api/content/numberPrice";
+    String FUNCTION_GET_NUMBERLIST = "/api/content/numberSearch";
     String FUNCTION_GET_INFO_NEWS_TYPE = "/api/content/list";
     String FUNCTION_GETINFO_NEWS_DETAIL_PART1 = "/api/content/";
     String FUNCTION_GETINFO_NEWS_DETAIL_PART2 = "/show";

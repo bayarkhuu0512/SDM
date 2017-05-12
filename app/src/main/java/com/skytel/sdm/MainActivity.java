@@ -155,9 +155,9 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
             selectItem(MENU_REGISTRATION);
         } else if (id == R.id.menu_information) {
             selectItem(MENU_INFORMATION);
-        } else if (id == R.id.menu_plan) {
+        } /*else if (id == R.id.menu_plan) {
             selectItem(MENU_PLAN);
-        } else if (id == R.id.menu_feedback) {
+        } */else if (id == R.id.menu_feedback) {
             selectItem(MENU_FEEDBACK);
         } else if (id == R.id.menu_settings) {
             selectItem(MENU_SETTINGS);
@@ -190,9 +190,9 @@ public class MainActivity extends AppCompatActivity implements BalanceUpdateList
             case MENU_INFORMATION:
                 fragment = new TabInformationFragment();
                 break;
-            case MENU_PLAN:
+           /* case MENU_PLAN:
                 fragment = new PlanFragment();
-                break;
+                break;*/
             case MENU_FEEDBACK:
                 fragment = new FeedbackFragment();
                 break;

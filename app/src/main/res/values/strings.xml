@@ -241,4 +241,6 @@
     <string name="cannot">Cannot</string>
     <string name="album_name">CameraSample</string>
 
+    <string name="plan_empty"></string>
+
 </resources>
