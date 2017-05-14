@@ -117,8 +117,8 @@
                 <Button
                     android:id="@+id/send_order"
                     style="@style/ButtonStyle"
-                    android:layout_margin="@dimen/main_padding"
                     android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/main_padding"
                     android:text="@string/order"></Button>
 
             </LinearLayout>

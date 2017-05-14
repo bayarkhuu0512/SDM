@@ -80,9 +80,7 @@ public class InfoNewsFragment extends Fragment implements Constants {
         mNewsListAdapter = new NewsListAdapter(getActivity(), mNewsListArrayList);
         mNewsListview.setAdapter(mNewsListAdapter);
 
-<<<<<<< HEAD
-=======
-
+        /*
         mInfoNewsTypeListview = (ListView) rootView.findViewById(R.id.info_type_list_view);
         mInfoNewsAdapter = new InfoNewsTypeAdapter(getActivity(), mInfoNewsTypeArrayList);
         mInfoNewsTypeListview.setAdapter(mInfoNewsAdapter);
@@ -99,8 +97,7 @@ public class InfoNewsFragment extends Fragment implements Constants {
                 }
             }
         });
->>>>>>> origin/master
-
+*/
         try {
             runGetInfoNewsList(INFO_CATEGORY_INFORMATION);
         } catch (Exception e) {

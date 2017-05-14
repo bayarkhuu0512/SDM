@@ -7,10 +7,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,19 +27,15 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mindorks.paracamera.Camera;
 import com.skytel.sdm.LoginActivity;
 import com.skytel.sdm.MainActivity;
 import com.skytel.sdm.R;
-import com.skytel.sdm.adapter.DealerChannelTypeAdapter;
 import com.skytel.sdm.adapter.HandsetChangeTypeAdapter;
 import com.skytel.sdm.adapter.NothingSelectedSpinnerAdapter;
 import com.skytel.sdm.database.DataManager;
-import com.skytel.sdm.entities.DealerChannelType;
 import com.skytel.sdm.entities.HandsetChangeType;
 import com.skytel.sdm.network.HttpClient;
 import com.skytel.sdm.utils.BitmapSaver;
-import com.skytel.sdm.utils.CameraActivity;
 import com.skytel.sdm.utils.ConfirmDialog;
 import com.skytel.sdm.utils.Constants;
 import com.skytel.sdm.utils.CustomProgressDialog;
@@ -47,24 +47,23 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+
+import static com.mindorks.paracamera.Camera.REQUEST_TAKE_PHOTO;
 
 
 public class HandsetChangeFragment extends Fragment implements Constants {
@@ -363,9 +362,9 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                 .addFormDataPart("sim_serial", mSimcardSerial.getText().toString())
                 .addFormDataPart("simchange_type", String.valueOf(mChosenHandsetChangeTypeId))
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext, imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext, imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageBack))
                 ).build();
 
         Request request = new Request.Builder()
@@ -443,9 +442,9 @@ public class HandsetChangeFragment extends Fragment implements Constants {
                         @Override
                         public void run() {
 
-                    mHandsetChangeTypeSpinner.setSelection(-1);
-                    mPhonenumber.setText("");
-                    mSimcardSerial.setText("");
+                            mHandsetChangeTypeSpinner.setSelection(-1);
+                            mPhonenumber.setText("");
+                            mSimcardSerial.setText("");
                         }
                     });
 
@@ -619,42 +618,73 @@ public class HandsetChangeFragment extends Fragment implements Constants {
         startActivityForResult(Intent.createChooser(intent, getString(R.string.select_file)), SELECT_FILE);
     }
 
+    File photoFile = null;
     private void cameraIntent() {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, REQUEST_CAMERA);
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(mContext.getPackageManager()) != null) {
+            try {
+                String imgName = "";
+                if (isFirst) {
+                    imgName = imageFront;
+                } else {
+                    imgName = imageBack;
+                }
+                photoFile = BitmapSaver.imageFile(mContext, imgName);
+            } catch (IOException ex) {
+                // Error occurred while creating the File
+            }
+            // Continue only if the File was successfully created
+            if (photoFile != null) {
+                Uri photoURI = FileProvider.getUriForFile(mContext,
+                        "com.example.android.fileprovider",
+                        photoFile);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(takePictureIntent, REQUEST_CAMERA);
+            }
+        }
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
-            if (requestCode == SELECT_FILE)
+
+            if (requestCode == SELECT_FILE) {
                 onSelectFromGalleryResult(data);
-            else if (requestCode == REQUEST_CAMERA)
-                onCaptureImageResult(data);
+            } else if (requestCode == REQUEST_CAMERA) {
+                onCaptureImageResult();
+            }
         } else {
             mProgressDialog.dismiss();
         }
 
     }
 
-    private void onCaptureImageResult(Intent data) {
-        bm = (Bitmap) data.getExtras().get("data");
+    private void onCaptureImageResult() {
+
+        Log.d(TAG, "mCurrentPhotoPath " + photoFile.getAbsolutePath());
+
+        Bitmap d = new BitmapDrawable(mContext.getResources(), photoFile.getAbsolutePath()).getBitmap();
+        int nh = (int) (d.getHeight() * (512.0 / d.getWidth()));
+        bm = Bitmap.createScaledBitmap(d, 512, nh, true);
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext, bm, imageFront);
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext, bm, imageBack);
         }
+
         mProgressDialog.dismiss();
+
     }
 
     @SuppressWarnings("deprecation")
     private void onSelectFromGalleryResult(Intent data) {
         if (data != null) {
+            Log.d(TAG, "Image Loaded");
             try {
-                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+//                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+                bm = BitmapSaver.getThumbnail(mContext, data.getData());
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -665,7 +695,9 @@ public class HandsetChangeFragment extends Fragment implements Constants {
             mFrontImage.setImageBitmap(bm);
             BitmapSaver.saveBitmapToFile(mContext, bm, imageFront);
 
-        } else {
+        } else
+
+        {
             mBackImage.setImageBitmap(bm);
             BitmapSaver.saveBitmapToFile(mContext, bm, imageBack);
 
@@ -693,4 +725,6 @@ public class HandsetChangeFragment extends Fragment implements Constants {
 
         }
     };
+
+
 }
