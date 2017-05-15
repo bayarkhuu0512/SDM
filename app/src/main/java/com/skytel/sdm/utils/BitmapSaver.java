@@ -20,9 +20,9 @@ import java.util.Date;
 public class BitmapSaver {
     static int THUMB_SIZE = 500;
 
-    public static void saveBitmapToFile(Context context, Bitmap bitmap, String imageName) {
+    public static void saveBitmapToFile(Context mContext, Bitmap bitmap, String imageName) {
         try {
-            FileOutputStream ostream = context.openFileOutput(imageName, Context.MODE_PRIVATE);
+            FileOutputStream ostream = new FileOutputStream(imageFile(mContext,imageName));
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, ostream);
             ostream.close();
         } catch (Exception e) {
@@ -37,12 +37,14 @@ public class BitmapSaver {
     }
 
     // remove this
+/*
     public static File readBitmapFromFile(Context mContext, String imageName) {
         // duplicated to imageFile()
         File storageDir = mContext.getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File image = new File(storageDir + "/" + imageName);
         return image;
     }
+*/
 
     public static Bitmap getThumbnail(Context context, Uri uri) throws FileNotFoundException, IOException {
         InputStream input = context.getContentResolver().openInputStream(uri);

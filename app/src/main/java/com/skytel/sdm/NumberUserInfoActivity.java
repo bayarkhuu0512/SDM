@@ -263,9 +263,9 @@ public class NumberUserInfoActivity extends AppCompatActivity implements Constan
         RequestBody requestBody = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageBack))
                 ).build();
         Request request = new Request.Builder()
                 .url(url.toString())

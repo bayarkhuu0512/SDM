@@ -414,9 +414,9 @@ public class DealerRegistrationFragment extends Fragment implements Constants {
                 .addFormDataPart("contact", mContactNumber.getText().toString())
                 .addFormDataPart("description", mOrderDesc.getText().toString())
                 .addFormDataPart("photo1_path", imageFront,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageFront)))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageFront)))
                 .addFormDataPart("photo2_path", imageBack,
-                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.readBitmapFromFile(mContext,imageBack))
+                        RequestBody.create(MEDIA_TYPE_PNG, BitmapSaver.imageFile(mContext, imageBack))
                 ).build();
 
 

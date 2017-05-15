@@ -684,6 +684,7 @@ public class HandsetChangeFragment extends Fragment implements Constants {
             try {
 //                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
                 bm = BitmapSaver.getThumbnail(mContext, data.getData());
+//                BitmapSaver.imageFile(mContext, "image_fron_gal");
 
             } catch (IOException e) {
                 e.printStackTrace();
