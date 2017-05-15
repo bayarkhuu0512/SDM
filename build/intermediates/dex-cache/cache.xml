@@ -2,220 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\6e5cc62c97d610f8f2f241fdde430df63b89bee2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_53f93e0a664cace246fc5369820fe0db17276ee3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\a69d56046b283feaf14bf46ced999aed1ce4a8af\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8b80a4e162e012a08d7923de08317ef6cf265f81">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_20a07454650418984c3dc1201427fee29d007242.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\0816a1ddb70664d8618716477b5ce530935e620b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_7b96cf8d8c801330cbda774a870af124109e6197.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_ae5669429ad733e26d76ca15d7976a621b1c4b62.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\12d164aafbe3ebb5f6e4af035480c3ede0e6f4aa\output\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_6be995683ccb7b63f0507901225e4f617904ca08.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\cc98daf32b25a1c52c8b18632f3ad3a9694bfadd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="95df9aed9df240a0e1b508ddaeb510d950b2879c">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_4d7a11e0c18f37cd10e218ebfe36830faf1bd6de.jar" />
-    </item>
-    <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="b18dcb0d949937d183227f5aee83039ee1113ed7">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_32ed930c717f4fc2c6677ba13ea04df91177cbb2\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.7\5599707a3eaad13e889f691b3af78c8c03842195\joda-time-2.7.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5599707a3eaad13e889f691b3af78c8c03842195">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\joda-time-2.7_d79da48beb2a44c28d44d1941fbea614065a224d.jar" />
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_870df02bb937748e5d3ae28bbc603fb8c20b8545\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_81fa5dd0a93a58bfe448f5023459188b2956e58a\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\12d164aafbe3ebb5f6e4af035480c3ede0e6f4aa\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_2aa8c9fe557b584d272564fa1c6f386756a61446.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.5.0\4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83\okhttp-3.5.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4b0bb6bfbecbdd42b97ff400af342bfe7f32bc83">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\okhttp-3.5.0_20e5f2e7da8077406caa23f10f746a5a46ca327b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\f6053e3cf0d0a938e3e6724ce92c818e11491153\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_d2049cea9e758172a2a54c3411ddf7f6911da83f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\6e5cc62c97d610f8f2f241fdde430df63b89bee2\output\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_a5c8e6edaf164ab1bfebc7bca58704da93f59a8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\e8e01b61a3241725c0609a0a94ebb69fd8d1f365\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d03cbe00a6703cfa62ae868707af59d41aff2140">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_8bc38a2ee86d9cbe80ff698d7f6c5be5810c53e3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.48\e579bd2905d0399af5029aaaf9817d5fa0ca88a5\ormlite-core-4.48.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\ormlite-core-4.48_4c2f270e59ad5493869b2d9ee12849629141d148.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\89ff334855dd3312696aad76ad1563eaef02eabe\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_74cb45c6a668fbf6a6d488ec77e3ad0e8c212d81.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.0.8\140889a527804c0f3c4e04eb36abce26b3cefc97\MPAndroidChart-v2.0.8.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="140889a527804c0f3c4e04eb36abce26b3cefc97">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.0.8_aecbc4a73ccb637e85d92b5167ebd11d12c599fb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.48\afa06f539a4026c10b247386312aa67404b80a16\ormlite-android-4.48.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="afa06f539a4026c10b247386312aa67404b80a16">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\ormlite-android-4.48_f147a873076de7f7520fa1e12942ee6602206ada.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-jdbc\4.48\b915ebd2c4b901eec32e4df44e5503752e92ce38\ormlite-jdbc-4.48.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b915ebd2c4b901eec32e4df44e5503752e92ce38">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\ormlite-jdbc-4.48_a54dff66b30002491435bda33155ba385ea79446.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Install\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_39d2a30847e7699167bf6f52707d4ade5665c7b2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\fd07e42d5b03cbb8cc2f6137bcebfc02f44369da\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_28622d3b7329a6a34e9f9b509bb3c47d1bf4c9e9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\okio-1.11.0_e4397f1c87c0e38cd3417734db358586fce09614.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\1dc5f76a8503024bdc66204fdd8f123b1f8c52c7\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_1224b0f7bf3bff26bf28f021a6512efd83a8261c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\bayarkhuu\.android\build-cache\555feed91dd053be895cf958ec8ba4b4b0ccd2fc\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\bayarkhuu\Documents\GitHub\SDM\app\build\intermediates\pre-dexed\debug\classes_d7f4fb3786f03d839ebdb17e055a43e33236a8f3.jar" />
+        sha1="3ac9643c3a8b7c32a9b6b50e1871fd5b870c8929">
+        <dex dex="C:\Users\Altanchimeg\Documents\GitHub\SDM\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7447afb0658ff1b5af771806b83c6dfe4dde4941\classes.dex" />
     </item>
 
 </items>
