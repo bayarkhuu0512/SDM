@@ -516,13 +516,24 @@ public class NumberChoiceFragment extends Fragment {
                             String unit = jsonData.getString("unit");
                             String days = jsonData.getString("days");
                             String serviceType = jsonData.getString("serviceType");
+                            String promo_price = jsonData.getString("promoPrice");
+                            String promo_unit = jsonData.getString("promoUnit");
+                            String promo_days = jsonData.getString("promoDays");
 
                             if (serviceType.equals("prepaid")) {
                                 mPriceType = new PriceType();
                                 mPriceType.setPriceTypeId(price_type_id);
-                                mPriceType.setPrice(price);
-                                mPriceType.setUnit(unit);
-                                mPriceType.setDays(days);
+                                if(promo_price!="0") {
+                                    mPriceType.setPrice(promo_price);
+                                    mPriceType.setUnit(promo_unit);
+                                    mPriceType.setDays(promo_days);
+                                }
+                                else {
+                                    mPriceType.setPrice(price);
+                                    mPriceType.setUnit(unit);
+                                    mPriceType.setDays(days);
+                                }
+
                                 mPriceType.setId(i);
                                 mPriceType.setNumberType(name_mn);
 
