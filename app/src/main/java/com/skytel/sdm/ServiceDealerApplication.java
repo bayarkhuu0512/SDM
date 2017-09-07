@@ -8,7 +8,7 @@ import org.acra.ReportingInteractionMode;
 import org.acra.annotation.ReportsCrashes;
 
 @ReportsCrashes(
-        mailTo = "altanchimeg@skytel.mn",
+        mailTo = "skytelteam2013@gmail.com",
         mode = ReportingInteractionMode.TOAST,
         resToastText = R.string.error)
 public class ServiceDealerApplication extends Application {

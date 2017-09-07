@@ -7,10 +7,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -359,11 +362,10 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
 
                 if (items[item].equals(getString(R.string.take_photo))) {
                     userChosenTask = getString(R.string.take_photo);
-                    if (result){
+                    if (result) {
                         mProgressDialog.show();
                         cameraIntent();
                     }
-
 
                 } else if (items[item].equals( getString(R.string.choose_from_library))) {
                     userChosenTask =  getString(R.string.choose_from_library);
@@ -384,46 +386,76 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);//
-        startActivityForResult(Intent.createChooser(intent,  getString(R.string.select_file)), SELECT_FILE);
+        startActivityForResult(Intent.createChooser(intent, getString(R.string.select_file)), SELECT_FILE);
     }
 
+    File photoFile = null;
     private void cameraIntent() {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, REQUEST_CAMERA);
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(mContext.getPackageManager()) != null) {
+            try {
+                String imgName = "";
+                if (isFirst) {
+                    imgName = imageFront;
+                } else {
+                    imgName = imageBack;
+                }
+                photoFile = BitmapSaver.imageFile(mContext, imgName);
+            } catch (IOException ex) {
+                // Error occurred while creating the File
+            }
+            // Continue only if the File was successfully created
+            if (photoFile != null) {
+                Uri photoURI = FileProvider.getUriForFile(mContext,
+                        "com.example.android.fileprovider",
+                        photoFile);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(takePictureIntent, REQUEST_CAMERA);
+            }
+        }
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         if (resultCode == Activity.RESULT_OK) {
-            if (requestCode == SELECT_FILE)
+
+            if (requestCode == SELECT_FILE) {
                 onSelectFromGalleryResult(data);
-            else if (requestCode == REQUEST_CAMERA)
-                onCaptureImageResult(data);
+            } else if (requestCode == REQUEST_CAMERA) {
+                onCaptureImageResult();
+            }
         } else {
             mProgressDialog.dismiss();
         }
 
     }
 
-    private void onCaptureImageResult(Intent data) {
-        bm = (Bitmap) data.getExtras().get("data");
+    private void onCaptureImageResult() {
+
+        Log.d(TAG, "mCurrentPhotoPath " + photoFile.getAbsolutePath());
+
+        Bitmap d = new BitmapDrawable(mContext.getResources(), photoFile.getAbsolutePath()).getBitmap();
+        int nh = (int) (d.getHeight() * (512.0 / d.getWidth()));
+        bm = Bitmap.createScaledBitmap(d, 512, nh, true);
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
         } else {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
         }
-        mProgressDialog.dismiss();
-    }
 
+        mProgressDialog.dismiss();
+
+    }
     @SuppressWarnings("deprecation")
     private void onSelectFromGalleryResult(Intent data) {
         if (data != null) {
+            Log.d(TAG, "Image Loaded");
             try {
-                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+//                bm = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), data.getData());
+                bm = BitmapSaver.getThumbnail(mContext, data.getData());
+//                BitmapSaver.imageFile(mContext, "image_fron_gal");
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -432,18 +464,18 @@ public class SkyMediaRegistrationFragment extends Fragment implements Constants 
 
         if (isFirst) {
             mFrontImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageFront);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageFront);
 
-        } else {
+        } else
+
+        {
             mBackImage.setImageBitmap(bm);
-            BitmapSaver.saveBitmapToFile(mContext,bm, imageBack);
+            BitmapSaver.saveBitmapToFile(mContext, bm, imageBack);
 
         }
         mProgressDialog.dismiss();
 
     }
-
-
     private ConfirmDialog.OnDialogConfirmListener dialogConfirmListener = new ConfirmDialog.OnDialogConfirmListener() {
 
         @Override
